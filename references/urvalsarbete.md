@@ -27,7 +27,7 @@ Exemplen är sökhjälp, inte permanent garanti. För senaste år: utgå från h
 - T10061: begär godsm och godsmki tillsammans. Behåll officiell bred varugrupp och välj inrikes samt den faktiskt relevanta körningstypen. Ett tomt totalalternativ innebär inte att lastade transporter saknas. Kontrollera exakta returnerade kortyp/riktning-rader innan val av punktskattning och KI; summera inte KI.
 - T10092: länsindelningen reglan har mkorstr men inte korstr enligt Toms kontroll 2026-10-14. Det gäller registreringslän, inte platsen för körningen. Led med att territoriell körning inte kan besvaras, i stället för ett närliggande medeltal.
 - T1101: huvudresor efter huvudsakligt färdsätt är inte delresor med buss. Begränsa besked om saknat mått till kontrollerat API-innehåll och hänvisa till produktsida/specialbearbetning vid behov. Sök inte bussvärden på externa nyhetssidor som ersättning för RVU.
-- T1203/T06013: etiketterna Påstigningar/Resor medför inte olika resbegrepp för spårväg och tunnelbana. Tom anger samma underlag med tusentals-/miljontalsredovisning. Uppgiften får inte överföras till järnvägens samtrafikdefinition eller RVU:s reskedjor. Se källkedjans motstridiga uppgifter i regional-linjetrafik.md.
+- T1203/T06013: etiketterna Påstigningar/Resor medför inte olika resbegrepp för spårväg och tunnelbana. Enligt statistikansvariges besked är Bantrafik och Järnvägstransporter huvudsaklig källa och dessa uppgifter används även i T1203. Tom har uppgett att samma påstigningar redovisas med tusentals-/miljontalsavrundning. Överför inte detta till järnvägens samtrafikdefinition eller RVU:s reskedjor. Summera inte produkterna.
 
 ## Statusmeddelanden
 

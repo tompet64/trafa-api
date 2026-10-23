@@ -99,7 +99,7 @@ Läs [references/punktlighet.md](references/punktlighet.md) vid de fyra T0604-pr
 
 Läs [references/bantrafikskador.md](references/bantrafikskador.md) vid T0602. Skilj händelser från personer, olyckor från självmordshändelser, kontrollera definitionsförändringar och undvik dubbelräkning med Vägtrafikskador. Använd T0602 som primär källa för olycks- och personskadefrågor även om trafikslaget är spårväg eller tunnelbana.
 
-När frågan främst gäller trafik och transporter med spårväg eller tunnelbana, använd Regional linjetrafik (T1203) som primär källa enligt användarens sakgranskning 2026-10-11. Kontrollera efterfrågat mått och urval; använd Bantrafik som komplettering vid behov. Läs [references/bantrafik.md](references/bantrafik.md) för gränsdragning och jämförbarhet.
+När frågan främst gäller trafik och transporter med spårväg eller tunnelbana, använd Regional linjetrafik (T1203) som relevant publiceringsprodukt. Trafikanalys totalundersökning Bantrafik och Järnvägstransporter är enligt statistikansvarige den huvudsakliga datakällan, och dess uppgifter återanvänds i T1203; behandla därför inte produkterna som oberoende källor eller summera dem. Kontrollera efterfrågat mått och urval. Läs [references/bantrafik.md](references/bantrafik.md) för gränsdragning och jämförbarhet.
 
 ## Hämta, kontrollera och redovisa
 
