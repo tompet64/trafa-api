@@ -25,8 +25,16 @@ Availability depends on the workspace plan, settings, and administrator permissi
 
 Clone the repository into the supported local skills directory, for example `~/.agents/skills/trafa-api`. Keep `SKILL.md`, `references/`, `scripts/`, `assets/`, `evaluation/`, and `agents/` together. Restart Codex if the skill does not appear.
 
+## Trafikanalys statistics terms
+
+Trafikanalys' rules for reusing its statistics and using the Statistics Portal are summarized in [DATA-TERMS.md](DATA-TERMS.md). Those terms apply to Trafikanalys data and website material; they are separate from the license for this project's code.
+
+## Code license
+
+The original Python source files (`*.py`) under `scripts/` and `evaluation/` are licensed under the MIT License; see [LICENSE](LICENSE). This license covers only project code whose rights are controlled by the repository owner. It does not cover statistics returned by Trafikanalys' API, API-derived metadata, third-party material, or other files in this repository unless a file states otherwise. Check [DATA-TERMS.md](DATA-TERMS.md) and any source-specific notices for those materials.
+
+The code is provided “as is”, without warranty, and users are responsible for its use and for validating its results.
+
 ## Scope and review
 
 The skill guides queries to Trafikanalys' public statistics API. It does not provide a hosted MCP server or create an API connection by itself. Review its scripts and references before use, especially when adapting it to a managed workplace.
-
-No license file is included. All rights remain with their respective rights holders; this repository does not grant a general license for reuse or redistribution.
