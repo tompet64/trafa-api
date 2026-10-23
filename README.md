@@ -25,8 +25,12 @@ Availability depends on the workspace plan, settings, and administrator permissi
 
 Clone the repository into the supported local skills directory, for example `~/.agents/skills/trafa-api`. Keep `SKILL.md`, `references/`, `scripts/`, `assets/`, `evaluation/`, and `agents/` together. Restart Codex if the skill does not appear.
 
+## Trafikanalys statistics terms
+
+Trafikanalys' rules for reusing its statistics and using the Statistics Portal are summarized in [DATA-TERMS.md](DATA-TERMS.md). Those terms apply to Trafikanalys data and website material; they do not license the code or other files in this repository.
+
 ## Scope and review
 
 The skill guides queries to Trafikanalys' public statistics API. It does not provide a hosted MCP server or create an API connection by itself. Review its scripts and references before use, especially when adapting it to a managed workplace.
 
-No license file is included. All rights remain with their respective rights holders; this repository does not grant a general license for reuse or redistribution.
+This repository has no separate open-source license for its code. Rights to third-party data and materials remain with their respective rights holders.
