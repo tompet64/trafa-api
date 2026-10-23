@@ -1,6 +1,6 @@
 # Regional linjetrafik – T1203
 
-Delvis granskad mot produktsida och kvalitetsdeklaration 2025, lästa 2026-10-11, och metadata från 2026-10-09. Toms sakgranskning 2026-10-11 anger primär källa för trafik- och transportfrågor främst om spårväg/tunnelbana. För olyckor/personskador används T0602.
+Delvis granskad mot produktsida och kvalitetsdeklaration 2025, lästa 2026-10-11, och metadata från 2026-10-09. Toms sakgranskning 2026-10-11 anger T1203 som primär publicerad statistikprodukt för trafik- och transportfrågor främst om spårväg/tunnelbana. Enligt ett senare besked från statistikansvarige är den underliggande huvudsakliga källan Trafikanalys totalundersökning Bantrafik och Järnvägstransporter; dessa uppgifter används även i T1203. Skilj alltså mellan svarande produkt och primär datakälla. För olyckor/personskador används T0602.
 
 ## population
 
@@ -36,7 +36,7 @@ API-metadata varnar att rikstotaler och finansieringstotaler är summor av tillg
 
 ## rail_overlap
 
-Trafik- och resandeuppgifter för spårväg och tunnelbana hämtas från Bantrafik. Ekonomi för dessa trafikslag samlas fortsatt från RKM. Regional kommersiell vägtrafik ingår både i T1203 och Kommersiell linjetrafik på väg T1202. Kommersiell regional vattenstatistik särredovisas även i ett eget tabellverk/API-produkt T1204. Summera inte överlappande produkter; all Bantrafiks järnvägstrafik kan inte ersätta RKM:s järnvägsuppgifter.
+För spårväg och tunnelbana är Trafikanalys totalundersökning Bantrafik och Järnvägstransporter den huvudsakliga källan för trafik- och resandeuppgifter. Dessa uppgifter används även i T1203; T1203 är därmed en publiceringsprodukt för regional linjetrafik, inte en oberoende primär datakälla för just dessa uppgifter. Ekonomi för dessa trafikslag samlas fortsatt från RKM. Regional kommersiell vägtrafik ingår både i T1203 och Kommersiell linjetrafik på väg T1202. Kommersiell regional vattenstatistik särredovisas även i ett eget tabellverk/API-produkt T1204. Summera inte överlappande produkter; all Bantrafiks järnvägstrafik kan inte ersätta RKM:s järnvägsuppgifter.
 
 ## measurement
 
@@ -58,8 +58,8 @@ Utbudskilometer fick definitionsförändringar 2006–2007 och Stockholms pendel
 
 ## Komplettering efter test 8, 2026-10-14
 
-Använd T1203 primärt och begär båda trafikslagen samtidigt. Verifierat exempel för ett helår: `t1203|pastig|ar:2025|finans:2|traslag:3,4` gav två numeriska rader. Vid frågor om senaste år, fastställ aktuellt högsta konkreta år i relevant struktur och hämta endast det året; 2025 är ett verifierat exempel, inte ett permanent senaste år. En tidigare kontroll bekräftade numeriska värden för båda trafikslagen samtliga år 2022–2025 med finans:2 explicit. Den kontrollens fyraårsintervall ska inte återanvändas som standarduttag. Ett tomt uttag utan finans får inte beskrivas som att produkten saknar dessa år.
+För frågor om Regional linjetrafik, hämta T1203 och begär båda trafikslagen samtidigt. Verifierat exempel för ett helår: `t1203|pastig|ar:2025|finans:2|traslag:3,4` gav två numeriska rader. Vid frågor om senaste år, fastställ aktuellt högsta konkreta år i relevant struktur och hämta endast det året; 2025 är ett verifierat exempel, inte ett permanent senaste år. En tidigare kontroll bekräftade numeriska värden för båda trafikslagen samtliga år 2022–2025 med finans:2 explicit. Den kontrollens fyraårsintervall ska inte återanvändas som standarduttag. Ett tomt uttag utan finans får inte beskrivas som att produkten saknar dessa år.
 
 Tom bekräftar att motsvarande Bantrafik-tal finns 2022–2025 och betecknar samma påstigningar, avrundade till miljontal i stället för tusental i T1203. Bantrafik 2025:s statistikblad bekräftar 2025 års spårvägs-/tunnelbanevärden. Alla prövade API-varianter av T06013 i denna felsökning gav DataCount 0; en fungerande T06013-query har därför inte verifierats här. Kalla inte detta att Bantrafik saknar uppgifter. Källa: https://www.trafa.se/globalassets/statistik/bantrafik/bantrafik/2025/bantrafik-2025.pdf .
 
-Källkedjans riktning behöver klarläggas: Tom anger Regional linjetrafik → Bantrafik; Regional linjetrafiks kvalitetsdeklaration 2025 anger Bantrafik → Regional linjetrafik för trafik- och resandeuppgifter (avsnitt 1.2 och historik). Behåll båda provenienserna utan att skriva över dem. Detta påverkar inte överlappet eller Toms prioritering av T1203. Ekonomins insamling är en separat fråga.
+Korrigering av tidigare osäkerhet om källkedjan: enligt Toms återgivning av besked från statistikansvarige (2026-10-23) är totalundersökningen Bantrafik och Järnvägstransporter huvudsaklig källa för spårväg och tunnelbana, och uppgifterna används också i Regional linjetrafik. Detta stämmer med riktningen i kvalitetsdeklarationen för T1203 (Bantrafik/Järnvägstransporter → T1203). Den tidigare formuleringen om motsatt riktning ska inte återanvändas. Ekonomins insamling är en separat fråga.

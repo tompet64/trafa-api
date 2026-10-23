@@ -33,5 +33,30 @@
   "B06": {
     "passenger_ship_ferry_passengers": 3021000,
     "all_ship_types_total": null
+  },
+  "B07": {
+    "publication": "2026 Q3, preliminär kvartalspublicering",
+    "published_local": "2026-10-23 08:00 Europe/Stockholm",
+    "rt5": {
+      "quarter": "88.9921358501726",
+      "months": {
+        "07": "88.6744162590146",
+        "08": "89.681178109636",
+        "09": "88.6106890401004"
+      },
+      "unweighted_monthly_mean": "88.98876113625033333333333333",
+      "quarter_minus_unweighted_mean": "0.00337471392226666666666667"
+    },
+    "stm5": {
+      "quarter": "87.2854122298808",
+      "months": {
+        "07": "86.4625975782162",
+        "08": "88.0519568608831",
+        "09": "87.2759215278004"
+      },
+      "unweighted_monthly_mean": "87.26349198896656666666666667",
+      "quarter_minus_unweighted_mean": "0.02192024091423333333333333"
+    },
+    "rounding": "RT(5) quarter and simple monthly mean both round to 88.99% at two decimals despite differing in full precision."
   }
 }

@@ -1,0 +1,22 @@
+{
+  "endpoint": "data",
+  "query": "t0604_stm_kv|stm5|ar:2026|kvartal:3",
+  "lang": "sv",
+  "url": "https://api.trafa.se/api/data?query=t0604_stm_kv%7Cstm5%7Car%3A2026%7Ckvartal%3A3&lang=sv",
+  "contract": {
+    "version": "2.1.0",
+    "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "file": "/root/.codex/skills/remote-skills/skill-6ac5f7be6b2881919a472dc3e7c1e468/references/openapi-trafa.json"
+  },
+  "response_limit_characters": null,
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "checked_at_utc": "2026-10-23T09:58:10.093192+00:00",
+  "response_utf8_bytes": 1583,
+  "sha256": "d526f8f28839972a64338bb7ae05b177336b9e7eb5b18f727e0cd66ef03d9cc4",
+  "elapsed_seconds": 5.632,
+  "attempts": 1,
+  "response_characters": 1564,
+  "schema_validated": true,
+  "outcome": "success"
+}

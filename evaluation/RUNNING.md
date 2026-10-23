@@ -32,7 +32,10 @@ statistikfrågan. Numeriska facitvärden är snapshots, aldrig allmänna konstan
 
 ## Kör beteendefallen separat
 
-`cases.json` innehåller sex ursprungliga användarfrågor och fem tekniska fall.
+`cases.json` innehåller tio beteendefall och fem tekniska fall. B07–B10 är
+punktlighetsfall med frysta API-svar, strukturuttag, valideringskvitton,
+anropsloggar och parafraserade utdrag ur officiella definitioner och
+publiceringsnotisen.
 Starta varje kandidat i en ny tråd med en oförändrad basversion. Ge kandidaten
 endast originalfrågan, färdigheten och tillåtna råkällor. Låt kandidaten välja
 produktväg och beräkningar. Visa inte oracle.json, fallens bedömningsrubrik,
@@ -40,7 +43,8 @@ tidigare svar, misstänkt fel eller graderingsresultat. Lägg inte facit i den
 katalog som kandidaten normalt inventerar. De första körningarna använde
 separata agenttrådar utan ärvd chatthistorik. Inga beteendefall gjorde nätanrop.
 
-Exempel på kandidatprompt för B01 (byt frågan för övriga B-fall):
+Exempel på kandidatprompt för B01 (byt frågan och ge endast tilldelade råkällor
+för respektive fall):
 
 > Använd den oförändrade trafa-api-färdigheten i BASVERSION för att besvara:
 > Hur stor andel av nyregistrerade personbilar var elbilar i september 2026?
@@ -62,6 +66,13 @@ ursprungsfrågan från B01/B02, inte bara ett internt fall-ID.
 Kandidaten får inte använda vanliga lyckade datasvar i T01–T03/T05. T05 får inte
 ersätta den tilldelade referensroten med andra kataloger. Avsaknad av nätverk är
 ett dokumenterat testvillkor, inte något som kandidaten ska kringgå.
+
+För B07–B10 ska kandidaten få endast de råuttag och definitioner som respektive
+fall behöver. B07 ska få de fyra punktlighetsutragen och
+`fixtures/official/punktlighet-q3-2026-publiceringsnotis.json`; B08 ska dessutom
+få `fixtures/official/punktlighet-kvalitetsdeklaration-2025.json`. B09 behöver
+RT-uttaget och kvalitetsdeklarationen. B10 behöver publiceringsnotisen. Använd
+inte de frysta värdena som facit för andra perioder.
 
 En separat bedömare får sedan fallrubrik, oracle.json, primärkällor och
 kandidatsvar. Bedöm slutsatsernas statistiska giltighet, numerik och spårbarhet.
@@ -90,7 +101,7 @@ inte nydokumenterad av API-etiketten ensam.
 normalt 364 dagar, enligt kvalitetsdeklaration 1.2.5. Kalla inte dess årsvolym
 en exakt dag-för-dag-summa för 1 januari–31 december utan ytterligare stöd.
 
-Detta är en första, enstaka körning per beteendefall med förberedda råkällor.
+Detta är en enstaka körning per beteendefall med förberedda råkällor.
 Den testar inte öppen metadatasökning från noll, webbfallback, en installerad
 MCP-anslutning, annan modellversion eller statistisk framgångsfrekvens över
 upprepade körningar. Upprepa i nya trådar vid förändringar. Bevara originalspår

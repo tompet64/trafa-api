@@ -1,5 +1,5 @@
 {
-  "edition": "2026-10-19.1",
+  "edition": "2026-10-23.1",
   "policy": "Bedöm statistisk semantik och spårbarhet. Kräv inte en exakt querysekvens, en viss klient eller svarstext. Okänd numerik/union är inte 0. Facit är primärsvar + belagda definitioner + öppet märkta expertuppgifter, aldrig kandidatens svar.",
   "cases": [
     {
@@ -280,6 +280,111 @@
         "references/openapi-trafa.json"
       ],
       "oracle_uncertainties": "Konstruerat gränsfall; inget bevis för hur ofta felet inträffar i verkliga API-et."
+    },
+    {
+      "id": "B07",
+      "kind": "assistant_behavior",
+      "prompt": "Ge mig den senaste punktlighetsstatistiken per 23 oktober 2026.",
+      "concept_and_delimitations": "Senaste publicering är preliminär kvartalsstatistik för 2026 kvartal 3. Frågan är bred och bör besvaras med både kvartalsvärden och månadsuppgifterna juli–september där båda femminutersmåtten finns.",
+      "evidenced_product_variables": "T0604_RT_Kv rt5 och T0604_STM_kv stm5. Kvartalsuttag för ar:2026, kvartal:3; månadsuttag för ar:2026, manad:07,08,09. Publiceringsnotis för kvartal 3.",
+      "checks_and_calculations": [
+        "Redovisa RT(5) och STM(5) för kvartalet samt separat för juli, augusti och september.",
+        "Märk månadsraderna som månadsuppgifter i den kvartalsvisa publiceringen; kalla inte september en separat månadsrelease.",
+        "Förklara att RT avser framförda tåg och STM planerade tåg dagen före, med måttens olika nämnare.",
+        "Publiceringsdatum ska styrkas av Trafikanalys publiceringsnotis."
+      ],
+      "acceptable_alternatives": [
+        "Redovisa tabellen med kvartalet och de tre månaderna i rader eller kolumner.",
+        "Avrunda till två decimaler om precisionen tydligt anges."
+      ],
+      "forbidden_conclusions": [
+        "Utge månadsuppgifterna för juli–september för en separat månadsutgivning.",
+        "Utelämna kvartalsvärdet eller alla tre månaderna vid en bred fråga utan att ange en konkret databegränsning.",
+        "Presentera RT och STM som samma mått."
+      ],
+      "sources": [
+        "punctuality-rt-q3",
+        "punctuality-rt-months",
+        "punctuality-stm-q3",
+        "punctuality-stm-months",
+        "D7",
+        "D8"
+      ],
+      "oracle_uncertainties": "API-snapshot och publicering avser 2026-10-23; värdena är inte tidlösa. API-klientens struktur- och datauttag är sparade med anropsloggar."
+    },
+    {
+      "id": "B08",
+      "kind": "assistant_behavior",
+      "prompt": "Är Q3-siffran bara genomsnittet av juli, augusti och september?",
+      "concept_and_delimitations": "Jämför kvartalsandelarna RT(5) och STM(5) med ovägda aritmetiska medel av respektive månadsandelar för 2026 Q3.",
+      "evidenced_product_variables": "Samma fyra API-uttag som B07; beräkningsdefinitioner i Trafikanalys kvalitetsdeklaration 2025.",
+      "checks_and_calculations": [
+        "Räkna det ovägda medlet från de tre månadsvärdena för vartdera måttet.",
+        "Jämför med kvartalsvärdet med tillräcklig precision; RT-värdena ser lika ut efter avrundning till två decimaler men skiljer sig i full precision.",
+        "Förklara att kvartalsvärdet är det publicerade periodmåttet; kalla det inte ett ovägt månadsmedel. Kvalitetsdeklarationen definierar kvoter av tågantal och STM som sammanvägning av punktlighet och regularitet."
+      ],
+      "acceptable_alternatives": [
+        "Visa uträknat medel och kvartalsvärde med fler decimaler, eller redovisa skillnaden i procentenheter.",
+        "Förklara att källan inte säger att kvartalsvärdet beräknas som ett ovägt medel."
+      ],
+      "forbidden_conclusions": [
+        "Hävda att kvartalsvärdet är exakt månadsmedel.",
+        "Jämföra avrundade tal som om de bevisade identitet.",
+        "Använda olika tidsgränser eller mått i jämförelsen."
+      ],
+      "sources": [
+        "punctuality-rt-q3",
+        "punctuality-rt-months",
+        "punctuality-stm-q3",
+        "punctuality-stm-months",
+        "D7"
+      ],
+      "oracle_uncertainties": "Kvalitetsdeklaration 2025 anger måttens kvotdefinitioner men inte uttryckligen aggregeringsformeln från tre API-månadsrader till kvartalsraden. API-värdena visar att kvartalsvärdena inte exakt motsvarar ovägda månadsmedel."
+    },
+    {
+      "id": "B09",
+      "kind": "assistant_behavior",
+      "prompt": "Visa bara RT(5) för tredje kvartalet 2026. Jag behöver inte STM.",
+      "concept_and_delimitations": "Användarens uttryckliga måttval och period ska följas. Ett kompletterande STM-värde är inte efterfrågat.",
+      "evidenced_product_variables": "T0604_RT_Kv rt5, ar:2026, kvartal:3.",
+      "checks_and_calculations": [
+        "Hämta kvartalsvärdet för RT(5), ange femminutersgränsen och att RT avser framförda persontåg.",
+        "Det är tillåtet att kort nämna att STM är ett separat mått, men redovisa inte det som ett påtvingat huvudresultat."
+      ],
+      "acceptable_alternatives": [
+        "En kort mening eller tabell med endast RT(5)."
+      ],
+      "forbidden_conclusions": [
+        "Byta till STM trots användarens explicita val.",
+        "Beskriva RT som andel av alla planerade tåg."
+      ],
+      "sources": [
+        "punctuality-rt-q3",
+        "D7"
+      ],
+      "oracle_uncertainties": "Ingen särskild osäkerhet utöver API-snapshotens tidsbundenhet."
+    },
+    {
+      "id": "B10",
+      "kind": "assistant_behavior",
+      "prompt": "När publicerades punktlighetsstatistiken för tredje kvartalet 2026?",
+      "concept_and_delimitations": "Frågan gäller publiceringsdatum och klockslag, inte observationernas referensperiod eller API-anropets hämtningstid.",
+      "evidenced_product_variables": "Trafikanalys publiceringsnotis för Punktlighet på järnväg 2026 kvartal 3.",
+      "checks_and_calculations": [
+        "Ange 23 oktober 2026 kl. 08.00 svensk tid.",
+        "Hänvisa till publiceringsnotisen; använd inte NextPublishDate, API-hämtningstid eller periodens slut som publiceringsdatum."
+      ],
+      "acceptable_alternatives": [
+        "Datum utan klockslag om användaren inte efterfrågar exakt klockslag; publiceringsnotisen ska stödja datumet."
+      ],
+      "forbidden_conclusions": [
+        "Ange september som separat publiceringsdatum.",
+        "Härleda publiceringstid från API-svarets tidsstämpel."
+      ],
+      "sources": [
+        "D8"
+      ],
+      "oracle_uncertainties": "Publiceringsnotisen anger tid i lokal svensk tid."
     }
   ]
 }

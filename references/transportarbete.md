@@ -90,7 +90,7 @@ Sekundärredovisning från Bantrafik av järnväg, tunnelbana och spårväg, med
 - trpsatt:21 järnväg, 22 tunnelbana, 23 spårväg. Godstransportarbete redovisas endast för järnväg, inte automatiskt samma färdsättstäckning som personmåttet.
 - lasttyp:1 vagnslastgods, 2 malm på Malmbanan, 3 kombigods; bekräfta kategoriernas additivitet och lastbärardefinition.
 - riktning är H med riktningh och riktningu; riktningu:11 Regionalt är en underkategori, inte hela bantrafiken. Bevara parentrelationerna.
-- För frågor främst om spårväg/tunnelbana används T1203 enligt Toms instruktion, med T04022 som sammanställning/komplement. Addera inte T1203, T06013 och T04022 för samma transporter.
+- För frågor främst om spårväg/tunnelbana är T1203 relevant publiceringsprodukt; enligt statistikansvariges besked är Bantrafik och Järnvägstransporter den huvudsakliga källan och uppgifterna används även i T1203. T04022 kan vara sammanställning/komplement. Addera inte T1203, T06013 och T04022 för samma transporter.
 
 Öppna frågor:
 - Exakt avgränsning av API-underkategorin Regionalt och faktisk årstäckning; inte automatiskt lika med RKM-regi.

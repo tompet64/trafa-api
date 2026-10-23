@@ -52,9 +52,24 @@ class OracleIntegrityTests(unittest.TestCase):
         self.assertEqual(observations('finland','pax')['value']*1000,oracle['B06']['passenger_ship_ferry_passengers'])
         self.assertIsNone(oracle['B06']['all_ship_types_total'])
 
-    def test_all_eleven_cases_have_reviewable_rubrics(self):
+    def test_punctuality_months_quarter_and_unweighted_means_are_distinguished(self):
+        oracle=read(HERE/'oracle.json')['B07']
+        for prefix,measure in [('rt','rt5'),('stm','stm5')]:
+            months=observations('punctuality-'+prefix+'-months',measure,'manad')
+            quarter=observations('punctuality-'+prefix+'-q3',measure)['value']
+            evidence=oracle[measure]
+            self.assertEqual(list(months),['07','08','09'])
+            for month,value in evidence['months'].items():
+                self.assertEqual(months[month],Decimal(value))
+            self.assertEqual(quarter,Decimal(evidence['quarter']))
+            arithmetic_mean=sum(months.values())/Decimal(3)
+            self.assertEqual(arithmetic_mean,Decimal(evidence['unweighted_monthly_mean']))
+            self.assertEqual(quarter-arithmetic_mean,Decimal(evidence['quarter_minus_unweighted_mean']))
+            self.assertNotEqual(quarter,arithmetic_mean)
+
+    def test_all_fifteen_cases_have_reviewable_rubrics(self):
         cases=read(HERE/'cases.json')['cases']
-        self.assertEqual({c['id'] for c in cases},{'B%02d'%i for i in range(1,7)}|{'T%02d'%i for i in range(1,6)})
+        self.assertEqual({c['id'] for c in cases},{'B%02d'%i for i in range(1,11)}|{'T%02d'%i for i in range(1,6)})
         for case in cases:
             for field in ['prompt','concept_and_delimitations','evidenced_product_variables',
                           'checks_and_calculations','acceptable_alternatives','forbidden_conclusions',
