@@ -27,7 +27,9 @@ Trafikanalys anger att API-data kan användas utan särskilt medgivande eller av
 
 ## Avgränsning för detta repository
 
-Dessa villkor gäller Trafikanalys statistik och användningen av deras webbplats/API. De licensierar inte koden, dokumentationen, testerna eller andra filer i detta repository. Repositoryt har ingen separat öppen programvarulicens; rättigheter till material tillhör respektive rättighetshavare.
+MIT-licensen i [LICENSE](LICENSE) gäller projektets ursprungliga Python-källkod (`*.py`) under `scripts/` och `evaluation/`, i den utsträckning rättigheterna kontrolleras av repositoryts ägare. Den omfattar inte statistik som returneras av Trafikanalys API, API-härledd metadata, tredjepartsmaterial eller andra filer i repot, om inte en fil uttryckligen säger något annat.
+
+Villkoren i det här dokumentet gäller Trafikanalys statistik och användningen av deras webbplats/API; de ersätter inte källans egna villkor eller särskilda rättighetsnotiser.
 
 ## Trafikanalys källor
 
