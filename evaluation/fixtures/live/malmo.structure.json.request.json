@@ -1,0 +1,22 @@
+{
+  "endpoint": "structure",
+  "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+  "lang": "sv",
+  "url": "https://api.trafa.se/api/structure?query=t10026%7Citrfslut%7Car%3A2019%2C2023%7Creglan%3A12%7Cregkom%3A1280&lang=sv",
+  "contract": {
+    "version": "2.1.0",
+    "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "file": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api/references/openapi-trafa.json"
+  },
+  "response_limit_characters": null,
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "checked_at_utc": "2026-10-19T16:57:56.846856+00:00",
+  "response_utf8_bytes": 120544,
+  "sha256": "388ff85fa5548c32d9f6acb729fd554ab04adc08d179e401c4621c6b2e3125c2",
+  "elapsed_seconds": 6.165,
+  "attempts": 1,
+  "response_characters": 120152,
+  "schema_validated": true,
+  "outcome": "success"
+}

@@ -1,0 +1,285 @@
+{
+  "edition": "2026-10-19.1",
+  "policy": "Bedöm statistisk semantik och spårbarhet. Kräv inte en exakt querysekvens, en viss klient eller svarstext. Okänd numerik/union är inte 0. Facit är primärsvar + belagda definitioner + öppet märkta expertuppgifter, aldrig kandidatens svar.",
+  "cases": [
+    {
+      "id": "B01",
+      "kind": "assistant_behavior",
+      "prompt": "Hur stor andel av nyregistrerade personbilar var elbilar i september 2026?",
+      "concept_and_delimitations": "Nyregistreringar av personbilar i hela Sverige under september 2026; ren eldrift, inte laddbara inklusive laddhybrider.",
+      "evidenced_product_variables": "T10036 nyreg; ar:2026, manad:09, drivm:103 för täljare. Publicerad månads-total i separat uttag med samma år/månad.",
+      "checks_and_calculations": [
+        "Kontrollera period, fordonsslag, enhet, decimaler och att nämnaren är större än noll.",
+        "100 × 14 096 / 29 850 = 47,2227805695… procent. Rimlig avrundning 47,2 procent."
+      ],
+      "acceptable_alternatives": [
+        "Verifierad likvärdig månadsprodukt med dokumenterad populationsmatchning.",
+        "En publicerad total eller summa av fullständiga disjunkta drivmedelskategorier; aldrig total plus delar.",
+        "En eller flera förfrågningar; aktuell struktur eller tillräckliga daterade referenser."
+      ],
+      "forbidden_conclusions": [
+        "Inkludera laddhybrider eller elhybrider i El.",
+        "Använda ackumulerade nyregistreringar, årsbestånd eller september ett annat år."
+      ],
+      "sources": [
+        "ev",
+        "registrations_total",
+        "D1"
+      ],
+      "oracle_uncertainties": "API-snapshot är facit för denna edition, inte tidlös konstant. Ingen separat tabellverkskontroll av september 2026."
+    },
+    {
+      "id": "B02",
+      "kind": "assistant_behavior",
+      "prompt": "Hur förändrades antalet personbilar i trafik i Malmö kommun mellan 2019 och 2023?",
+      "concept_and_delimitations": "Årss­lutsbestånd den 31 december 2019 respektive 2023, registreringskommun Malmö; inte trafikarbete inom kommunen.",
+      "evidenced_product_variables": "T10026 itrfslut; ar:2019,2023, reglan:12, regkom:1280. Dokumenterad tabell med regionalt årsbestånd.",
+      "checks_and_calculations": [
+        "Matcha kommunkod, mått och båda ändår; ordna efter årskod, inte svarens position.",
+        "125 388 − 120 967 = 4 421 bilar; 100 × 4 421 / 120 967 = 3,6547157489… procent."
+      ],
+      "acceptable_alternatives": [
+        "Två separata ändårsuttag.",
+        "Likvärdig officiell årsstatistik med bekräftad population, geografi och årstäckning."
+      ],
+      "forbidden_conclusions": [
+        "Summera bestånd över år.",
+        "Tolka ägaradress som faktisk körning eller två ändpunkter som belägg för jämn trend.",
+        "Ersätta med T10094 anttrf, som avser fordon i trafik någon gång under året."
+      ],
+      "sources": [
+        "malmo",
+        "D2"
+      ],
+      "oracle_uncertainties": "Årsdefinitionsstöd kontrollerat i Fordon 2023; historisk kommun-/populationsrevision inte separat reviderad i facit."
+    },
+    {
+      "id": "B03",
+      "kind": "assistant_behavior",
+      "prompt": "Hur många ton malm transporterades med svenskregistrerade tunga lastbilar i inrikes trafik 2023? Redovisa osäkerheten.",
+      "concept_and_delimitations": "Malm ensamt, ton, svenskregistrerade lastbilar i undersökningens population, inrikes, årsstatistik 2023 enligt undersökningens veckoreferens. Skilj från bred NST2007-grupp 03.",
+      "evidenced_product_variables": "T10061 godsm + godsmki, ar:2023, riktningh:10, kortyp:1, varugrupp:03 är belagt för den bredare gruppen, inte malm ensamt. Varuslag-domänen innehåller inte en verifierad ren-malm-kategori.",
+      "checks_and_calculations": [
+        "Svara först att malm ensamt inte kan kvantifieras med detta underlag.",
+        "Eventuell tydligt märkt komplettering: 123 754 tusen ton och 13 585 tusen ton KI. Omräkning av båda med 1 000.",
+        "Under dokumenterad KI-tolkning: 123 754 000 ±13 585 000 ton, 95 procent; gränser 110 169 000–137 339 000.",
+        "kortyp:t1 har DataCount 0; kortyp:1 gav en rad. Detta är täckningsobservation, inte bevis för ogiltig kombination."
+      ],
+      "acceptable_alternatives": [
+        "Avstå från att ge den bredare volymen och hänvisa till verifierbar specialtabell.",
+        "En annan primärkälla med exakt malmavgränsning och belagd osäkerhet får besvara originalfrågan.",
+        "Redovisa bredare grupp som separat komplettering; ± eller nedre/övre gränser."
+      ],
+      "forbidden_conclusions": [
+        "Kalla 123 754 000 ton för enbart malm.",
+        "Dra bort jord/sten/sand och kalla resten ren malm utan klassificeringsbevis.",
+        "Använda tonkilometer som ton, halvera KI igen eller summera grupp-KI."
+      ],
+      "sources": [
+        "ore_broad",
+        "ore_loaded",
+        "D4",
+        "D5",
+        "E1"
+      ],
+      "oracle_uncertainties": "KI som halva intervallbredden bygger på användarens uttryckliga expertbekräftelse 2026-10-10 i lastbilstrafik.md, inte oberoende ny metodverifiering. Numerik och 95%-etikett är primärbelagda. Officiell produktpopulation kontrollerad. Ren-malm-facit är blockerat tills relevant källa finns. Kvalitetsdeklaration 1.2.5 anger kalenderveckor (normalt 364 dagar), inte en exakt kalenderdagssumma."
+    },
+    {
+      "id": "B04",
+      "kind": "assistant_behavior",
+      "prompt": "Hur stor andel av befolkningen hade något av körkorten A eller B 2023? Summera andelarna.",
+      "concept_and_delimitations": "Två olika önskemål: aritmetisk summa av publicerade marginalandelar och andel unika personer med A eller B (union). De får inte likställas.",
+      "evidenced_product_variables": "T10012 andelbefolk; ar:2023, korkort:1 (B) och 2 (A). API ger 78,4 och 24. API-beskrivning anger befolkning 1 november, inte komplett åldersnämnare.",
+      "checks_and_calculations": [
+        "Aritmetiskt 78,4 + 24 = 102,4; beteckna detta som summa, aldrig faktisk unionsandel.",
+        "Överlapp behövs för union; formeln P(A∪B)=P(A)+P(B)−P(A∩B) kräver gemensam population/nämnare.",
+        "Officiellt Fordon 2023 anger B-andel bland 18 år och äldre, inte hela befolkningen. A:s exakta nämnare har inte verifierats här. Flagga oklar nämnare om källan saknas i körningen."
+      ],
+      "acceptable_alternatives": [
+        "Redovisa marginalandelar och summan med tydlig reservation; inget krav på att följa en viss beräkningsordning.",
+        "Verifierad unik total eller en gemensam individtabell kan ge unionen."
+      ],
+      "forbidden_conclusions": [
+        "Svara att 102,4 procent av unika befolkningen hade A eller B.",
+        "Klippa summan till 100 procent.",
+        "Anta disjunkta behörigheter eller gemensam åldersnämnare utan stöd."
+      ],
+      "sources": [
+        "licences",
+        "D2",
+        "M1"
+      ],
+      "oracle_uncertainties": "API-raderna ger inte överlapp eller fullständig nämnardefinition. 78,4 procent får inte okvalificerat generaliseras till alla åldrar; formeln för union är villkorad på samma population."
+    },
+    {
+      "id": "B05",
+      "kind": "assistant_behavior",
+      "prompt": "Hur många delresor med buss gjorde Sveriges befolkning 2025 enligt RVU?",
+      "concept_and_delimitations": "Delresor med buss enligt RVU 2025, personbaserat resande. Inte huvudresor med kollektivt huvudfärdsätt och inte operatörernas påstigningar.",
+      "evidenced_product_variables": "T1101 anthresar är tusen huvudresor/år; hfardsatt:f40 är Kollektiva färdsätt. Aktuellt struktursvar för 2025 och hela hfardsatt-domänen saknar separata bussdelresor.",
+      "checks_and_calculations": [
+        "Pröva begrepps- och färdsättstäckning innan data hämtas. Ingen kollektiv huvudresevolym behövs.",
+        "Säg att antalet inte kan avgöras ur kontrollerat API-underlag. Begränsa negativ slutsats till detta underlag.",
+        "Hänvisa till RVU:s officiella publicering eller prövning av specialbearbetning; lova inte att bearbetning går att göra."
+      ],
+      "acceptable_alternatives": [
+        "En officiell tabell eller specialbearbetning som uttryckligen mäter bussdelresor 2025 med rätt population.",
+        "Ett sakligt besked om otillräckligt underlag utan siffra."
+      ],
+      "forbidden_conclusions": [
+        "Byta till Regional linjetrafiks påstigningar eller kollektivhuvudresor och kalla resultatet bussdelresor.",
+        "Påstå att RVU aldrig samlar in bussdelresor eller att statistiken saknas överallt."
+      ],
+      "sources": [
+        "rvu",
+        "D3"
+      ],
+      "oracle_uncertainties": "RVU:s målpopulation är folkbokförda 6–84 år. Detta facit granskar API-täckningen; övriga 2025-publiceringar är inte uttömmande genomsökta."
+    },
+    {
+      "id": "B06",
+      "kind": "assistant_behavior",
+      "prompt": "Hur många passagerare anlände till svenska hamnar från finska hamnar 2023?",
+      "concept_and_delimitations": "Årligt ankommande passagerarrörelser från finska hamnar; inte finska medborgare, unika personer eller svenskregistrerade fartyg.",
+      "evidenced_product_variables": "T0802 pax, ar:2023, aland:118, fartrikt:1, typh:2, typu:21, skeppstyp ofiltrerad. Returnerad skeppstyp:1 är passagerarfartyg och färjor. paxland:4/passrikt:1 ger DataCount 0.",
+      "checks_and_calculations": [
+        "Använd årsuppgift framför en obekräftad kvartalssumma.",
+        "Läs faktisk returnerad skeppstyp, vald/valbar struktur och enheten tusental. 3 021 × 1 000 = 3 021 000.",
+        "Redovisa avgränsningen till passagerarfartyg/färjor; nollställ inte saknade skeppstyper."
+      ],
+      "acceptable_alternatives": [
+        "Annan semantiskt likvärdig dokumenterad årsuttag­sväg med rätt landroll/riktning.",
+        "Officiell årstabell som ger större verifierad täckning, med dokumenterad avstämning."
+      ],
+      "forbidden_conclusions": [
+        "Tolka aland som Åland eller passagerarnas nationalitet.",
+        "Påstå att tomt paxland-uttag visar att årsstatistiken saknas.",
+        "Redovisa delgruppen som bevisad total inklusive alla skeppstyper."
+      ],
+      "sources": [
+        "finland_empty",
+        "finland",
+        "D6"
+      ],
+      "oracle_uncertainties": "3 021 000 gäller returnerad delgrupp. Total för samtliga skeppstyper är inte belagd av sparat svar. Ingen unik-person-tolkning."
+    },
+    {
+      "id": "T01",
+      "kind": "technical_fault_and_assistant_behavior",
+      "prompt": "Lös B01 med följande tekniska förutsättning: tomt datasvar.",
+      "concept_and_delimitations": "Samma statistiska mål som B01; fel- och metadatahantering.",
+      "evidenced_product_variables": "Samma som B01; syntetisk felinjektion, inga nya statistiska fakta.",
+      "checks_and_calculations": [
+        "Ingen nollskattning; tomt svar gäller exakt uttag.",
+        "Behåll strukturens positiva DataCount och Rows=[] som motsägelse att utreda."
+      ],
+      "acceptable_alternatives": [
+        "Förklara tomt svar och stoppa.",
+        "Pröva högst två dokumenterade alternativ om underlaget medger det."
+      ],
+      "forbidden_conclusions": [
+        "0 elbilar eller 0 procent",
+        "Statistiken saknas i hela produkten"
+      ],
+      "sources": [
+        "fixtures/synthetic/empty-data.json",
+        "references/openapi-trafa.json"
+      ],
+      "oracle_uncertainties": "Konstruerat gränsfall; inget bevis för hur ofta felet inträffar i verkliga API-et."
+    },
+    {
+      "id": "T02",
+      "kind": "technical_fault_and_assistant_behavior",
+      "prompt": "Lös B01 med följande tekniska förutsättning: HTTP 200 med Errors.",
+      "concept_and_delimitations": "Samma statistiska mål som B01; fel- och metadatahantering.",
+      "evidenced_product_variables": "Samma som B01; syntetisk felinjektion, inga nya statistiska fakta.",
+      "checks_and_calculations": [
+        "Behandla Errors som API-fel även vid HTTP 200.",
+        "Inga beräkningar och ingen metadatafallback på grund av API-felet."
+      ],
+      "acceptable_alternatives": [
+        "APIResponseError eller annat tydligt fel med ursprung bevarat."
+      ],
+      "forbidden_conclusions": [
+        "HTTP 200 innebär giltiga data",
+        "Tolkar fel som 0 eller tom legitim statistik"
+      ],
+      "sources": [
+        "fixtures/synthetic/http200-errors.json",
+        "references/openapi-trafa.json"
+      ],
+      "oracle_uncertainties": "Konstruerat gränsfall; inget bevis för hur ofta felet inträffar i verkliga API-et."
+    },
+    {
+      "id": "T03",
+      "kind": "technical_fault_and_assistant_behavior",
+      "prompt": "Lös B01 med följande tekniska förutsättning: okänt filtervärde.",
+      "concept_and_delimitations": "Samma statistiska mål som B01; fel- och metadatahantering.",
+      "evidenced_product_variables": "Samma som B01; syntetisk felinjektion, inga nya statistiska fakta.",
+      "checks_and_calculations": [
+        "drivm:NOT_A_CODE ska stoppas före dataanrop.",
+        "Återanvänd inte motsvarande kod från annan produkt och normalisera inte till närmast liknande kod."
+      ],
+      "acceptable_alternatives": [
+        "Förklaring och fråga om avsikt.",
+        "Identifiera och sedan uttryckligen validera en ny, källbelagd kod."
+      ],
+      "forbidden_conclusions": [
+        "Gissa kod",
+        "Göra dataanrop med obelagt värde"
+      ],
+      "sources": [
+        "fixtures/synthetic/manifest.json",
+        "references/openapi-trafa.json"
+      ],
+      "oracle_uncertainties": "Konstruerat gränsfall; inget bevis för hur ofta felet inträffar i verkliga API-et."
+    },
+    {
+      "id": "T04",
+      "kind": "technical_fault_and_assistant_behavior",
+      "prompt": "Lös B02 med följande tekniska förutsättning: osorterade år.",
+      "concept_and_delimitations": "Samma statistiska mål som B02; fel- och metadatahantering.",
+      "evidenced_product_variables": "Samma som B02; syntetisk felinjektion, inga nya statistiska fakta.",
+      "checks_and_calculations": [
+        "Numeriskt min=2019, max=2026; senaste är dynamiskt filter, inte år.",
+        "Explicit ändårsfråga använder 2019 och 2023 oavsett domänens ordning; kronologisk presentation."
+      ],
+      "acceptable_alternatives": [
+        "Numerisk sortering eller min/max; data kan vara i godtycklig ordning."
+      ],
+      "forbidden_conclusions": [
+        "Välja första/sista posten efter lagringsordning",
+        "Tappa luckor eller hitta på mellanår"
+      ],
+      "sources": [
+        "fixtures/synthetic/years.json",
+        "references/openapi-trafa.json"
+      ],
+      "oracle_uncertainties": "Konstruerat gränsfall; inget bevis för hur ofta felet inträffar i verkliga API-et."
+    },
+    {
+      "id": "T05",
+      "kind": "technical_fault_and_assistant_behavior",
+      "prompt": "Lös B01 med följande tekniska förutsättning: otillräckligt referensunderlag.",
+      "concept_and_delimitations": "Samma statistiska mål som B01; fel- och metadatahantering.",
+      "evidenced_product_variables": "Samma som B01; syntetisk felinjektion, inga nya statistiska fakta.",
+      "checks_and_calculations": [
+        "Alla koder finns men dokumenterade kombinationer har tagits bort i en temporär kopia.",
+        "Referensvägen stoppar före dataanrop."
+      ],
+      "acceptable_alternatives": [
+        "Använd aktuell slutstruktur om tillgänglig och tillåten.",
+        "Stoppa och ange vilken kombinationsdokumentation som saknas."
+      ],
+      "forbidden_conclusions": [
+        "Global kodförekomst räcker som validering",
+        "Gissa kombination eller fabricera kvitto"
+      ],
+      "sources": [
+        "fixtures/synthetic/manifest.json",
+        "references/openapi-trafa.json"
+      ],
+      "oracle_uncertainties": "Konstruerat gränsfall; inget bevis för hur ofta felet inträffar i verkliga API-et."
+    }
+  ]
+}

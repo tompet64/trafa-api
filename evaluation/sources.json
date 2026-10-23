@@ -1,0 +1,283 @@
+{
+  "captured": [
+    {
+      "endpoint": "data",
+      "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t10036%7Cnyreg%7Car%3A2026%7Cdrivm%3A103%7Cmanad%3A09&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:02.869689+00:00",
+      "http_status": 200,
+      "sha256": "3e997f19a1b5cd16dd396179b8c57370d26f011bc6e47ce057bdc95a544e8442",
+      "response_utf8_bytes": 1509,
+      "outcome": "success",
+      "file": "ev.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "En elrad för täljaren."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t10036%7Cnyreg%7Car%3A2026%7Cdrivm%3A103%7Cmanad%3A09&lang=sv",
+      "checked_at_utc": "2026-10-19T16:57:57.022765+00:00",
+      "http_status": 200,
+      "sha256": "6733ed68d0411425e39f1a7cfa57244e70ea606452752953ced2e674505c644d",
+      "response_utf8_bytes": 116803,
+      "outcome": "success",
+      "file": "ev.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "En elrad för täljaren."
+    },
+    {
+      "endpoint": "data",
+      "query": "t0802|pax|ar:2023|aland:118|fartrikt:1|typh:2|typu:21|skeppstyp",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t0802%7Cpax%7Car%3A2023%7Caland%3A118%7Cfartrikt%3A1%7Ctyph%3A2%7Ctypu%3A21%7Cskeppstyp&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:21.207195+00:00",
+      "http_status": 200,
+      "sha256": "558444e9d0b3cb8d615fb73948af3691c8480a0a63aba72370905f7078cf8ca1",
+      "response_utf8_bytes": 2699,
+      "outcome": "success",
+      "file": "finland.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "En dokumenterad alternativ årsväg, en landrelation, endast pax; ofiltrerad skeppstyp behövs för täckningskontroll."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t0802|pax|ar:2023|aland:118|fartrikt:1|typh:2|typu:21|skeppstyp",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t0802%7Cpax%7Car%3A2023%7Caland%3A118%7Cfartrikt%3A1%7Ctyph%3A2%7Ctypu%3A21%7Cskeppstyp&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:15.386000+00:00",
+      "http_status": 200,
+      "sha256": "cf37097ab555feb00b9d75b451d88d75307f9dbdc7def826401f51475747134e",
+      "response_utf8_bytes": 138470,
+      "outcome": "success",
+      "file": "finland.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "En dokumenterad alternativ årsväg, en landrelation, endast pax; ofiltrerad skeppstyp behövs för täckningskontroll."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t0802|pax|ar:2023|passrikt:1|paxland:4",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t0802%7Cpax%7Car%3A2023%7Cpassrikt%3A1%7Cpaxland%3A4&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:09.067088+00:00",
+      "http_status": 200,
+      "sha256": "6daf03b070f94753b25d9c2e0be8cee18ff0b6761756f829d120d27766f4559c",
+      "response_utf8_bytes": 138445,
+      "outcome": "success",
+      "file": "finland_empty.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "Dokumenterad första årsväg gav DataCount 0."
+    },
+    {
+      "endpoint": "data",
+      "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t10012%7Candelbefolk%7Car%3A2023%7Ckorkort%3A1%2C2&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:14.430488+00:00",
+      "http_status": 200,
+      "sha256": "6d2f35feeb745cdbc3d3baaf17289c0a7dccb7a0fb2d186be0b61ba5fadcb0aa",
+      "response_utf8_bytes": 1967,
+      "outcome": "success",
+      "file": "licences.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "Två behörighetsrader, ett år och ett andelsmått."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t10012%7Candelbefolk%7Car%3A2023%7Ckorkort%3A1%2C2&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:09.031001+00:00",
+      "http_status": 200,
+      "sha256": "d0db6dda6e983edd4b04f7e6aa30398f818d172c163c75772aca15019e877c3d",
+      "response_utf8_bytes": 37116,
+      "outcome": "success",
+      "file": "licences.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "Två behörighetsrader, ett år och ett andelsmått."
+    },
+    {
+      "endpoint": "data",
+      "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t10026%7Citrfslut%7Car%3A2019%2C2023%7Creglan%3A12%7Cregkom%3A1280&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:02.868032+00:00",
+      "http_status": 200,
+      "sha256": "0c8985f1aaf0574f5cc65a66dabd677c0e9456c4a75dbd0c5f90d619df44feef",
+      "response_utf8_bytes": 2301,
+      "outcome": "success",
+      "file": "malmo.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "Två ändår, en kommun, ett mått."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t10026%7Citrfslut%7Car%3A2019%2C2023%7Creglan%3A12%7Cregkom%3A1280&lang=sv",
+      "checked_at_utc": "2026-10-19T16:57:56.846856+00:00",
+      "http_status": 200,
+      "sha256": "388ff85fa5548c32d9f6acb729fd554ab04adc08d179e401c4621c6b2e3125c2",
+      "response_utf8_bytes": 120544,
+      "outcome": "success",
+      "file": "malmo.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "Två ändår, en kommun, ett mått."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t10061|godsm|godsmki|ar:2023|kortyp:t1|riktningh:10|varugrupp:03",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t10061%7Cgodsm%7Cgodsmki%7Car%3A2023%7Ckortyp%3At1%7Criktningh%3A10%7Cvarugrupp%3A03&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:08.936590+00:00",
+      "http_status": 200,
+      "sha256": "383396d97109c5fa7e8070ce1a2c665382a483da63fe905fa38880b5969d7370",
+      "response_utf8_bytes": 112394,
+      "outcome": "success",
+      "file": "ore_broad.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "Dokumenterat totalurval gav DataCount 0; bevarat täckningsfall."
+    },
+    {
+      "endpoint": "data",
+      "query": "t10061|godsm|godsmki|ar:2023|kortyp:1|riktningh:10|varugrupp:03",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t10061%7Cgodsm%7Cgodsmki%7Car%3A2023%7Ckortyp%3A1%7Criktningh%3A10%7Cvarugrupp%3A03&lang=sv",
+      "checked_at_utc": "2026-10-19T16:59:08.660845+00:00",
+      "http_status": 200,
+      "sha256": "fe0b73c2dccc6a83d8b8d2fae1cec4f7ac57b573bac0f1e78f208d6c6e97fa94",
+      "response_utf8_bytes": 2382,
+      "outcome": "success",
+      "file": "ore_loaded.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "En bred varugrupp, ett år och punktskattning med KI efter motiverad last-avgränsning."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t10061|godsm|godsmki|ar:2023|kortyp:1|riktningh:10|varugrupp:03",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t10061%7Cgodsm%7Cgodsmki%7Car%3A2023%7Ckortyp%3A1%7Criktningh%3A10%7Cvarugrupp%3A03&lang=sv",
+      "checked_at_utc": "2026-10-19T16:59:03.167014+00:00",
+      "http_status": 200,
+      "sha256": "c9300b3c151ffc78738baca60b96e25a1f78e7bd30e7dd52185c8d3efd67be86",
+      "response_utf8_bytes": 112399,
+      "outcome": "success",
+      "file": "ore_loaded.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "En bred varugrupp, ett år och punktskattning med KI efter motiverad last-avgränsning."
+    },
+    {
+      "endpoint": "data",
+      "query": "t10036|nyreg|ar:2026|manad:09",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t10036%7Cnyreg%7Car%3A2026%7Cmanad%3A09&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:03.027573+00:00",
+      "http_status": 200,
+      "sha256": "55aa099631f50185d87c6f4409cf23a69236a481b3c32aecbff15c10b7dba9c0",
+      "response_utf8_bytes": 1199,
+      "outcome": "success",
+      "file": "registrations_total.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "En publicerad totalrad för nämnaren."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t10036|nyreg|ar:2026|manad:09",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t10036%7Cnyreg%7Car%3A2026%7Cmanad%3A09&lang=sv",
+      "checked_at_utc": "2026-10-19T16:57:57.522745+00:00",
+      "http_status": 200,
+      "sha256": "52559e79e8da1c91ec605193e06311a87064c928c873d52daf64ef423dc3e998",
+      "response_utf8_bytes": 116800,
+      "outcome": "success",
+      "file": "registrations_total.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "En publicerad totalrad för nämnaren."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t1101|anthresar|ar:2025|hfardsatt",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t1101%7Canthresar%7Car%3A2025%7Chfardsatt&lang=sv",
+      "checked_at_utc": "2026-10-19T16:58:29.226373+00:00",
+      "http_status": 200,
+      "sha256": "53adb32d745e0ee11d5bfb63391f2dfd6913d1c9d98c60bec86441b00c6220cd",
+      "response_utf8_bytes": 45658,
+      "outcome": "success",
+      "file": "rvu.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "Enbart struktur för begrepps-/färdsättskontroll; inget missvisande datauttag."
+    }
+  ],
+  "reuse_search": {
+    "review_bundle": "libfile_78db36779bb4819193b3303598b6bf3d",
+    "bundle_commit": "eba36fa252cc6352e613cfb12d1caf35865a6b0a",
+    "result": "Contains metadata and prior test logs, no observation response fixtures. Reused baseline catalogs and existing synthetic tests. Library search testresultat.json describes test execution, not an observation oracle."
+  },
+  "collection_policy": "Only question-specific filtered selections; 2 endpoint years for Malmö; RVU metadata only. Initial total kortyp:t1 and paxland paths DataCount 0; one documented alternative each. Exploratory connectivity probe read first 150 bytes of EV data, not used as fixture. Collector used original client, then independent raw cell inspection for oracle. No production fix.",
+  "official_definition_sources": [
+    {
+      "id": "D1",
+      "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+      "edition": "Fordon 2025, 2026-02-19",
+      "checked_on": "2026-10-19",
+      "locator": "1.2.5; Bilaga 1 Drivmedel/Status",
+      "supports": "Nyregistreringar är flöde; El skiljs från elhybrid och laddhybrid. I trafik är registerstatus. 2025 års dokumentation är definitionsstöd, inte ensam garanti för varje historisk eller kommande period."
+    },
+    {
+      "id": "D2",
+      "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2024/fordon-2023.pdf",
+      "edition": "Fordon 2023, 2024-02-22",
+      "checked_on": "2026-10-19",
+      "locator": "sida 1 Statistikens omfattning; sida 4 Regionala skillnader i körkortsinnehav",
+      "supports": "Bestånd avser årsskifte; B-andel 2023 beskrivs för befolkningen 18 år och äldre. Detta gör en åldersreservation nödvändig vid API-rubrikens breda befolkningsetikett."
+    },
+    {
+      "id": "D3",
+      "url": "https://www.trafa.se/globalassets/statistik/resvanor/2026/kvalitetsdeklaration-resvanor-i-sverige-2025.pdf",
+      "edition": "RVU 2025, 2026-05-28",
+      "checked_on": "2026-10-19",
+      "locator": "1.2.1; 1.2.2; 1.2.4; 1.2.5",
+      "supports": "Folkbokförda 6–84 år; publicerade tabeller täcker bara en del av insamlat underlag. Kollektiva färdsätt samlar flera trafikslag. API-frånvaro bevisar inte avsaknad i undersökningen."
+    },
+    {
+      "id": "D4",
+      "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/lastbilstrafik/2024/kvalitetsdeklaration-lastbilstrafik-2023.pdf",
+      "edition": "Lastbilstrafik 2023, 2024-05-15",
+      "checked_on": "2026-10-19",
+      "locator": "1.2.1; 2.1; 2.2.1; Bilaga I",
+      "supports": "Svenska lastbilar/dragbilar med maximilastvikt minst 3,5 ton; urvalsundersökning. Varuslagsklassificering måste kontrolleras. Se KI-status i cases.json; ett allmänt konfidensintervallbelägg räcker inte för att bestämma API-fältets representation."
+    },
+    {
+      "id": "D5",
+      "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/lastbilstrafik/2024/lastbilstrafik-2023_korr-2025-05-15.pdf",
+      "edition": "Lastbilstrafik 2023, korrigerad 2025-05-15",
+      "checked_on": "2026-10-19",
+      "locator": "sida 4 varuslagsfigurer",
+      "supports": "Publikationen visar breda varukategorier och en särskild jord/sten/sand-kategori. Ingen ogrundad identifikation av resterande utvinning som enbart malm är tillåten."
+    },
+    {
+      "id": "D6",
+      "url": "https://www.trafa.se/sjofart/sjotrafik/",
+      "edition": "Daterad produktprofil granskad 2026-10-11",
+      "checked_on": "2026-10-11 (inherited)",
+      "locator": "references/sjotrafik.md",
+      "supports": "Populationsstöd och produktroll från daterad referens, inte ny primärsidverifiering. Aktuell landroll, riktning, skeppstyp och skala beläggs direkt i captured API structure/data."
+    },
+    {
+      "id": "E1",
+      "kind": "user_expert_confirmation",
+      "reviewer": "Tom",
+      "received_at": "2026-10-10T23:07:49+02:00",
+      "locator": "references/lastbilstrafik.md; references/metadata/berikningar_manuella.json",
+      "supports": "API-KI är halva bredden i tvåsidigt 95%-intervall. Bevarad expertkälla; inte ny primärdefinition i denna granskning."
+    },
+    {
+      "id": "M1",
+      "kind": "mathematical_identity",
+      "supports": "En unionsandel kräver överlapp samt gemensamt definierad population. Identiteten är matematisk, inte härledd från kandidatens svar."
+    }
+  ]
+}

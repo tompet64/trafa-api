@@ -1,0 +1,1140 @@
+{
+  "T10011": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10011",
+      "url": "https://api.trafa.se/api/structure?query=t10011&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:00.915628+00:00",
+      "response_characters": 38957,
+      "response_utf8_bytes": 39139,
+      "download_bytes_after_http_decoding": 39139,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10011",
+      "unique_id": "T10011",
+      "reserialized_minified_json_characters": 38957,
+      "status": "ok"
+    }
+  ],
+  "T10014": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10014",
+      "url": "https://api.trafa.se/api/structure?query=t10014&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:01.554581+00:00",
+      "response_characters": 36300,
+      "response_utf8_bytes": 36483,
+      "download_bytes_after_http_decoding": 36483,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10014",
+      "unique_id": "T10014",
+      "reserialized_minified_json_characters": 36300,
+      "status": "ok"
+    }
+  ],
+  "T10015": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10015",
+      "url": "https://api.trafa.se/api/structure?query=t10015&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:02.084055+00:00",
+      "response_characters": 31863,
+      "response_utf8_bytes": 32025,
+      "download_bytes_after_http_decoding": 32025,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10015",
+      "unique_id": "T10015",
+      "reserialized_minified_json_characters": 31863,
+      "status": "ok"
+    }
+  ],
+  "T10017": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10017",
+      "url": "https://api.trafa.se/api/structure?query=t10017&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:02.576555+00:00",
+      "response_characters": 31530,
+      "response_utf8_bytes": 31713,
+      "download_bytes_after_http_decoding": 31713,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10017",
+      "unique_id": "T10017",
+      "reserialized_minified_json_characters": 31530,
+      "status": "ok"
+    }
+  ],
+  "T10018": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10018",
+      "url": "https://api.trafa.se/api/structure?query=t10018&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:03.087800+00:00",
+      "response_characters": 37777,
+      "response_utf8_bytes": 37974,
+      "download_bytes_after_http_decoding": 37974,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10018",
+      "unique_id": "T10018",
+      "reserialized_minified_json_characters": 37777,
+      "status": "ok"
+    }
+  ],
+  "T10019": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10019",
+      "url": "https://api.trafa.se/api/structure?query=t10019&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:03.570805+00:00",
+      "response_characters": 27331,
+      "response_utf8_bytes": 27493,
+      "download_bytes_after_http_decoding": 27493,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10019",
+      "unique_id": "T10019",
+      "reserialized_minified_json_characters": 27331,
+      "status": "ok"
+    }
+  ],
+  "T0401": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0401",
+      "url": "https://api.trafa.se/api/structure?query=t0401&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:03.998011+00:00",
+      "response_characters": 70,
+      "response_utf8_bytes": 70,
+      "download_bytes_after_http_decoding": 70,
+      "format_matches_request": true,
+      "valid_structure": false,
+      "status": "error",
+      "error": "ValueError: Expected selected product not found unambiguously"
+    }
+  ],
+  "T10012": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10012",
+      "url": "https://api.trafa.se/api/structure?query=t10012&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:04.507198+00:00",
+      "response_characters": 36899,
+      "response_utf8_bytes": 37105,
+      "download_bytes_after_http_decoding": 37105,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10012",
+      "unique_id": "T10012",
+      "reserialized_minified_json_characters": 36899,
+      "status": "ok"
+    }
+  ],
+  "T10091": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10091",
+      "url": "https://api.trafa.se/api/structure?query=t10091&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:05.025702+00:00",
+      "response_characters": 43233,
+      "response_utf8_bytes": 43467,
+      "download_bytes_after_http_decoding": 43467,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10091",
+      "unique_id": "T10091",
+      "reserialized_minified_json_characters": 43233,
+      "status": "ok"
+    }
+  ],
+  "T10092": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10092",
+      "url": "https://api.trafa.se/api/structure?query=t10092&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:05.564571+00:00",
+      "response_characters": 53976,
+      "response_utf8_bytes": 54282,
+      "download_bytes_after_http_decoding": 54282,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10092",
+      "unique_id": "T10092",
+      "reserialized_minified_json_characters": 53976,
+      "status": "ok"
+    }
+  ],
+  "T10093": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10093",
+      "url": "https://api.trafa.se/api/structure?query=t10093&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:06.081745+00:00",
+      "response_characters": 41678,
+      "response_utf8_bytes": 41905,
+      "download_bytes_after_http_decoding": 41905,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10093",
+      "unique_id": "T10093",
+      "reserialized_minified_json_characters": 41678,
+      "status": "ok"
+    }
+  ],
+  "T10094": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10094",
+      "url": "https://api.trafa.se/api/structure?query=t10094&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:06.635238+00:00",
+      "response_characters": 48235,
+      "response_utf8_bytes": 48494,
+      "download_bytes_after_http_decoding": 48494,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10094",
+      "unique_id": "T10094",
+      "reserialized_minified_json_characters": 48235,
+      "status": "ok"
+    }
+  ],
+  "T0901": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0901",
+      "url": "https://api.trafa.se/api/structure?query=t0901&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:07.240296+00:00",
+      "response_characters": 64866,
+      "response_utf8_bytes": 65091,
+      "download_bytes_after_http_decoding": 65091,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0901",
+      "unique_id": "T0901",
+      "reserialized_minified_json_characters": 64866,
+      "status": "ok"
+    }
+  ],
+  "T08091": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t08091",
+      "url": "https://api.trafa.se/api/structure?query=t08091&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:07.805422+00:00",
+      "response_characters": 58852,
+      "response_utf8_bytes": 59148,
+      "download_bytes_after_http_decoding": 59148,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t08091",
+      "unique_id": "T08091",
+      "reserialized_minified_json_characters": 58852,
+      "status": "ok"
+    }
+  ],
+  "T08092": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t08092",
+      "url": "https://api.trafa.se/api/structure?query=t08092&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:08.311067+00:00",
+      "response_characters": 28990,
+      "response_utf8_bytes": 29166,
+      "download_bytes_after_http_decoding": 29166,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t08092",
+      "unique_id": "T08092",
+      "reserialized_minified_json_characters": 28990,
+      "status": "ok"
+    }
+  ],
+  "T04020": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t04020",
+      "url": "https://api.trafa.se/api/structure?query=t04020&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:08.778046+00:00",
+      "response_characters": 26901,
+      "response_utf8_bytes": 27057,
+      "download_bytes_after_http_decoding": 27057,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t04020",
+      "unique_id": "T04020",
+      "reserialized_minified_json_characters": 26901,
+      "status": "ok"
+    }
+  ],
+  "T04021": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t04021",
+      "url": "https://api.trafa.se/api/structure?query=t04021&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:09.280867+00:00",
+      "response_characters": 32422,
+      "response_utf8_bytes": 32581,
+      "download_bytes_after_http_decoding": 32581,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t04021",
+      "unique_id": "T04021",
+      "reserialized_minified_json_characters": 32422,
+      "status": "ok"
+    }
+  ],
+  "T04022": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t04022",
+      "url": "https://api.trafa.se/api/structure?query=t04022&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:09.809874+00:00",
+      "response_characters": 30632,
+      "response_utf8_bytes": 30792,
+      "download_bytes_after_http_decoding": 30792,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t04022",
+      "unique_id": "T04022",
+      "reserialized_minified_json_characters": 30632,
+      "status": "ok"
+    }
+  ],
+  "T04023": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t04023",
+      "url": "https://api.trafa.se/api/structure?query=t04023&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:10.292038+00:00",
+      "response_characters": 29372,
+      "response_utf8_bytes": 29543,
+      "download_bytes_after_http_decoding": 29543,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t04023",
+      "unique_id": "T04023",
+      "reserialized_minified_json_characters": 29372,
+      "status": "ok"
+    }
+  ],
+  "T04024": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t04024",
+      "url": "https://api.trafa.se/api/structure?query=t04024&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:10.764932+00:00",
+      "response_characters": 27210,
+      "response_utf8_bytes": 27379,
+      "download_bytes_after_http_decoding": 27379,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t04024",
+      "unique_id": "T04024",
+      "reserialized_minified_json_characters": 27210,
+      "status": "ok"
+    }
+  ],
+  "T1201": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t1201",
+      "url": "https://api.trafa.se/api/structure?query=t1201&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:11.444876+00:00",
+      "response_characters": 112159,
+      "response_utf8_bytes": 112548,
+      "download_bytes_after_http_decoding": 112548,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t1201",
+      "unique_id": "T1201",
+      "reserialized_minified_json_characters": 112159,
+      "status": "ok"
+    }
+  ],
+  "T1004": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t1004",
+      "url": "https://api.trafa.se/api/structure?query=t1004&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:12.420154+00:00",
+      "response_characters": 208414,
+      "response_utf8_bytes": 209197,
+      "download_bytes_after_http_decoding": 209197,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t1004",
+      "unique_id": "T1004",
+      "reserialized_minified_json_characters": 208414,
+      "status": "ok"
+    }
+  ],
+  "T0802": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0802",
+      "url": "https://api.trafa.se/api/structure?query=t0802&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:13.420256+00:00",
+      "response_characters": 137931,
+      "response_utf8_bytes": 138401,
+      "download_bytes_after_http_decoding": 138401,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0802",
+      "unique_id": "T0802",
+      "reserialized_minified_json_characters": 137931,
+      "status": "ok"
+    }
+  ],
+  "T06011": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t06011",
+      "url": "https://api.trafa.se/api/structure?query=t06011&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:14.044198+00:00",
+      "response_characters": 54164,
+      "response_utf8_bytes": 54398,
+      "download_bytes_after_http_decoding": 54398,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t06011",
+      "unique_id": "T06011",
+      "reserialized_minified_json_characters": 54164,
+      "status": "ok"
+    }
+  ],
+  "T06012": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t06012",
+      "url": "https://api.trafa.se/api/structure?query=t06012&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:14.562543+00:00",
+      "response_characters": 39573,
+      "response_utf8_bytes": 39761,
+      "download_bytes_after_http_decoding": 39761,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t06012",
+      "unique_id": "T06012",
+      "reserialized_minified_json_characters": 39573,
+      "status": "ok"
+    }
+  ],
+  "T06013": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t06013",
+      "url": "https://api.trafa.se/api/structure?query=t06013&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:15.166571+00:00",
+      "response_characters": 68470,
+      "response_utf8_bytes": 68811,
+      "download_bytes_after_http_decoding": 68811,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t06013",
+      "unique_id": "T06013",
+      "reserialized_minified_json_characters": 68470,
+      "status": "ok"
+    }
+  ],
+  "T10061": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10061",
+      "url": "https://api.trafa.se/api/structure?query=t10061&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:16.041065+00:00",
+      "response_characters": 111919,
+      "response_utf8_bytes": 112375,
+      "download_bytes_after_http_decoding": 112375,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10061",
+      "unique_id": "T10061",
+      "reserialized_minified_json_characters": 111919,
+      "status": "ok"
+    }
+  ],
+  "T10062": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10062",
+      "url": "https://api.trafa.se/api/structure?query=t10062&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:16.639649+00:00",
+      "response_characters": 56476,
+      "response_utf8_bytes": 56749,
+      "download_bytes_after_http_decoding": 56749,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10062",
+      "unique_id": "T10062",
+      "reserialized_minified_json_characters": 56476,
+      "status": "ok"
+    }
+  ],
+  "T10021": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10021",
+      "url": "https://api.trafa.se/api/structure?query=t10021&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:17.264043+00:00",
+      "response_characters": 114648,
+      "response_utf8_bytes": 115026,
+      "download_bytes_after_http_decoding": 115026,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10021",
+      "unique_id": "T10021",
+      "reserialized_minified_json_characters": 114648,
+      "status": "ok"
+    }
+  ],
+  "T10023": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10023",
+      "url": "https://api.trafa.se/api/structure?query=t10023&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:17.946531+00:00",
+      "response_characters": 117303,
+      "response_utf8_bytes": 117683,
+      "download_bytes_after_http_decoding": 117683,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10023",
+      "unique_id": "T10023",
+      "reserialized_minified_json_characters": 117303,
+      "status": "ok"
+    }
+  ],
+  "T10026": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10026",
+      "url": "https://api.trafa.se/api/structure?query=t10026&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:18.658740+00:00",
+      "response_characters": 119856,
+      "response_utf8_bytes": 120248,
+      "download_bytes_after_http_decoding": 120248,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10026",
+      "unique_id": "T10026",
+      "reserialized_minified_json_characters": 119856,
+      "status": "ok"
+    }
+  ],
+  "T10029": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10029",
+      "url": "https://api.trafa.se/api/structure?query=t10029&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:19.332631+00:00",
+      "response_characters": 115694,
+      "response_utf8_bytes": 116078,
+      "download_bytes_after_http_decoding": 116078,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10029",
+      "unique_id": "T10029",
+      "reserialized_minified_json_characters": 115694,
+      "status": "ok"
+    }
+  ],
+  "T10033": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10033",
+      "url": "https://api.trafa.se/api/structure?query=t10033&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:19.817512+00:00",
+      "response_characters": 29630,
+      "response_utf8_bytes": 29796,
+      "download_bytes_after_http_decoding": 29796,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10033",
+      "unique_id": "T10033",
+      "reserialized_minified_json_characters": 29630,
+      "status": "ok"
+    }
+  ],
+  "T10036": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10036",
+      "url": "https://api.trafa.se/api/structure?query=t10036&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:20.741329+00:00",
+      "response_characters": 116448,
+      "response_utf8_bytes": 116794,
+      "download_bytes_after_http_decoding": 116794,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10036",
+      "unique_id": "T10036",
+      "reserialized_minified_json_characters": 116448,
+      "status": "ok"
+    }
+  ],
+  "T10039": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10039",
+      "url": "https://api.trafa.se/api/structure?query=t10039&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:21.385325+00:00",
+      "response_characters": 124846,
+      "response_utf8_bytes": 125246,
+      "download_bytes_after_http_decoding": 125246,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10039",
+      "unique_id": "T10039",
+      "reserialized_minified_json_characters": 124846,
+      "status": "ok"
+    }
+  ],
+  "T1101": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t1101",
+      "url": "https://api.trafa.se/api/structure?query=t1101&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:21.926344+00:00",
+      "response_characters": 45426,
+      "response_utf8_bytes": 45660,
+      "download_bytes_after_http_decoding": 45660,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t1101",
+      "unique_id": "T1101",
+      "reserialized_minified_json_characters": 45426,
+      "status": "ok"
+    }
+  ],
+  "T1202": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t1202",
+      "url": "https://api.trafa.se/api/structure?query=t1202&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:22.400778+00:00",
+      "response_characters": 23726,
+      "response_utf8_bytes": 23897,
+      "download_bytes_after_http_decoding": 23897,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t1202",
+      "unique_id": "T1202",
+      "reserialized_minified_json_characters": 23726,
+      "status": "ok"
+    }
+  ],
+  "T1203": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t1203",
+      "url": "https://api.trafa.se/api/structure?query=t1203&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:22.935432+00:00",
+      "response_characters": 43285,
+      "response_utf8_bytes": 43567,
+      "download_bytes_after_http_decoding": 43567,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t1203",
+      "unique_id": "T1203",
+      "reserialized_minified_json_characters": 43285,
+      "status": "ok"
+    }
+  ],
+  "T0808": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0808",
+      "url": "https://api.trafa.se/api/structure?query=t0808&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:23.591977+00:00",
+      "response_characters": 82234,
+      "response_utf8_bytes": 82549,
+      "download_bytes_after_http_decoding": 82549,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0808",
+      "unique_id": "T0808",
+      "reserialized_minified_json_characters": 82234,
+      "status": "ok"
+    }
+  ],
+  "T1102": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t1102",
+      "url": "https://api.trafa.se/api/structure?query=t1102&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:24.306222+00:00",
+      "response_characters": 105861,
+      "response_utf8_bytes": 106244,
+      "download_bytes_after_http_decoding": 106244,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t1102",
+      "unique_id": "T1102",
+      "reserialized_minified_json_characters": 105861,
+      "status": "ok"
+    }
+  ],
+  "T0603": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0603",
+      "url": "https://api.trafa.se/api/structure?query=t0603&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:24.846347+00:00",
+      "response_characters": 36055,
+      "response_utf8_bytes": 36330,
+      "download_bytes_after_http_decoding": 36330,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0603",
+      "unique_id": "T0603",
+      "reserialized_minified_json_characters": 36055,
+      "status": "ok"
+    }
+  ],
+  "T08021": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t08021",
+      "url": "https://api.trafa.se/api/structure?query=t08021&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:25.463480+00:00",
+      "response_characters": 51206,
+      "response_utf8_bytes": 51457,
+      "download_bytes_after_http_decoding": 51457,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t08021",
+      "unique_id": "T08021",
+      "reserialized_minified_json_characters": 51206,
+      "status": "ok"
+    }
+  ],
+  "T10016": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10016",
+      "url": "https://api.trafa.se/api/structure?query=t10016&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:26.129169+00:00",
+      "response_characters": 61096,
+      "response_utf8_bytes": 61348,
+      "download_bytes_after_http_decoding": 61348,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10016",
+      "unique_id": "T10016",
+      "reserialized_minified_json_characters": 61096,
+      "status": "ok"
+    }
+  ],
+  "T10013": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10013",
+      "url": "https://api.trafa.se/api/structure?query=t10013&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:26.710077+00:00",
+      "response_characters": 58295,
+      "response_utf8_bytes": 58576,
+      "download_bytes_after_http_decoding": 58576,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10013",
+      "unique_id": "T10013",
+      "reserialized_minified_json_characters": 58295,
+      "status": "ok"
+    }
+  ],
+  "T0301": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0301",
+      "url": "https://api.trafa.se/api/structure?query=t0301&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:27.318797+00:00",
+      "response_characters": 80290,
+      "response_utf8_bytes": 80532,
+      "download_bytes_after_http_decoding": 80532,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0301",
+      "unique_id": "T0301",
+      "reserialized_minified_json_characters": 80290,
+      "status": "ok"
+    }
+  ],
+  "T0701": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0701",
+      "url": "https://api.trafa.se/api/structure?query=t0701&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:27.854490+00:00",
+      "response_characters": 37753,
+      "response_utf8_bytes": 37959,
+      "download_bytes_after_http_decoding": 37959,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0701",
+      "unique_id": "T0701",
+      "reserialized_minified_json_characters": 37753,
+      "status": "ok"
+    }
+  ],
+  "T1204": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t1204",
+      "url": "https://api.trafa.se/api/structure?query=t1204&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:28.322192+00:00",
+      "response_characters": 21865,
+      "response_utf8_bytes": 22031,
+      "download_bytes_after_http_decoding": 22031,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t1204",
+      "unique_id": "T1204",
+      "reserialized_minified_json_characters": 21865,
+      "status": "ok"
+    }
+  ],
+  "T0501": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0501",
+      "url": "https://api.trafa.se/api/structure?query=t0501&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:29.229565+00:00",
+      "response_characters": 135042,
+      "response_utf8_bytes": 135352,
+      "download_bytes_after_http_decoding": 135352,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0501",
+      "unique_id": "T0501",
+      "reserialized_minified_json_characters": 135042,
+      "status": "ok"
+    }
+  ],
+  "T10030": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10030",
+      "url": "https://api.trafa.se/api/structure?query=t10030&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:30.283886+00:00",
+      "response_characters": 131541,
+      "response_utf8_bytes": 131920,
+      "download_bytes_after_http_decoding": 131920,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10030",
+      "unique_id": "T10030",
+      "reserialized_minified_json_characters": 131541,
+      "status": "ok"
+    }
+  ],
+  "T0602": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0602",
+      "url": "https://api.trafa.se/api/structure?query=t0602&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:30.810457+00:00",
+      "response_characters": 44958,
+      "response_utf8_bytes": 45238,
+      "download_bytes_after_http_decoding": 45238,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0602",
+      "unique_id": "T0602",
+      "reserialized_minified_json_characters": 44958,
+      "status": "ok"
+    }
+  ],
+  "T0604_RT_ar": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0604_rt_ar",
+      "url": "https://api.trafa.se/api/structure?query=t0604_rt_ar&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:31.367089+00:00",
+      "response_characters": 54926,
+      "response_utf8_bytes": 55241,
+      "download_bytes_after_http_decoding": 55241,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0604_rt_ar",
+      "unique_id": "T0604_RT_ar",
+      "reserialized_minified_json_characters": 54926,
+      "status": "ok"
+    }
+  ],
+  "T0604_RT_Kv": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0604_rt_kv",
+      "url": "https://api.trafa.se/api/structure?query=t0604_rt_kv&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:31.877120+00:00",
+      "response_characters": 39935,
+      "response_utf8_bytes": 40198,
+      "download_bytes_after_http_decoding": 40198,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0604_rt_kv",
+      "unique_id": "T0604_RT_Kv",
+      "reserialized_minified_json_characters": 39935,
+      "status": "ok"
+    }
+  ],
+  "T10010": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10010",
+      "url": "https://api.trafa.se/api/structure?query=t10010&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:32.484268+00:00",
+      "response_characters": 64213,
+      "response_utf8_bytes": 64474,
+      "download_bytes_after_http_decoding": 64474,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10010",
+      "unique_id": "T10010",
+      "reserialized_minified_json_characters": 64213,
+      "status": "ok"
+    }
+  ],
+  "T0604_STM_ar": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0604_stm_ar",
+      "url": "https://api.trafa.se/api/structure?query=t0604_stm_ar&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:33.035898+00:00",
+      "response_characters": 54929,
+      "response_utf8_bytes": 55289,
+      "download_bytes_after_http_decoding": 55289,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0604_stm_ar",
+      "unique_id": "T0604_STM_ar",
+      "reserialized_minified_json_characters": 54929,
+      "status": "ok"
+    }
+  ],
+  "T0604_STM_kv": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t0604_stm_kv",
+      "url": "https://api.trafa.se/api/structure?query=t0604_stm_kv&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:33.539604+00:00",
+      "response_characters": 40207,
+      "response_utf8_bytes": 40526,
+      "download_bytes_after_http_decoding": 40526,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t0604_stm_kv",
+      "unique_id": "T0604_STM_kv",
+      "reserialized_minified_json_characters": 40207,
+      "status": "ok"
+    }
+  ],
+  "T04010": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t04010",
+      "url": "https://api.trafa.se/api/structure?query=t04010&lang=sv",
+      "checked_at_utc": "2026-10-09T15:15:34.063232+00:00",
+      "response_characters": 47580,
+      "response_utf8_bytes": 47812,
+      "download_bytes_after_http_decoding": 47812,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t04010",
+      "unique_id": "T04010",
+      "reserialized_minified_json_characters": 47580,
+      "status": "ok"
+    }
+  ],
+  "T10020": [
+    {
+      "requested_format": "json",
+      "observed_format": "json",
+      "content_type": "application/json; charset=utf-8",
+      "http_status": 200,
+      "query": "t10020",
+      "url": "https://api.trafa.se/api/structure?query=t10020&lang=sv",
+      "checked_at_utc": "2026-10-09T16:12:18Z",
+      "response_characters": 123458,
+      "response_utf8_bytes": 123848,
+      "download_bytes_after_http_decoding": 123848,
+      "format_matches_request": true,
+      "valid_structure": true,
+      "api_name": "t10020",
+      "unique_id": "T10020",
+      "reserialized_minified_json_characters": 123458,
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "edition": "2026-10-19.1",
+  "finished_at_utc": "2026-10-19T17:07:10.949335+00:00",
+  "baseline_skill_commit": "2db7fea7937ccf26503f2faafac21b27af7f3c4b",
+  "deterministic": {
+    "existing_code_tests": 86,
+    "new_code_tests": 9,
+    "oracle_integrity_tests": 3,
+    "run_total": 98,
+    "failures": 0,
+    "errors": 0,
+    "network": "Blocked in Python runner and its Python subprocesses; API acquisition was an explicit prior step."
+  },
+  "behavior": {
+    "runs": 11,
+    "repetitions_per_case": 1,
+    "approved_with_scope_and_reservations": 11,
+    "rejected": 0,
+    "original_question_numeric_completeness": {
+      "B01": "complete within snapshot",
+      "B02": "complete within snapshot",
+      "B03": "pure ore not established",
+      "B04": "union and common denominator not established",
+      "B05": "bus subtrips not established",
+      "B06": "all ship types total not established"
+    },
+    "grader": "separate agent using primary fixture cells and source-backed rubric; not a model-generated golden answer"
+  },
+  "observed_defects": [
+    {
+      "case": "B02",
+      "severity": "minor formatting in log",
+      "evidence": "4,421 bilar in calculation log; main answer 4 421 correct",
+      "fixed": false
+    },
+    {
+      "case": "B04",
+      "severity": "clarity / denominator caveat",
+      "evidence": "Union formula not explicitly conditional on common population; no numerical union claimed; candidate flags unverified age denominator",
+      "fixed": false
+    }
+  ],
+  "not_counted_as_skill_errors": [
+    "Empty DataCount for two documented selections is an observed API coverage limitation.",
+    "No numerical oracle for narrower malm, unique A/B union, RVU bus subtrips, all ship types.",
+    "Offline shortlogs are not complete independently captured tool traces."
+  ],
+  "production_changes": "No runtime code or statistical rules corrected. Only evaluation package and SKILL.md development navigation added after baseline run.",
+  "limits": [
+    "One run per behavior, no success-rate estimate",
+    "Prepared sources; no open-ended discovery or live-network behavior validation",
+    "No installed MCP/OpenAPI connector tested",
+    "CI for trafapy is separate; no GitHub repository mutation in this task"
+  ]
+}

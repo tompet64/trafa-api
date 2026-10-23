@@ -1,0 +1,10 @@
+{
+  "kind": "synthetic_fault_injection_not_live_statistics",
+  "files": {
+    "empty-data.json": "Derived from ev.json by replacing Rows with []; hypothetical empty response after positive structure count.",
+    "http200-errors.json": "Constructed error response sent at HTTP status 200; not captured from server.",
+    "years.json": "Constructed unsorted year domain including dynamic filter."
+  },
+  "unknown_filter": "t10036|nyreg|ar:2026|drivm:NOT_A_CODE|manad:09",
+  "insufficient_references": "Copy reference catalogs into a temporary directory and remove T10036 combination support; retain codes and domains. Do not mutate installed references."
+}

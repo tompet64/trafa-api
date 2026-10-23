@@ -1,0 +1,22 @@
+{
+  "endpoint": "structure",
+  "query": "t1101|anthresar|ar:2025|hfardsatt",
+  "lang": "sv",
+  "url": "https://api.trafa.se/api/structure?query=t1101%7Canthresar%7Car%3A2025%7Chfardsatt&lang=sv",
+  "contract": {
+    "version": "2.1.0",
+    "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "file": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api/references/openapi-trafa.json"
+  },
+  "response_limit_characters": null,
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "checked_at_utc": "2026-10-19T16:58:29.226373+00:00",
+  "response_utf8_bytes": 45658,
+  "sha256": "53adb32d745e0ee11d5bfb63391f2dfd6913d1c9d98c60bec86441b00c6220cd",
+  "elapsed_seconds": 8.012,
+  "attempts": 1,
+  "response_characters": 45424,
+  "schema_validated": true,
+  "outcome": "success"
+}

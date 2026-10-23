@@ -1,0 +1,14 @@
+interface:
+  display_name: Trafikanalys API
+  short_description: Verifierade urval och säkra statistikuttagsfrågor
+  default_prompt: Använd $trafa-api för att identifiera rätt produkt och variabler
+    och hämta statistiken med verifierade filter.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

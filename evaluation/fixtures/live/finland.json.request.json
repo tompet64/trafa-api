@@ -1,0 +1,22 @@
+{
+  "endpoint": "data",
+  "query": "t0802|pax|ar:2023|aland:118|fartrikt:1|typh:2|typu:21|skeppstyp",
+  "lang": "sv",
+  "url": "https://api.trafa.se/api/data?query=t0802%7Cpax%7Car%3A2023%7Caland%3A118%7Cfartrikt%3A1%7Ctyph%3A2%7Ctypu%3A21%7Cskeppstyp&lang=sv",
+  "contract": {
+    "version": "2.1.0",
+    "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "file": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api/references/openapi-trafa.json"
+  },
+  "response_limit_characters": null,
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "checked_at_utc": "2026-10-19T16:58:21.207195+00:00",
+  "response_utf8_bytes": 2699,
+  "sha256": "558444e9d0b3cb8d615fb73948af3691c8480a0a63aba72370905f7078cf8ca1",
+  "elapsed_seconds": 5.805,
+  "attempts": 1,
+  "response_characters": 2687,
+  "schema_validated": true,
+  "outcome": "success"
+}

@@ -1,0 +1,537 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Trafikanalys statistik-API",
+    "version": "2.1.0",
+    "description": "JSON-kontrakt för Trafikanalys API; filen installerar ingen Action. Produktmetadata och kombinationsregler hanteras separat. Verifierat mot sparade struktursvar och representativa datasvar 2026-10-09; ingen garanti för alla framtida svar. Daterade referensdata får användas för urvalskontroll när struktursvaret är för stort; det är inte aktuell strukturvalidering."
+  },
+  "servers": [
+    {
+      "url": "https://api.trafa.se/api",
+      "description": "Trafikanalys statistik-API"
+    }
+  ],
+  "paths": {
+    "/structure": {
+      "get": {
+        "operationId": "getStructure",
+        "summary": "Hämta produktlista och struktur för vald statistikprodukt",
+        "description": "Utan query hämtas produktlistan. Annars hämtas produktens urvalsstruktur. Följ StructureItems och ParentName. Selected anger val, Option valbarhet. Om struktursvaret är för stort får urvalet kontrolleras mot daterade referensdata och dokumenterade kombinationer.",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": false,
+            "description": "Produktens Name följt av mått och dimensioner. Filter: dimension:kod1,kod2. Utelämna för produktlistan på /structure.",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            },
+            "example": "t10026|itrfslut|ar:2023|reglan:01|drivmedel:103"
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "required": false,
+            "description": "Språk för etiketter och beskrivningar.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "sv",
+                "en"
+              ],
+              "default": "sv"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON-svar; HTTP 200 garanterar inte giltigt urval eller observationer.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StructureResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Felaktig strukturfråga (klienten måste även kontrollera felsvar vid HTTP 200)"
+          },
+          "404": {
+            "description": "Produkten eller resursen hittades inte (klienten måste även kontrollera felsvar vid HTTP 200)"
+          },
+          "500": {
+            "description": "Serverfel (klienten måste även kontrollera felsvar vid HTTP 200)"
+          }
+        }
+      }
+    },
+    "/data": {
+      "get": {
+        "operationId": "getStatistics",
+        "summary": "Hämta statistik från Trafikanalys",
+        "description": "Hämta statistik med explicit query. Validera urvalet med /structure eller, när struktursvaret är för stort, med daterade referensdata och dokumenterade kombinationer. Kontrollera Errors och Rows även vid HTTP 200. Ange efterfrågad tid explicit.",
+        "parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Obligatorisk urvalsfråga: produktens Name följt av behövliga mått och dimensioner. Filter: dimension:kod1,kod2. Ange tid explicit för en bestämd period.",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            },
+            "example": "t10026|itrfslut|ar:2023|reglan:01|drivmedel:103"
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "required": false,
+            "description": "Språk för etiketter och beskrivningar.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "sv",
+                "en"
+              ],
+              "default": "sv"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON-svar; HTTP 200 garanterar inte giltigt urval eller observationer.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StatisticsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Felaktig statistikfråga (klienten måste även kontrollera felsvar vid HTTP 200)"
+          },
+          "404": {
+            "description": "Produkten eller resursen hittades inte (klienten måste även kontrollera felsvar vid HTTP 200)"
+          },
+          "500": {
+            "description": "Serverfel (klienten måste även kontrollera felsvar vid HTTP 200)"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StructureResponse": {
+        "type": "object",
+        "properties": {
+          "DataCount": {
+            "type": "integer",
+            "description": "Storleksindikator från API:t för urvalet, inte antal strukturposter. Tolka inte 0 i ett produktanrop som avsaknad av metadata. Verifiera betydelsen innan automatisk uppdelning."
+          },
+          "StructureItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StructureItem"
+            }
+          },
+          "ValidatedRequestType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "DataCount",
+          "StructureItems"
+        ]
+      },
+      "StructureItem": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer"
+          },
+          "Label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Exakt API-kod. Behåll skiftläge och inledande nollor."
+          },
+          "ParentName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Type": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "P",
+              "D",
+              "H",
+              "M",
+              "DV",
+              "F",
+              null
+            ],
+            "description": "P produkt; D dimension; H hierarki; M mätvärde; DV dimensionsvärde; F reserverat filter."
+          },
+          "DataType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Selected": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "description": "Om noden är vald i queryn. false betyder inte otillgänglig."
+          },
+          "Option": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "description": "Valbarhet i aktuellt struktururval. false får inte ignoreras; true garanterar inte dataposter."
+          },
+          "UniqueId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ActiveFrom": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "FullLabel": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "FullName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "StructureItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StructureItem"
+            },
+            "description": "Rekursiva barn. Läs även ParentName; produktvariabler behöver inte vara barn till P-posten."
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "Name",
+          "Type",
+          "ParentName",
+          "Selected",
+          "Option",
+          "StructureItems"
+        ]
+      },
+      "StatisticsResponse": {
+        "type": "object",
+        "properties": {
+          "Header": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/StatisticsHeader"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "Rows": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/StatisticsRow"
+            }
+          },
+          "Errors": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "description": "API-fel kan returneras vid HTTP 200. Tomt Rows med Errors=null kräver separat urvalskontroll."
+          },
+          "Description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "OriginalName": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Notes": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": true
+          },
+          "NextPublishDate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ActiveFrom": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ValidatedRequestType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "Header",
+          "Rows",
+          "Errors"
+        ]
+      },
+      "StatisticsHeader": {
+        "type": "object",
+        "properties": {
+          "Column": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/StatisticsColumn"
+            }
+          },
+          "Description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      },
+      "StatisticsColumn": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "DataType": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Filters": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "Value": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "UniqueId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      },
+      "StatisticsRow": {
+        "type": "object",
+        "properties": {
+          "Cell": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/StatisticsCell"
+            }
+          },
+          "IsTotal": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      },
+      "StatisticsCell": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "IsMeasure": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "Description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Value": {
+            "type": [
+              "string",
+              "number",
+              "null"
+            ],
+            "description": "Råvärde. Mätvärden kan vara numeriska strängar. Bevara saknat/sekretess; använd inte FormattedValue för beräkning."
+          },
+          "FormattedValue": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Level": {
+            "type": [
+              "string",
+              "integer",
+              "null"
+            ]
+          },
+          "Gis": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "UniqueId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "NoteIds": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": [
+                "integer",
+                "string"
+              ]
+            }
+          },
+          "Versions": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "object",
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "Column",
+          "Value",
+          "IsMeasure"
+        ]
+      }
+    }
+  }
+}

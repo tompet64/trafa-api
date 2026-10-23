@@ -1,0 +1,57 @@
+{
+  "code_target_commit": "2db7fea7937ccf26503f2faafac21b27af7f3c4b",
+  "behavior_execution": "one fresh agent per case; same inherited parent model, exact model identifier not independently recorded",
+  "statistical_case_contexts": {
+    "B01": {
+      "original_question": "Hur stor andel av nyregistrerade personbilar var elbilar i september 2026?",
+      "baseline": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api",
+      "source_directory": "/workspace/scratch/1b4b28e271c0/evidence",
+      "network": "not available / no calls allowed",
+      "context": "fresh thread; no inherited history; only baseline and evidence; no oracle provided",
+      "output": "behavior/b01.md"
+    },
+    "B02": {
+      "original_question": "Hur förändrades antalet personbilar i trafik i Malmö kommun mellan 2019 och 2023?",
+      "baseline": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api",
+      "source_directory": "/workspace/scratch/1b4b28e271c0/evidence",
+      "network": "not available / no calls allowed",
+      "context": "fresh thread; no inherited history; only baseline and evidence; no oracle provided",
+      "output": "behavior/b02.md"
+    },
+    "B03": {
+      "original_question": "Hur många ton malm transporterades med svenskregistrerade tunga lastbilar i inrikes trafik 2023? Redovisa osäkerheten.",
+      "baseline": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api",
+      "source_directory": "/workspace/scratch/1b4b28e271c0/evidence",
+      "network": "not available / no calls allowed",
+      "context": "fresh thread; no inherited history; only baseline and evidence; no oracle provided",
+      "output": "behavior/b03.md"
+    },
+    "B04": {
+      "original_question": "Hur stor andel av befolkningen hade något av körkorten A eller B 2023? Summera andelarna.",
+      "baseline": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api",
+      "source_directory": "/workspace/scratch/1b4b28e271c0/evidence",
+      "network": "not available / no calls allowed",
+      "context": "fresh thread; no inherited history; only baseline and evidence; no oracle provided",
+      "output": "behavior/b04.md"
+    },
+    "B05": {
+      "original_question": "Hur många delresor med buss gjorde Sveriges befolkning 2025 enligt RVU?",
+      "baseline": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api",
+      "source_directory": "/workspace/scratch/1b4b28e271c0/evidence",
+      "network": "not available / no calls allowed",
+      "context": "fresh thread; no inherited history; only baseline and evidence; no oracle provided",
+      "output": "behavior/b05.md"
+    },
+    "B06": {
+      "original_question": "Hur många passagerare anlände till svenska hamnar från finska hamnar 2023?",
+      "baseline": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api",
+      "source_directory": "/workspace/scratch/1b4b28e271c0/evidence",
+      "network": "not available / no calls allowed",
+      "context": "fresh thread; no inherited history; only baseline and evidence; no oracle provided",
+      "output": "behavior/b06.md"
+    }
+  },
+  "technical_contexts": "See RUNNING.md table; T05 used temporary metadata copy without T10036 combination entry.",
+  "grading": "Separate agent; source-backed rubric; candidate outputs never used as oracle values.",
+  "isolation_limit": "Shared filesystem; separation enforced by explicit task scopes, not an OS access-control boundary."
+}

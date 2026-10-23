@@ -1,0 +1,22 @@
+{
+  "endpoint": "structure",
+  "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+  "lang": "sv",
+  "url": "https://api.trafa.se/api/structure?query=t10012%7Candelbefolk%7Car%3A2023%7Ckorkort%3A1%2C2&lang=sv",
+  "contract": {
+    "version": "2.1.0",
+    "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "file": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api/references/openapi-trafa.json"
+  },
+  "response_limit_characters": null,
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "checked_at_utc": "2026-10-19T16:58:09.031001+00:00",
+  "response_utf8_bytes": 37116,
+  "sha256": "d0db6dda6e983edd4b04f7e6aa30398f818d172c163c75772aca15019e877c3d",
+  "elapsed_seconds": 6.154,
+  "attempts": 1,
+  "response_characters": 36910,
+  "schema_validated": true,
+  "outcome": "success"
+}
