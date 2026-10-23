@@ -1,6 +1,6 @@
 # Anrop och källor
 
-Använd server och operationer i `openapi-trafa.json`: `https://api.trafa.se/api` med `/structure` för urvalets metadata och `/data` för statistik. Bygg `query` enligt `produkt|mått|dimension|dimension:kod1,kod2`. Skicka `lang=sv` eller `lang=en` efter behov. Använd HTTP-klientens parametervärden för URL-kodning.
+Använd server och operationer i `openapi-trafa.json`: `https://api.trafa.se/api` med `/structure` för urvalets metadata och `/data` för statistik. Bygg `query` enligt `produkt|mått|dimension|dimension:kod1,kod2`. En dimension utan kolon och värdekoder, exempelvis `|fslag`, tas med i svaret utan att begränsas till en värdemängd; `|fslag:` med tomt värde är inte samma sak och ska inte användas. Kontrollera alltid i aktuell struktur och produktdokumentation att den redovisningsdimensionen är tillåten tillsammans med måttet och övriga urval. När alla kategorier efterfrågas behövs ingen förhandsgranskning av alla produkter: gör kontrollen för det valda uttaget. Om anslutningen inte kan representera en ofiltrerad dimension, använd direktklienten om den är tillgänglig; annars ange begränsningen. Skicka `lang=sv` eller `lang=en` efter behov. Använd HTTP-klientens parametervärden för URL-kodning.
 
 Illustration från officiell beskrivning: `t10011|itrfslut|ar|pass`. Kontrollera koder och kombination enligt vald metadataväg innan återanvändning. Lägg på ett val i taget i struktur när aktuell valbarhet behöver utforskas och svaret ryms.
 
