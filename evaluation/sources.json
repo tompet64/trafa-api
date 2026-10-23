@@ -209,6 +209,118 @@
       "file": "rvu.structure.json",
       "kind": "captured_primary_api_response",
       "why_small_and_needed": "Enbart struktur för begrepps-/färdsättskontroll; inget missvisande datauttag."
+    },
+    {
+      "endpoint": "data",
+      "query": "t0604_rt_kv|rt5|ar:2026|manad:07,08,09",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t0604_rt_kv%7Crt5%7Car%3A2026%7Cmanad%3A07%2C08%2C09&lang=sv",
+      "checked_at_utc": "2026-10-23T09:56:45.185770+00:00",
+      "http_status": 200,
+      "sha256": "83ba7b3020fcc1bac9b790f04f9dcdeefe0cd961319f7521c132426bb1e35a10",
+      "response_utf8_bytes": 2717,
+      "outcome": "success",
+      "file": "punctuality-rt-months.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "rt-months: verified API evidence for the punctuality behavior cases."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t0604_rt_kv|rt5|ar:2026|manad:07,08,09",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t0604_rt_kv%7Crt5%7Car%3A2026%7Cmanad%3A07%2C08%2C09&lang=sv",
+      "checked_at_utc": "2026-10-23T09:56:39.026549+00:00",
+      "http_status": 200,
+      "sha256": "860df088e80994c9d9d05afc1b5007f2880f4a71f853673293e26b24e9f88ca3",
+      "response_utf8_bytes": 40212,
+      "outcome": "success",
+      "file": "punctuality-rt-months.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "rt-months: verified API evidence for the punctuality behavior cases."
+    },
+    {
+      "endpoint": "data",
+      "query": "t0604_rt_kv|rt5|ar:2026|kvartal:3",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t0604_rt_kv%7Crt5%7Car%3A2026%7Ckvartal%3A3&lang=sv",
+      "checked_at_utc": "2026-10-23T09:57:43.116616+00:00",
+      "http_status": 200,
+      "sha256": "30cda37df6730be73e9e46dc241ca7ea3eef07b574273bb8f95c8c7096925b34",
+      "response_utf8_bytes": 1600,
+      "outcome": "success",
+      "file": "punctuality-rt-q3.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "rt-q3: verified API evidence for the punctuality behavior cases."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t0604_rt_kv|rt5|ar:2026|kvartal:3",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t0604_rt_kv%7Crt5%7Car%3A2026%7Ckvartal%3A3&lang=sv",
+      "checked_at_utc": "2026-10-23T09:57:37.010684+00:00",
+      "http_status": 200,
+      "sha256": "98259ed622d1fa9c86cac12a7b1e4f9c68f789fe5f7f2c014c8dab8e9fca1bbf",
+      "response_utf8_bytes": 40212,
+      "outcome": "success",
+      "file": "punctuality-rt-q3.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "rt-q3: verified API evidence for the punctuality behavior cases."
+    },
+    {
+      "endpoint": "data",
+      "query": "t0604_stm_kv|stm5|ar:2026|manad:07,08,09",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t0604_stm_kv%7Cstm5%7Car%3A2026%7Cmanad%3A07%2C08%2C09&lang=sv",
+      "checked_at_utc": "2026-10-23T09:57:15.696628+00:00",
+      "http_status": 200,
+      "sha256": "93a3092af6f6901402e9a7e46f4e8f09efc78d5474769334e5dfdcc5748c4c5f",
+      "response_utf8_bytes": 2703,
+      "outcome": "success",
+      "file": "punctuality-stm-months.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "stm-months: verified API evidence for the punctuality behavior cases."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t0604_stm_kv|stm5|ar:2026|manad:07,08,09",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t0604_stm_kv%7Cstm5%7Car%3A2026%7Cmanad%3A07%2C08%2C09&lang=sv",
+      "checked_at_utc": "2026-10-23T09:57:09.838803+00:00",
+      "http_status": 200,
+      "sha256": "1d8fae24156b0cc632adedab2bc18df74699a1eeab73d869c2bc3182c386c0b9",
+      "response_utf8_bytes": 40528,
+      "outcome": "success",
+      "file": "punctuality-stm-months.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "stm-months: verified API evidence for the punctuality behavior cases."
+    },
+    {
+      "endpoint": "data",
+      "query": "t0604_stm_kv|stm5|ar:2026|kvartal:3",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/data?query=t0604_stm_kv%7Cstm5%7Car%3A2026%7Ckvartal%3A3&lang=sv",
+      "checked_at_utc": "2026-10-23T09:58:10.093192+00:00",
+      "http_status": 200,
+      "sha256": "d526f8f28839972a64338bb7ae05b177336b9e7eb5b18f727e0cd66ef03d9cc4",
+      "response_utf8_bytes": 1583,
+      "outcome": "success",
+      "file": "punctuality-stm-q3.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "stm-q3: verified API evidence for the punctuality behavior cases."
+    },
+    {
+      "endpoint": "structure",
+      "query": "t0604_stm_kv|stm5|ar:2026|kvartal:3",
+      "lang": "sv",
+      "url": "https://api.trafa.se/api/structure?query=t0604_stm_kv%7Cstm5%7Car%3A2026%7Ckvartal%3A3&lang=sv",
+      "checked_at_utc": "2026-10-23T09:58:04.455116+00:00",
+      "http_status": 200,
+      "sha256": "a7a419536f24c32f12b6404c2e332e5a4dd29e0a9b79861e544a02db014865cf",
+      "response_utf8_bytes": 40528,
+      "outcome": "success",
+      "file": "punctuality-stm-q3.structure.json",
+      "kind": "captured_primary_api_response",
+      "why_small_and_needed": "stm-q3: verified API evidence for the punctuality behavior cases."
     }
   ],
   "reuse_search": {
@@ -278,6 +390,24 @@
       "id": "M1",
       "kind": "mathematical_identity",
       "supports": "En unionsandel kräver överlapp samt gemensamt definierad population. Identiteten är matematisk, inte härledd från kandidatens svar."
+    },
+    {
+      "id": "D7",
+      "url": "https://www.trafa.se/globalassets/statistik/bantrafik/punktlighet-pa-jarnvag/2026/kvalitetsdeklaration-punktlighet-pa-jarnvag-2025.pdf",
+      "edition": "Kvalitetsdeklaration Punktlighet på järnväg 2025, 2026-02-26",
+      "checked_on": "2026-10-23",
+      "locator": "avsnitt 1.2.3 och bilaga 1",
+      "supports": "RT, regularitet och STM definieras som andelar av tågantal; STM sammanväger punktlighet och regularitet. Underlaget ger inte stöd för att anta ett ovägt medel av månadsandelar.",
+      "fixture": "fixtures/official/punktlighet-kvalitetsdeklaration-2025.json"
+    },
+    {
+      "id": "D8",
+      "url": "https://www.trafa.se/bantrafik/punktlighet-pa-jarnvag/punktlighet-pa-jarnvag-2026-kvartal-3-15797/",
+      "edition": "Publiceringsnotis Punktlighet på järnväg 2026 kvartal 3",
+      "checked_on": "2026-10-23",
+      "locator": "När och var?",
+      "supports": "Publicering 2026-10-23 kl. 08.00.",
+      "fixture": "fixtures/official/punktlighet-q3-2026-publiceringsnotis.json"
     }
   ]
 }

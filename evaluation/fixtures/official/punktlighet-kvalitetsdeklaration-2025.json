@@ -1,0 +1,18 @@
+{
+  "source_url": "https://www.trafa.se/globalassets/statistik/bantrafik/punktlighet-pa-jarnvag/2026/kvalitetsdeklaration-punktlighet-pa-jarnvag-2025.pdf",
+  "edition": "Kvalitetsdeklaration Punktlighet på järnväg 2025",
+  "published": "2026-02-26",
+  "checked_on": "2026-10-23",
+  "locators": [
+    "Avsnitt 1.2.3",
+    "Avsnitt 4.3",
+    "Bilaga 1: Beräkningsformler"
+  ],
+  "evidence_summary": [
+    "STM avser andelen planerade tåg dagen före avgång som ankommit inom den valda tidsgränsen.",
+    "STM sammanväger tågens regularitet och punktlighet; RT avser punktlighet bland framförda tåg.",
+    "Kvalitetsdeklarationen definierar måtten som andelar av tågantal och beskriver STM som en sammanvägning av punktlighet och regularitet. Behandla därför inte kvartalsandel som ett ovägt aritmetiskt medel av månadsandelar utan särskilt metodstöd.",
+    "Senaste kvartals- eller årsstatistik ska användas även för tidigare perioder eftersom äldre publikationer normalt inte uppdateras."
+  ],
+  "note": "Kort, parafraserat underlag för beteendeutvärdering; kontrollera den länkade kvalitetsdeklarationen för full definition."
+}
