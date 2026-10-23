@@ -1,0 +1,22 @@
+{
+  "endpoint": "structure",
+  "query": "t10061|godsm|godsmki|ar:2023|kortyp:1|riktningh:10|varugrupp:03",
+  "lang": "sv",
+  "url": "https://api.trafa.se/api/structure?query=t10061%7Cgodsm%7Cgodsmki%7Car%3A2023%7Ckortyp%3A1%7Criktningh%3A10%7Cvarugrupp%3A03&lang=sv",
+  "contract": {
+    "version": "2.1.0",
+    "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "file": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api/references/openapi-trafa.json"
+  },
+  "response_limit_characters": null,
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "checked_at_utc": "2026-10-19T16:59:03.167014+00:00",
+  "response_utf8_bytes": 112399,
+  "sha256": "c9300b3c151ffc78738baca60b96e25a1f78e7bd30e7dd52185c8d3efd67be86",
+  "elapsed_seconds": 6.448,
+  "attempts": 1,
+  "response_characters": 111943,
+  "schema_validated": true,
+  "outcome": "success"
+}

@@ -1,0 +1,37 @@
+{
+  "independence": "Values transcribed from primary captured API Cells by evaluator, not generated assistant answers; arithmetic checked with decimal.Decimal independently of client code. Semantic rubric separately grounded in primary metadata, official definitions and explicitly labelled user expert evidence.",
+  "B01": {
+    "numerator": 14096,
+    "denominator": 29850,
+    "percent_1_decimal": "47.2"
+  },
+  "B02": {
+    "2019": 120967,
+    "2023": 125388,
+    "difference": 4421,
+    "percent_1_decimal": "3.7"
+  },
+  "B03": {
+    "exact_ore_tonnes": null,
+    "broader_group_tonnes": 123754000,
+    "broader_group_margin_tonnes": 13585000,
+    "lower": 110169000,
+    "upper": 137339000,
+    "interval_evidence_status": "user_expert_confirmation_not_new_independent_primary_verification"
+  },
+  "B04": {
+    "A_percent": "24",
+    "B_percent": "78.4",
+    "sum": "102.4",
+    "union": null,
+    "common_denominator_verified": false
+  },
+  "B05": {
+    "bus_subtrips": null,
+    "reason": "Concept not identified in captured API metadata; no assertion of absence elsewhere."
+  },
+  "B06": {
+    "passenger_ship_ferry_passengers": 3021000,
+    "all_ship_types_total": null
+  }
+}

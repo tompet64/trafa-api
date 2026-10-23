@@ -1,0 +1,22 @@
+{
+  "endpoint": "structure",
+  "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+  "lang": "sv",
+  "url": "https://api.trafa.se/api/structure?query=t10036%7Cnyreg%7Car%3A2026%7Cdrivm%3A103%7Cmanad%3A09&lang=sv",
+  "contract": {
+    "version": "2.1.0",
+    "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "file": "/workspace/scratch/1b4b28e271c0/baseline/trafa-api/references/openapi-trafa.json"
+  },
+  "response_limit_characters": null,
+  "http_status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "checked_at_utc": "2026-10-19T16:57:57.022765+00:00",
+  "response_utf8_bytes": 116803,
+  "sha256": "6733ed68d0411425e39f1a7cfa57244e70ea606452752953ced2e674505c644d",
+  "elapsed_seconds": 6.343,
+  "attempts": 1,
+  "response_characters": 116457,
+  "schema_validated": true,
+  "outcome": "success"
+}
