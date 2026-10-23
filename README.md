@@ -4,6 +4,10 @@ A ChatGPT/Codex skill for working with the open Trafikanalys API at `api.trafa.s
 
 It provides workflow instructions, product and variable metadata, documented API combinations, an OpenAPI contract, a Python client, and offline checks. It is independent of the separate `trafapy` repository.
 
+## AI disclosure
+
+Most of this repository's original content—including its skill instructions, Python code, tests, and supporting documentation—was created with ChatGPT assistance, based on prompts and direction from the repository owner. Trafikanalys statistics and API-derived metadata are sourced separately; they are not ChatGPT-generated, and their reuse is governed by [DATA-TERMS.md](DATA-TERMS.md). AI-assisted content may contain errors: review the code and validate results before use. The licensed code is provided “as is” under the MIT License.
+
 ## Repository layout
 
 The repository root is the complete skill folder. `SKILL.md` is the entry point; `references/`, `scripts/`, `evaluation/`, `assets/`, and `agents/` contain the supporting files. Browse or download individual files directly from GitHub.
