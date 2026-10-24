@@ -1,0 +1,24 @@
+name: Offline regression
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check MCP replay harness syntax
+        run: node --check evaluation/comparison/replay_mcp.mjs
+      - name: Run offline regressions (including comparison tests)
+        run: python evaluation/run_offline.py
