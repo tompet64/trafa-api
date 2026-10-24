@@ -57,6 +57,21 @@ class ComparisonTests(unittest.TestCase):
             self.assertEqual([x['level'] for x in result['server_logs']],['info','error','log'])
             self.assertEqual(proc.stderr,'')
 
+    @unittest.skipUnless(shutil.which('node'), 'Node needed to exercise MCP schema negotiation')
+    def test_unfiltered_dimension_is_sent_only_if_worker_schema_supports_it(self):
+        for supported in (False,True):
+            with self.subTest(supported=supported), tempfile.TemporaryDirectory() as directory:
+                worker=Path(directory)/'worker.mjs'
+                worker.write_text("export default { async fetch(request) { const q=await request.json(); "
+                    "if(q.method==='tools/list') return Response.json({result:{tools:[{name:'get_statistics',inputSchema:{properties:"
+                    + ("{dimensions:{type:'array'}}" if supported else "{}") + "}}]}}); "
+                    "if(q.params.arguments.dimensions[0]!=='skeppstyp') throw Error('Missing dimension'); "
+                    "return Response.json({result:{isError:false,structuredContent:{ok:true}}}); } };",encoding='utf-8')
+                proc=subprocess.run(['node',str(HERE/'comparison/replay_mcp.mjs'),str(worker),
+                                     str(HERE/'fixtures/live'),'finland'],check=True,text=True,capture_output=True)
+                result=json.loads(proc.stdout)
+                self.assertEqual(result['status'],'success' if supported else 'unsupported')
+
     def trace(self):
         return dict(schema_version=1,coverage={'host':'complete','upstream':'complete'},events=[
             dict(id='tool1',kind='tool',start_ms=0,duration_ms=100,outcome='success'),

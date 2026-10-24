@@ -32,14 +32,20 @@ for (const t of tokens) {
   else if (flat.some(n => n.Name === t && n.Type === 'M')) measures.push(t);
   else throw Error(`Unknown fixture entity: ${t}`);
 }
+let supportsDimensions = true;
 if (dimensions.length) {
+  const listing = await worker.fetch(new Request('https://replay.invalid/mcp',{method:'POST',body:JSON.stringify({jsonrpc:'2.0',id:'schema',method:'tools/list'})}));
+  const tools = (await listing.json()).result?.tools ?? [];
+  supportsDimensions = Boolean(tools.find(t => t.name === 'get_statistics')?.inputSchema?.properties?.dimensions);
+}
+if (!supportsDimensions) {
   writeReport(JSON.stringify({status:'unsupported',reason:'Unfiltered reporting dimension cannot be expressed by current MCP input schema',dimensions,events,server_logs:serverLogs}));
   process.exit(0);
 }
 const started = performance.now();
 if (preflight === '--preflight') {
-  await worker.fetch(new Request('https://replay.invalid/mcp',{method:'POST',body:JSON.stringify({jsonrpc:'2.0',id:0,method:'tools/call',params:{name:'get_structure',arguments:{product,measures,filters}}})}));
+  await worker.fetch(new Request('https://replay.invalid/mcp',{method:'POST',body:JSON.stringify({jsonrpc:'2.0',id:0,method:'tools/call',params:{name:'get_structure',arguments:{product,measures,filters,...(dimensions.length?{dimensions}:{})}}})}));
 }
-const response = await worker.fetch(new Request('https://replay.invalid/mcp',{method:'POST',body:JSON.stringify({jsonrpc:'2.0',id:1,method:'tools/call',params:{name:'get_statistics',arguments:{product,measures,filters,time_dimension:'ar',max_rows:100}}})}));
+const response = await worker.fetch(new Request('https://replay.invalid/mcp',{method:'POST',body:JSON.stringify({jsonrpc:'2.0',id:1,method:'tools/call',params:{name:'get_statistics',arguments:{product,measures,filters,...(dimensions.length?{dimensions}:{}),time_dimension:'ar',max_rows:100}}})}));
 const rpc = await response.json(), result = rpc.result;
 writeReport(JSON.stringify({status:result?.isError ? 'error':'success',elapsed_ms:performance.now()-started,events,server_logs:serverLogs,result:result?.structuredContent ?? rpc.error}));
