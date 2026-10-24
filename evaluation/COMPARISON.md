@@ -32,8 +32,10 @@ en transportstub, inte en OS-sandbox för godtycklig serverkod.
 
 B01 (elbilsandel) kör täljare och nämnare, B02 (Malmö) kör ändpunkterna, B04
 (körkort) två överlappande kategorier, B06 (Finland) en ofiltrerad dimension.
-MCP-gränssnittets oförmåga att uttrycka B06 markeras `unsupported`, aldrig som
-ett korrekt nollvärde. Jämför hela Header/Rows mot inspelade API-svar; en
+Replay läser tools/list innan B06 körs. Om get_statistics saknar dimensions
+markeras fallet `unsupported`, aldrig som ett korrekt nollvärde. Med
+serverversion 0.3.0 skickas skeppstyp i dimensions och hela Header/Rows jämförs
+mot samma inspelade svar som direktklienten. Jämför hela Header/Rows mot inspelade API-svar; en
 numeriskt korrekt tabell är fortfarande inte ett granskat statistiskt slutsvar.
 
 För att återskapa en avsiktligt redundant preflight, lägg till `--preflight`
