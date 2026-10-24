@@ -42,6 +42,13 @@ visar inte hur ofta assistenten använder mönstret. Jämför endpointlistan med
 standardkörningen. En oväntad MCP-error eller ändrad råtabell ger exitkod 1;
 `unsupported` redovisas som en kompatibilitetslucka och `raw_data_equal: null`.
 
+Serverns console-loggar samlas separat i `mcp.server_logs`. Standardutmatningen
+innehåller fortfarande exakt ett JSON-dokument, även när servern skriver
+strukturerade loggar. Med serverversion 0.2.0 finns också serverns eget kvitto i
+`mcp.result.trace`; håll dess interna tider skilda från replay-fixturernas
+tider. Ett sådant kvitto kan lämnas direkt till trace_report.py. Det täcker
+upstream-anrop, medan värdens webbsökningar fortfarande är okända.
+
 Replay registrerar varje HTTP-anrop, query, språk, storlek och varaktighet.
 Tiden avser lokal fixturläsning och serverns kvarvarande väntelogik, inte
 verklig API- eller ChatGPT-latens. Den ska inte användas för att utse den

@@ -3,7 +3,12 @@ import fs from 'node:fs';
 import {pathToFileURL} from 'node:url';
 const [workerPath, root, name, preflight] = process.argv.slice(2);
 const query = JSON.parse(fs.readFileSync(`${root}/${name}.json.request.json`)).query;
-const events = [];
+const events = [], serverLogs = [];
+// Workers emit structured logs. Keep stdout as exactly one JSON report.
+const writeReport = console.log.bind(console);
+for (const level of ['log','info','warn','error','debug']) {
+  console[level] = (...values) => serverLogs.push({level,message:values.map(String).join(' ')});
+}
 globalThis.fetch = async input => {
   const start = performance.now(), url = new URL(input);
   if (url.origin !== 'https://api.trafa.se' || url.searchParams.get('query') !== query || url.searchParams.get('lang') !== 'sv') throw Error('Unrecorded request');
@@ -28,7 +33,7 @@ for (const t of tokens) {
   else throw Error(`Unknown fixture entity: ${t}`);
 }
 if (dimensions.length) {
-  console.log(JSON.stringify({status:'unsupported',reason:'Unfiltered reporting dimension cannot be expressed by current MCP input schema',dimensions,events}));
+  writeReport(JSON.stringify({status:'unsupported',reason:'Unfiltered reporting dimension cannot be expressed by current MCP input schema',dimensions,events,server_logs:serverLogs}));
   process.exit(0);
 }
 const started = performance.now();
@@ -37,4 +42,4 @@ if (preflight === '--preflight') {
 }
 const response = await worker.fetch(new Request('https://replay.invalid/mcp',{method:'POST',body:JSON.stringify({jsonrpc:'2.0',id:1,method:'tools/call',params:{name:'get_statistics',arguments:{product,measures,filters,time_dimension:'ar',max_rows:100}}})}));
 const rpc = await response.json(), result = rpc.result;
-console.log(JSON.stringify({status:result?.isError ? 'error':'success',elapsed_ms:performance.now()-started,events,result:result?.structuredContent ?? rpc.error}));
+writeReport(JSON.stringify({status:result?.isError ? 'error':'success',elapsed_ms:performance.now()-started,events,server_logs:serverLogs,result:result?.structuredContent ?? rpc.error}));

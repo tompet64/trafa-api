@@ -2,6 +2,9 @@
 import copy
 import importlib.util
 import json
+import shutil
+import subprocess
+import tempfile
 from pathlib import Path
 import unittest
 
@@ -38,6 +41,21 @@ class ComparisonTests(unittest.TestCase):
         for path in (HERE.parent/'references/metadata').glob('*.json'):
             with self.subTest(path=path.name):
                 self.assertIsInstance(json.loads(path.read_text(encoding='utf-8-sig')), (dict,list))
+
+    @unittest.skipUnless(shutil.which('node'), 'Node needed to exercise the MCP replay harness')
+    def test_worker_console_logs_do_not_corrupt_json_report(self):
+        with tempfile.TemporaryDirectory() as directory:
+            worker=Path(directory)/'worker.mjs'
+            worker.write_text("console.info('synthetic info'); console.error('synthetic error'); "
+                "export default { async fetch() { console.log('synthetic call'); "
+                "return Response.json({result:{isError:false,structuredContent:{ok:true}}}); } };",
+                encoding='utf-8')
+            proc=subprocess.run(['node',str(HERE/'comparison/replay_mcp.mjs'),str(worker),
+                                 str(HERE/'fixtures/live'),'ev'],check=True,text=True,capture_output=True)
+            result=json.loads(proc.stdout)
+            self.assertEqual(result['status'],'success')
+            self.assertEqual([x['level'] for x in result['server_logs']],['info','error','log'])
+            self.assertEqual(proc.stderr,'')
 
     def trace(self):
         return dict(schema_version=1,coverage={'host':'complete','upstream':'complete'},events=[
