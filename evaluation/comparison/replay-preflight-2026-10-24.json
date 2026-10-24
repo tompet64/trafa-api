@@ -1,0 +1,1485 @@
+{
+  "mode": "fixture_replay",
+  "skill_commit_note": "Record Git SHA with the output",
+  "worker_sha256": "eac854ec0028bc88f66feee72136b33a68d57a2574dcf9fcead763a7d7cb3568",
+  "limitation": "No model routing, ChatGPT search, live network latency or statistical prose grading.",
+  "runs": [
+    {
+      "case_id": "B01",
+      "fixture": "ev",
+      "skill": {
+        "status": "success",
+        "elapsed_ms": 12.854074000074434,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+            "lang": "sv",
+            "start_ms": 876527.5150380001,
+            "duration_ms": 0.20333699990260357,
+            "outcome": "success",
+            "bytes": 116803
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+            "lang": "sv",
+            "start_ms": 876538.706281,
+            "duration_ms": 0.06018099998073012,
+            "outcome": "success",
+            "bytes": 1509
+          }
+        ],
+        "result": {
+          "Name": "Personbilar",
+          "OriginalName": "T10036",
+          "row_count": 1,
+          "empty_result": false,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2026"
+                ],
+                "Value": "År",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "drivm",
+                "Type": "D",
+                "DataType": "String",
+                "Filters": [
+                  "103"
+                ],
+                "Value": "Drivmedel",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Ddrivm"
+              },
+              {
+                "Name": "manad",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "09"
+                ],
+                "Value": "Månad",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dmanad"
+              },
+              {
+                "Name": "nyreg",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Antal nyregistreringar",
+                "Unit": "",
+                "Description": "",
+                "UniqueId": "Dnyreg"
+              }
+            ],
+            "Description": null
+          },
+          "Notes": {},
+          "warning": null,
+          "row_sample": [
+            {
+              "dimensions": {
+                "ar": {
+                  "code": "2026",
+                  "label": "2026"
+                },
+                "drivm": {
+                  "code": "103",
+                  "label": "El"
+                },
+                "manad": {
+                  "code": "09",
+                  "label": "september"
+                }
+              },
+              "measures": {
+                "nyreg": "14096"
+              },
+              "is_total": false,
+              "note_ids": []
+            }
+          ],
+          "sample_complete": true,
+          "selection": {
+            "product": "t10036",
+            "measures": [
+              "nyreg"
+            ],
+            "DataCount": 1,
+            "validation_source": "structure",
+            "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+            "lang": "sv",
+            "structure_path": "/tmp/tmpyfprcmpe/data.structure.json",
+            "structure_sha256": "6733ed68d0411425e39f1a7cfa57244e70ea606452752953ced2e674505c644d",
+            "structure_checked_at_utc": "2026-10-24T04:51:15.336451+00:00",
+            "contract": {
+              "version": "2.1.0",
+              "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+              "file": "/workspace/scratch/dc239165f13e/trafa-api/references/openapi-trafa.json"
+            },
+            "metadata_plan": {
+              "metadata_source": "structure",
+              "reason": "current_structure",
+              "structure_max_characters": null,
+              "size_evidence": null
+            }
+          },
+          "data_requested": true,
+          "structure_path": "/tmp/tmpyfprcmpe/data.structure.json",
+          "validation_path": "/tmp/tmpyfprcmpe/data.validation.json",
+          "raw_path": "/tmp/tmpyfprcmpe/data.json"
+        }
+      },
+      "mcp": {
+        "status": "success",
+        "elapsed_ms": 2006.26585,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+            "lang": "sv",
+            "start_ms": 46.442974,
+            "duration_ms": 0.19327200000000033,
+            "outcome": "success",
+            "bytes": 116803
+          },
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+            "lang": "sv",
+            "start_ms": 1046.564286,
+            "duration_ms": 0.2409339999999247,
+            "outcome": "success",
+            "bytes": 116803
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+            "lang": "sv",
+            "start_ms": 2048.544795,
+            "duration_ms": 0.18584099999998216,
+            "outcome": "success",
+            "bytes": 1509
+          }
+        ],
+        "result": {
+          "ok": true,
+          "source": {
+            "url": "https://api.trafa.se/api/data?query=t10036%7Cnyreg%7Car%3A2026%7Cdrivm%3A103%7Cmanad%3A09&lang=sv",
+            "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+            "lang": "sv",
+            "retrieved_at": "2026-10-24T04:51:17.399Z",
+            "contract_version": "2.1.0",
+            "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+            "response_bytes": 1509
+          },
+          "metadata_source": "current_structure",
+          "query": "t10036|nyreg|ar:2026|drivm:103|manad:09",
+          "DataCount": 1,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2026"
+                ],
+                "Value": "År",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "drivm",
+                "Type": "D",
+                "DataType": "String",
+                "Filters": [
+                  "103"
+                ],
+                "Value": "Drivmedel",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Ddrivm"
+              },
+              {
+                "Name": "manad",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "09"
+                ],
+                "Value": "Månad",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dmanad"
+              },
+              {
+                "Name": "nyreg",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Antal nyregistreringar",
+                "Unit": "",
+                "Description": "",
+                "UniqueId": "Dnyreg"
+              }
+            ],
+            "Description": null
+          },
+          "Rows": [
+            {
+              "Cell": [
+                {
+                  "Name": "2026",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "ar",
+                  "Value": "2026",
+                  "FormattedValue": "2026",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DarDV2026",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "103",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "drivm",
+                  "Value": "El",
+                  "FormattedValue": "El",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DdrivmDV103",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "09",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "manad",
+                  "Value": "september",
+                  "FormattedValue": "september",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DmanadDV09",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "",
+                  "IsMeasure": true,
+                  "Description": "",
+                  "Column": "nyreg",
+                  "Value": "14096",
+                  "FormattedValue": "14 096",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "",
+                  "NoteIds": [],
+                  "Versions": []
+                }
+              ],
+              "IsTotal": false
+            }
+          ],
+          "row_count": 1,
+          "data_status": "rows_returned"
+        }
+      },
+      "raw_data_equal": true
+    },
+    {
+      "case_id": "B01",
+      "fixture": "registrations_total",
+      "skill": {
+        "status": "success",
+        "elapsed_ms": 14.963679999937085,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10036|nyreg|ar:2026|manad:09",
+            "lang": "sv",
+            "start_ms": 878596.802001,
+            "duration_ms": 0.07047700000839541,
+            "outcome": "success",
+            "bytes": 116800
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t10036|nyreg|ar:2026|manad:09",
+            "lang": "sv",
+            "start_ms": 878610.430375,
+            "duration_ms": 0.06029100006799126,
+            "outcome": "success",
+            "bytes": 1199
+          }
+        ],
+        "result": {
+          "Name": "Personbilar",
+          "OriginalName": "T10036",
+          "row_count": 1,
+          "empty_result": false,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2026"
+                ],
+                "Value": "År",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "manad",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "09"
+                ],
+                "Value": "Månad",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dmanad"
+              },
+              {
+                "Name": "nyreg",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Antal nyregistreringar",
+                "Unit": "",
+                "Description": "",
+                "UniqueId": "Dnyreg"
+              }
+            ],
+            "Description": null
+          },
+          "Notes": {},
+          "warning": null,
+          "row_sample": [
+            {
+              "dimensions": {
+                "ar": {
+                  "code": "2026",
+                  "label": "2026"
+                },
+                "manad": {
+                  "code": "09",
+                  "label": "september"
+                }
+              },
+              "measures": {
+                "nyreg": "29850"
+              },
+              "is_total": false,
+              "note_ids": []
+            }
+          ],
+          "sample_complete": true,
+          "selection": {
+            "product": "t10036",
+            "measures": [
+              "nyreg"
+            ],
+            "DataCount": 1,
+            "validation_source": "structure",
+            "query": "t10036|nyreg|ar:2026|manad:09",
+            "lang": "sv",
+            "structure_path": "/tmp/tmpxhhmuuit/data.structure.json",
+            "structure_sha256": "52559e79e8da1c91ec605193e06311a87064c928c873d52daf64ef423dc3e998",
+            "structure_checked_at_utc": "2026-10-24T04:51:17.405641+00:00",
+            "contract": {
+              "version": "2.1.0",
+              "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+              "file": "/workspace/scratch/dc239165f13e/trafa-api/references/openapi-trafa.json"
+            },
+            "metadata_plan": {
+              "metadata_source": "structure",
+              "reason": "current_structure",
+              "structure_max_characters": null,
+              "size_evidence": null
+            }
+          },
+          "data_requested": true,
+          "structure_path": "/tmp/tmpxhhmuuit/data.structure.json",
+          "validation_path": "/tmp/tmpxhhmuuit/data.validation.json",
+          "raw_path": "/tmp/tmpxhhmuuit/data.json"
+        }
+      },
+      "mcp": {
+        "status": "success",
+        "elapsed_ms": 2006.361935,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10036|nyreg|ar:2026|manad:09",
+            "lang": "sv",
+            "start_ms": 46.835958,
+            "duration_ms": 0.1327800000000039,
+            "outcome": "success",
+            "bytes": 116800
+          },
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10036|nyreg|ar:2026|manad:09",
+            "lang": "sv",
+            "start_ms": 1047.838941,
+            "duration_ms": 0.2317399999999452,
+            "outcome": "success",
+            "bytes": 116800
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t10036|nyreg|ar:2026|manad:09",
+            "lang": "sv",
+            "start_ms": 2049.134145,
+            "duration_ms": 0.20519999999987704,
+            "outcome": "success",
+            "bytes": 1199
+          }
+        ],
+        "result": {
+          "ok": true,
+          "source": {
+            "url": "https://api.trafa.se/api/data?query=t10036%7Cnyreg%7Car%3A2026%7Cmanad%3A09&lang=sv",
+            "query": "t10036|nyreg|ar:2026|manad:09",
+            "lang": "sv",
+            "retrieved_at": "2026-10-24T04:51:19.471Z",
+            "contract_version": "2.1.0",
+            "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+            "response_bytes": 1199
+          },
+          "metadata_source": "current_structure",
+          "query": "t10036|nyreg|ar:2026|manad:09",
+          "DataCount": 1,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2026"
+                ],
+                "Value": "År",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "manad",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "09"
+                ],
+                "Value": "Månad",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dmanad"
+              },
+              {
+                "Name": "nyreg",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Antal nyregistreringar",
+                "Unit": "",
+                "Description": "",
+                "UniqueId": "Dnyreg"
+              }
+            ],
+            "Description": null
+          },
+          "Rows": [
+            {
+              "Cell": [
+                {
+                  "Name": "2026",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "ar",
+                  "Value": "2026",
+                  "FormattedValue": "2026",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DarDV2026",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "09",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "manad",
+                  "Value": "september",
+                  "FormattedValue": "september",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DmanadDV09",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "",
+                  "IsMeasure": true,
+                  "Description": "",
+                  "Column": "nyreg",
+                  "Value": "29850",
+                  "FormattedValue": "29 850",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "",
+                  "NoteIds": [],
+                  "Versions": []
+                }
+              ],
+              "IsTotal": false
+            }
+          ],
+          "row_count": 1,
+          "data_status": "rows_returned"
+        }
+      },
+      "raw_data_equal": true
+    },
+    {
+      "case_id": "B02",
+      "fixture": "malmo",
+      "skill": {
+        "status": "success",
+        "elapsed_ms": 13.810840000019198,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+            "lang": "sv",
+            "start_ms": 880669.210524,
+            "duration_ms": 0.07818799997494352,
+            "outcome": "success",
+            "bytes": 120544
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+            "lang": "sv",
+            "start_ms": 880681.557382,
+            "duration_ms": 0.051447999908305064,
+            "outcome": "success",
+            "bytes": 2301
+          }
+        ],
+        "result": {
+          "Name": "Personbilar",
+          "OriginalName": "T10026",
+          "row_count": 2,
+          "empty_result": false,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2019",
+                  "2023"
+                ],
+                "Value": "AR",
+                "Unit": null,
+                "Description": null,
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "reglan",
+                "Type": "D",
+                "DataType": "Region",
+                "Filters": [
+                  "12"
+                ],
+                "Value": "Län",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dreglan"
+              },
+              {
+                "Name": "regkom",
+                "Type": "D",
+                "DataType": "Region",
+                "Filters": [
+                  "1280"
+                ],
+                "Value": "Kommun",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dregkom"
+              },
+              {
+                "Name": "itrfslut",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Antal i trafik",
+                "Unit": "",
+                "Description": "Avser i slutet av perioden",
+                "UniqueId": "Ditrfslut"
+              }
+            ],
+            "Description": null
+          },
+          "Notes": {},
+          "warning": null,
+          "row_sample": [
+            {
+              "dimensions": {
+                "ar": {
+                  "code": "2019",
+                  "label": "2019"
+                },
+                "reglan": {
+                  "code": "12",
+                  "label": "Skåne"
+                },
+                "regkom": {
+                  "code": "1280",
+                  "label": "Malmö"
+                }
+              },
+              "measures": {
+                "itrfslut": "120967"
+              },
+              "is_total": false,
+              "note_ids": []
+            },
+            {
+              "dimensions": {
+                "ar": {
+                  "code": "2023",
+                  "label": "2023"
+                },
+                "reglan": {
+                  "code": "12",
+                  "label": "Skåne"
+                },
+                "regkom": {
+                  "code": "1280",
+                  "label": "Malmö"
+                }
+              },
+              "measures": {
+                "itrfslut": "125388"
+              },
+              "is_total": false,
+              "note_ids": []
+            }
+          ],
+          "sample_complete": true,
+          "selection": {
+            "product": "t10026",
+            "measures": [
+              "itrfslut"
+            ],
+            "DataCount": 2,
+            "validation_source": "structure",
+            "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+            "lang": "sv",
+            "structure_path": "/tmp/tmpb530h09x/data.structure.json",
+            "structure_sha256": "388ff85fa5548c32d9f6acb729fd554ab04adc08d179e401c4621c6b2e3125c2",
+            "structure_checked_at_utc": "2026-10-24T04:51:19.478033+00:00",
+            "contract": {
+              "version": "2.1.0",
+              "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+              "file": "/workspace/scratch/dc239165f13e/trafa-api/references/openapi-trafa.json"
+            },
+            "metadata_plan": {
+              "metadata_source": "structure",
+              "reason": "current_structure",
+              "structure_max_characters": null,
+              "size_evidence": null
+            }
+          },
+          "data_requested": true,
+          "structure_path": "/tmp/tmpb530h09x/data.structure.json",
+          "validation_path": "/tmp/tmpb530h09x/data.validation.json",
+          "raw_path": "/tmp/tmpb530h09x/data.json"
+        }
+      },
+      "mcp": {
+        "status": "success",
+        "elapsed_ms": 2006.872299,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+            "lang": "sv",
+            "start_ms": 50.337106,
+            "duration_ms": 0.14230500000000035,
+            "outcome": "success",
+            "bytes": 120544
+          },
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+            "lang": "sv",
+            "start_ms": 1052.149172,
+            "duration_ms": 0.256554000000051,
+            "outcome": "success",
+            "bytes": 120544
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+            "lang": "sv",
+            "start_ms": 2053.282576,
+            "duration_ms": 0.1902949999998782,
+            "outcome": "success",
+            "bytes": 2301
+          }
+        ],
+        "result": {
+          "ok": true,
+          "source": {
+            "url": "https://api.trafa.se/api/data?query=t10026%7Citrfslut%7Car%3A2019%2C2023%7Creglan%3A12%7Cregkom%3A1280&lang=sv",
+            "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+            "lang": "sv",
+            "retrieved_at": "2026-10-24T04:51:21.547Z",
+            "contract_version": "2.1.0",
+            "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+            "response_bytes": 2301
+          },
+          "metadata_source": "current_structure",
+          "query": "t10026|itrfslut|ar:2019,2023|reglan:12|regkom:1280",
+          "DataCount": 2,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2019",
+                  "2023"
+                ],
+                "Value": "AR",
+                "Unit": null,
+                "Description": null,
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "reglan",
+                "Type": "D",
+                "DataType": "Region",
+                "Filters": [
+                  "12"
+                ],
+                "Value": "Län",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dreglan"
+              },
+              {
+                "Name": "regkom",
+                "Type": "D",
+                "DataType": "Region",
+                "Filters": [
+                  "1280"
+                ],
+                "Value": "Kommun",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dregkom"
+              },
+              {
+                "Name": "itrfslut",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Antal i trafik",
+                "Unit": "",
+                "Description": "Avser i slutet av perioden",
+                "UniqueId": "Ditrfslut"
+              }
+            ],
+            "Description": null
+          },
+          "Rows": [
+            {
+              "Cell": [
+                {
+                  "Name": "2019",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "ar",
+                  "Value": "2019",
+                  "FormattedValue": "2019",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DarDV2019",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "12",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "reglan",
+                  "Value": "Skåne",
+                  "FormattedValue": "Skåne",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DreglanDV12",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "1280",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "regkom",
+                  "Value": "Malmö",
+                  "FormattedValue": "Malmö",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DregkomDV1280",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "",
+                  "IsMeasure": true,
+                  "Description": "",
+                  "Column": "itrfslut",
+                  "Value": "120967",
+                  "FormattedValue": "120 967",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "",
+                  "NoteIds": [],
+                  "Versions": []
+                }
+              ],
+              "IsTotal": false
+            },
+            {
+              "Cell": [
+                {
+                  "Name": "2023",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "ar",
+                  "Value": "2023",
+                  "FormattedValue": "2023",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DarDV2023",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "12",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "reglan",
+                  "Value": "Skåne",
+                  "FormattedValue": "Skåne",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DreglanDV12",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "1280",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "regkom",
+                  "Value": "Malmö",
+                  "FormattedValue": "Malmö",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DregkomDV1280",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "",
+                  "IsMeasure": true,
+                  "Description": "",
+                  "Column": "itrfslut",
+                  "Value": "125388",
+                  "FormattedValue": "125 388",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "",
+                  "NoteIds": [],
+                  "Versions": []
+                }
+              ],
+              "IsTotal": false
+            }
+          ],
+          "row_count": 2,
+          "data_status": "rows_returned"
+        }
+      },
+      "raw_data_equal": true
+    },
+    {
+      "case_id": "B04",
+      "fixture": "licences",
+      "skill": {
+        "status": "success",
+        "elapsed_ms": 5.006070000035834,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+            "lang": "sv",
+            "start_ms": 882744.506518,
+            "duration_ms": 0.060781000001952634,
+            "outcome": "success",
+            "bytes": 37116
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+            "lang": "sv",
+            "start_ms": 882748.202128,
+            "duration_ms": 0.04571800002395321,
+            "outcome": "success",
+            "bytes": 1967
+          }
+        ],
+        "result": {
+          "Name": "Körkort",
+          "OriginalName": "T10012",
+          "row_count": 2,
+          "empty_result": false,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2023"
+                ],
+                "Value": "År",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "korkort",
+                "Type": "D",
+                "DataType": "String",
+                "Filters": [
+                  "1",
+                  "2"
+                ],
+                "Value": "Körkort klass",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dkorkort"
+              },
+              {
+                "Name": "andelbefolk",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Andel av befolkningen",
+                "Unit": "",
+                "Description": "Befolkning avser 1 november",
+                "UniqueId": "Dandelbefolk"
+              }
+            ],
+            "Description": null
+          },
+          "Notes": {},
+          "warning": null,
+          "row_sample": [
+            {
+              "dimensions": {
+                "ar": {
+                  "code": "2023",
+                  "label": "2023"
+                },
+                "korkort": {
+                  "code": "1",
+                  "label": "Körtkort klass B (personbil och lätt lastbil)"
+                }
+              },
+              "measures": {
+                "andelbefolk": "78,4"
+              },
+              "is_total": false,
+              "note_ids": []
+            },
+            {
+              "dimensions": {
+                "ar": {
+                  "code": "2023",
+                  "label": "2023"
+                },
+                "korkort": {
+                  "code": "2",
+                  "label": "Körkort klass A (motorcykel, lätt/mellan/tung)"
+                }
+              },
+              "measures": {
+                "andelbefolk": "24"
+              },
+              "is_total": false,
+              "note_ids": []
+            }
+          ],
+          "sample_complete": true,
+          "selection": {
+            "product": "t10012",
+            "measures": [
+              "andelbefolk"
+            ],
+            "DataCount": 2,
+            "validation_source": "structure",
+            "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+            "lang": "sv",
+            "structure_path": "/tmp/tmpvroh5jrg/data.structure.json",
+            "structure_sha256": "d0db6dda6e983edd4b04f7e6aa30398f818d172c163c75772aca15019e877c3d",
+            "structure_checked_at_utc": "2026-10-24T04:51:21.553294+00:00",
+            "contract": {
+              "version": "2.1.0",
+              "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+              "file": "/workspace/scratch/dc239165f13e/trafa-api/references/openapi-trafa.json"
+            },
+            "metadata_plan": {
+              "metadata_source": "structure",
+              "reason": "current_structure",
+              "structure_max_characters": null,
+              "size_evidence": null
+            }
+          },
+          "data_requested": true,
+          "structure_path": "/tmp/tmpvroh5jrg/data.structure.json",
+          "validation_path": "/tmp/tmpvroh5jrg/data.validation.json",
+          "raw_path": "/tmp/tmpvroh5jrg/data.json"
+        }
+      },
+      "mcp": {
+        "status": "success",
+        "elapsed_ms": 2004.6277800000003,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+            "lang": "sv",
+            "start_ms": 50.891984,
+            "duration_ms": 0.13512200000000263,
+            "outcome": "success",
+            "bytes": 37116
+          },
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+            "lang": "sv",
+            "start_ms": 1051.155181,
+            "duration_ms": 0.21806999999989785,
+            "outcome": "success",
+            "bytes": 37116
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+            "lang": "sv",
+            "start_ms": 2051.445924,
+            "duration_ms": 0.27419400000007954,
+            "outcome": "success",
+            "bytes": 1967
+          }
+        ],
+        "result": {
+          "ok": true,
+          "source": {
+            "url": "https://api.trafa.se/api/data?query=t10012%7Candelbefolk%7Car%3A2023%7Ckorkort%3A1%2C2&lang=sv",
+            "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+            "lang": "sv",
+            "retrieved_at": "2026-10-24T04:51:23.611Z",
+            "contract_version": "2.1.0",
+            "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+            "response_bytes": 1967
+          },
+          "metadata_source": "current_structure",
+          "query": "t10012|andelbefolk|ar:2023|korkort:1,2",
+          "DataCount": 2,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2023"
+                ],
+                "Value": "År",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "korkort",
+                "Type": "D",
+                "DataType": "String",
+                "Filters": [
+                  "1",
+                  "2"
+                ],
+                "Value": "Körkort klass",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dkorkort"
+              },
+              {
+                "Name": "andelbefolk",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Andel av befolkningen",
+                "Unit": "",
+                "Description": "Befolkning avser 1 november",
+                "UniqueId": "Dandelbefolk"
+              }
+            ],
+            "Description": null
+          },
+          "Rows": [
+            {
+              "Cell": [
+                {
+                  "Name": "2023",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "ar",
+                  "Value": "2023",
+                  "FormattedValue": "2023",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DarDV2023",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "1",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "korkort",
+                  "Value": "Körtkort klass B (personbil och lätt lastbil)",
+                  "FormattedValue": "Körtkort klass B (personbil och lätt lastbil)",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DkorkortDV1",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "",
+                  "IsMeasure": true,
+                  "Description": "",
+                  "Column": "andelbefolk",
+                  "Value": "78,4",
+                  "FormattedValue": "78,40",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "",
+                  "NoteIds": [],
+                  "Versions": []
+                }
+              ],
+              "IsTotal": false
+            },
+            {
+              "Cell": [
+                {
+                  "Name": "2023",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "ar",
+                  "Value": "2023",
+                  "FormattedValue": "2023",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DarDV2023",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "2",
+                  "IsMeasure": false,
+                  "Description": "",
+                  "Column": "korkort",
+                  "Value": "Körkort klass A (motorcykel, lätt/mellan/tung)",
+                  "FormattedValue": "Körkort klass A (motorcykel, lätt/mellan/tung)",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "DkorkortDV2",
+                  "NoteIds": [],
+                  "Versions": []
+                },
+                {
+                  "Name": "",
+                  "IsMeasure": true,
+                  "Description": "",
+                  "Column": "andelbefolk",
+                  "Value": "24",
+                  "FormattedValue": "24",
+                  "Level": "0",
+                  "Gis": "",
+                  "UniqueId": "",
+                  "NoteIds": [],
+                  "Versions": []
+                }
+              ],
+              "IsTotal": false
+            }
+          ],
+          "row_count": 2,
+          "data_status": "rows_returned"
+        }
+      },
+      "raw_data_equal": true
+    },
+    {
+      "case_id": "B06",
+      "fixture": "finland",
+      "skill": {
+        "status": "success",
+        "elapsed_ms": 14.386986999966211,
+        "events": [
+          {
+            "kind": "http",
+            "endpoint": "structure",
+            "query": "t0802|pax|ar:2023|aland:118|fartrikt:1|typh:2|typu:21|skeppstyp",
+            "lang": "sv",
+            "start_ms": 884808.984575,
+            "duration_ms": 0.08261400000719732,
+            "outcome": "success",
+            "bytes": 138470
+          },
+          {
+            "kind": "http",
+            "endpoint": "data",
+            "query": "t0802|pax|ar:2023|aland:118|fartrikt:1|typh:2|typu:21|skeppstyp",
+            "lang": "sv",
+            "start_ms": 884821.898487,
+            "duration_ms": 0.07344100004047505,
+            "outcome": "success",
+            "bytes": 2699
+          }
+        ],
+        "result": {
+          "Name": "Sjötrafik",
+          "OriginalName": "T0802",
+          "row_count": 1,
+          "empty_result": false,
+          "Header": {
+            "Column": [
+              {
+                "Name": "ar",
+                "Type": "D",
+                "DataType": "Time",
+                "Filters": [
+                  "2023"
+                ],
+                "Value": "År",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dar"
+              },
+              {
+                "Name": "aland",
+                "Type": "D",
+                "DataType": "Region",
+                "Filters": [
+                  "118"
+                ],
+                "Value": "Avgångsland",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Daland"
+              },
+              {
+                "Name": "fartrikt",
+                "Type": "D",
+                "DataType": "String",
+                "Filters": [
+                  "1"
+                ],
+                "Value": "Ankommande/Avgående fartyg",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dfartrikt"
+              },
+              {
+                "Name": "typh",
+                "Type": "D",
+                "DataType": "String",
+                "Filters": [
+                  "2"
+                ],
+                "Value": "Inrikes/Utrikes trafik",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dtyph"
+              },
+              {
+                "Name": "typu",
+                "Type": "D",
+                "DataType": "String",
+                "Filters": [
+                  "21"
+                ],
+                "Value": "Till/Från Sverige",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dtypu"
+              },
+              {
+                "Name": "skeppstyp",
+                "Type": "D",
+                "DataType": "String",
+                "Filters": [],
+                "Value": "Passagerarfartyg/Färja eller kryssning",
+                "Unit": null,
+                "Description": "",
+                "UniqueId": "Dskeppstyp"
+              },
+              {
+                "Name": "pax",
+                "Type": "M",
+                "DataType": "String",
+                "Filters": null,
+                "Value": "Antal passagerare i 1 000-tal",
+                "Unit": "",
+                "Description": "",
+                "UniqueId": "Dpax"
+              }
+            ],
+            "Description": null
+          },
+          "Notes": {},
+          "warning": null,
+          "row_sample": [
+            {
+              "dimensions": {
+                "ar": {
+                  "code": "2023",
+                  "label": "2023"
+                },
+                "aland": {
+                  "code": "118",
+                  "label": "Finland"
+                },
+                "fartrikt": {
+                  "code": "1",
+                  "label": "ankommande fartyg"
+                },
+                "typh": {
+                  "code": "2",
+                  "label": "Utrikes trafik"
+                },
+                "typu": {
+                  "code": "21",
+                  "label": "till Sverige från utlandet"
+                },
+                "skeppstyp": {
+                  "code": "1",
+                  "label": "passagerarfartyg och färjor"
+                }
+              },
+              "measures": {
+                "pax": "3021"
+              },
+              "is_total": false,
+              "note_ids": []
+            }
+          ],
+          "sample_complete": true,
+          "selection": {
+            "product": "t0802",
+            "measures": [
+              "pax"
+            ],
+            "DataCount": 1,
+            "validation_source": "structure",
+            "query": "t0802|pax|ar:2023|aland:118|fartrikt:1|typh:2|typu:21|skeppstyp",
+            "lang": "sv",
+            "structure_path": "/tmp/tmpmfy1a2qn/data.structure.json",
+            "structure_sha256": "cf37097ab555feb00b9d75b451d88d75307f9dbdc7def826401f51475747134e",
+            "structure_checked_at_utc": "2026-10-24T04:51:23.617801+00:00",
+            "contract": {
+              "version": "2.1.0",
+              "sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+              "file": "/workspace/scratch/dc239165f13e/trafa-api/references/openapi-trafa.json"
+            },
+            "metadata_plan": {
+              "metadata_source": "structure",
+              "reason": "current_structure",
+              "structure_max_characters": null,
+              "size_evidence": null
+            }
+          },
+          "data_requested": true,
+          "structure_path": "/tmp/tmpmfy1a2qn/data.structure.json",
+          "validation_path": "/tmp/tmpmfy1a2qn/data.validation.json",
+          "raw_path": "/tmp/tmpmfy1a2qn/data.json"
+        }
+      },
+      "mcp": {
+        "status": "unsupported",
+        "reason": "Unfiltered reporting dimension cannot be expressed by current MCP input schema",
+        "dimensions": [
+          "skeppstyp"
+        ],
+        "events": []
+      },
+      "raw_data_equal": null
+    }
+  ]
+}

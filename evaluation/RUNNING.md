@@ -106,3 +106,11 @@ Den testar inte öppen metadatasökning från noll, webbfallback, en installerad
 MCP-anslutning, annan modellversion eller statistisk framgångsfrekvens över
 upprepade körningar. Upprepa i nya trådar vid förändringar. Bevara originalspår
 innan en produktionsrättning görs; ändra aldrig facit för att få gröna tester.
+
+## Jämför direktklient och MCP
+
+Se [COMPARISON.md](COMPARISON.md) för reproducerbart transportreplay,
+normaliserade spår, levande kontroll och separat beteendeprotokoll. Den nya
+GitHub Actions-konfigurationen kör hela offline-sviten på Python 3.10, 3.12 och
+3.13. Den testar inte automatiskt en installerad plugin eller modellens
+webbval. Se också [granskningen 2026-10-24](comparison/FINDINGS-2026-10-24.md).

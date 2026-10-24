@@ -131,3 +131,12 @@ Vid underhåll: håll verifieringsdatum för API-struktur och metodkällor separ
 ## Regressionstestning vid utveckling
 
 Läs [evaluation/RUNNING.md](evaluation/RUNNING.md) när användaren ber om tester eller utveckling av färdigheten. Håll deterministiska kodtester och källbelagda beteendebedömningar åtskilda. Kör `python evaluation/run_offline.py` utan nätverk. Bevara basversionens resultat före rättningar och tillåt statistiskt likvärdiga lösningar. Läs inte evaluationsfacit eller tidigare kandidatsvar under en kandidatkörning eller för att besvara en vanlig statistikfråga; använd då metadata och primärkällor enligt arbetsgången ovan.
+
+Vid jämförelse mellan direktklient och installerad MCP-plugin: läs
+[evaluation/COMPARISON.md](evaluation/COMPARISON.md). Håll transportreplay,
+levande verktygsprov och bedömning av assistentens fullständiga arbetsgång
+åtskilda. Registrera även interna struktur-/dataanrop och motiverade
+webbåtgärder när loggåtkomsten medger det; redovisa annars luckorna som okända.
+Ett MCP-verktyg som redan slutvaliderar urvalet behöver inte föregås av samma
+strukturhämtning. Använd en separat metadatasökning när en kod, definition
+eller kombination fortfarande behöver fastställas. Hoppa aldrig över validering.

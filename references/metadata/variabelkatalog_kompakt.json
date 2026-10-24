@@ -11454,9 +11454,1523 @@
         "type": "H",
         "parent_name": "t10026",
         "api_name_source": "measured_structure",
-        "value_list_status": "obse
-... 70779 bytes omitted ...
-istration_scope",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "RegPL",
+        "api_name": "regpl",
+        "label": "Region",
+        "kind": "dimension_or_hierarchy",
+        "type": "H",
+        "parent_name": "t10026",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "AgarKat",
+        "api_name": "agarkat",
+        "label": "Ägarkategori",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "agare",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_dfc6aedbbc490a62"
+      },
+      {
+        "code_documented": "kon",
+        "api_name": "kon",
+        "label": "Kön",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "agare",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_c8fb87fe01cb1b67"
+      },
+      {
+        "code_documented": "RegLan",
+        "api_name": "reglan",
+        "label": "Län",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "regpl",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_dd3fc2e5971a0cdc"
+      },
+      {
+        "code_documented": "RegKom",
+        "api_name": "regkom",
+        "label": "Kommun",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "reglan",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_b81c3e53a251224e"
+      }
+    ],
+    "manual_enrichment": {
+      "api_name_documented": "t10026",
+      "identity_source": "User-supplied structure response for T04021; includes product list",
+      "status": "partially_reviewed_by_user_and_official_sources",
+      "label_enriched_proposed": "Personbilar – regional årsstatistik, län och kommuner",
+      "publication_context": "Fordon i län och kommuner",
+      "temporal_resolution": "year",
+      "search_aliases": [
+        "personbilar per län",
+        "personbilar per kommun",
+        "regional fordonsstatistik",
+        "personbilsbestånd"
+      ],
+      "related_products": [
+        {
+          "code": "T10020",
+          "relationship": "broad_content_overlap",
+          "assessment": "I stort sett samma personbilsinnehåll enligt användaren. Exakt likvärdighet och omkodning har inte fastställts.",
+          "source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:27:39+02:00",
+            "scope": "broad product comparison and publication context; not exact equivalence of all dimensions or value domains"
+          }
+        }
+      ],
+      "open_questions": [
+        "Exakta skillnader mot T10020 i variabler, värdemängder och tillåtna urval; ingen automatisk ersättning.",
+        "Produktens alla detaljdefinitioner, periodtäckning och urvalslikvärdighet mot omstuvade produkter är inte verifierade i aktuell API-struktur."
+      ],
+      "context_path_proposed": [
+        "Fordon",
+        "Personbilar"
+      ],
+      "source": {
+        "kind": "user_expert_statement",
+        "reviewer": "Tom",
+        "received_at": "2026-10-09T20:27:39+02:00",
+        "scope": "broad product comparison and publication context; not exact equivalence of all dimensions or value domains"
+      },
+      "observed_structure_counts": {
+        "dimensions_including_time": 8,
+        "dimensions_excluding_ar": 7,
+        "hierarchies": 2,
+        "measures": 4,
+        "time_counting_note": "År räknas separat från övriga D-dimensioner i jämförelsen 7 respektive 15. Månad ingår fortfarande bland övriga dimensioner för T10036.",
+        "source": "Saved API structure, checked 2026-10-09"
+      },
+      "stock_comparability_note": "Månadsbeståndet i T10036 inkluderar tillfälligt registrerade fordon. Motsvarande årsbestånd i T10016, T10026 och T10020 utesluter dem. Decemberbestånd och årsbestånd den 31 december kan därför skilja sig trots samma referensdag; likställ dem inte utan populationskontroll.",
+      "reviewed_facts": [
+        {
+          "field": "stock_population_temporary_registration",
+          "value": false,
+          "source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:49:51+02:00",
+            "scope": "Month-end stocks in T10036 include temporarily registered vehicles; corresponding annual stocks in T10016, T10026 and T10020 exclude them"
+          }
+        },
+        {
+          "field": "registration_scope",
+          "value": "Registreringspliktiga fordon i Transportstyrelsens vägtrafikregister. Moped klass II, statliga militära fordon och ej registreringspliktiga fordon inom inhägnat område ingår inte. Terrängvagn, terrängsläp och motorredskap finns i registret men redovisas inte i denna statistik.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.2.1",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "reference_periods",
+          "value": "Årsbestånd avser 31 december; ny- och avregistreringar avser kalenderåret. I trafik betyder registrerat och inte avställt, inte observerad körning.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.2.5; Bilaga 1, Status",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "register_quality",
+          "value": "Administrativa totalregister ger ingen urvalsosäkerhet. Kodningsfel och saknade variabeluppgifter kan förekomma. Årsmodell kompletteras med tillverkningsår när den saknas.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "2.1–2.2.4",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "regional_basis",
+          "value": "Län/kommun är ägarens folkbokföring eller företagets registrerade adress, inte körplats. Statistikens ägarkategori kan inte besvara antal tjänstebilar.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.1.2; Bilaga 1, Ägande",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "publication_schedule",
+          "value": "Regional årsstatistik publiceras i mitten av februari, den detaljerade Fordon-publikationen i slutet av februari. Månadsstatistik publiceras andra vardagen följande månad.",
+          "source": {
+            "kind": "official_product_page",
+            "url": "https://www.trafa.se/vagtrafik/fordon/",
+            "edition": null,
+            "checked_on": "2026-10-11",
+            "section": "Publicering",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "monthly_annual_comparability",
+          "value": "Månadsbestånd inkluderar tillfälligt registrerade fordon; officiella årsbestånd utesluter dem. Månatliga avregistreringar är preliminära, årsredovisningen slutlig.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "5.4",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "registered_fuel",
+          "value": "Registrerade drivmedel beskriver inte faktiskt använt bränsle.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Drivmedel",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "hybrid_classification",
+          "value": "El är ren eldrift. Elhybrid och laddhybrid är skilda kategorier; mildhybrider redovisas under bensin/diesel.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Drivmedel",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "statistical_owner_classification",
+          "value": "I Fordon-definitionerna redovisas enskild näringsverksamhet bland juridiska personer, trots att den juridiskt inte är en juridisk person. Skilj statistisk ägarkategori från legal form och företagstyp; kontrollera motsvarande definition i varje API-produkt.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Ägande",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        }
+      ],
+      "product_page": "https://www.trafa.se/vagtrafik/fordon/",
+      "quality_document": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-i-lan-och-kommuner-2025.pdf",
+      "publication_frequency": "annual",
+      "population_description": "Svenskregistrerade personbilar, inklusive klass II/husbilar enligt vald kategori. Se registeravgränsning och vald produktkategori; bestånd skiljer sig mellan månads- och årsredovisning.",
+      "geographic_coverage": "Svensk registrering; eventuell läns-/kommunindelning beskriver registrerad adress, inte användningsplats.",
+      "geographic_basis": "Ägarens folkbokföring eller företagets registrerade adress; bevara okända geografiska kategorier.",
+      "method_sources_checked_on": "2026-10-11",
+      "background_review": {
+        "pass": 2,
+        "checked_on": "2026-10-11",
+        "scope": "Gemensamma register-, populations-, period- och kvalitetsdefinitioner samt relevanta fordonsslag. Ingen ny API-hämtning eller fullständig likvärdighetskontroll av urval.",
+        "source_documents": [
+          "https://www.trafa.se/vagtrafik/fordon/",
+          "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-i-lan-och-kommuner-2025.pdf"
+        ],
+        "api_structure_checked_on_unchanged": true
+      },
+      "interpretation_rules": [
+        "Registrerat bestånd är inte antal fordon som faktiskt kör eller ägare som använder fordon. Körsträckor har annan population och ger inte körningens geografiska plats.",
+        "Skilj nyregistrering i det svenska registret från tillverkning av ett nytt fordon; import kan omfatta begagnade fordon. Återpåställning är inte en nyregistrering.",
+        "Skilj avställning från avregistrering. Skrotning och export är avregistreringsorsaker; addera inte orsakerna ovanpå totalen. Administrativ skrotning visar inte när faktisk skrotning skedde.",
+        "Använd produktens specifika koder och tillåtna kombinationer. Omstuvade produkter överlappar äldre produkter; addera dem inte och anta inte en automatisk ett-till-ett-ersättning.",
+        "Summera inte bestånd över perioder, procentandelar eller gruppmedel. Offentlig statistik har fler publiceringsformer än API-et; kontrollera aktuell produktversion när ett urval saknas.",
+        "Personbilar kan omfatta klass II/husbilar; välj registrerad kategori om frågan enbart gäller vanliga personbilar. Drivmedelsandel anger fordonsantal, inte andel körsträcka eller energi."
+      ],
+      "stock_population_temporary_registration": false,
+      "publication_month": 2,
+      "publication_timing": "Mitten av februari",
+      "official_statistics_status": "SOS_annual_publication_background",
+      "preferred_selection_example": {
+        "query": "t10026|itrfslut|agarkat:t1|ar:2019,2023|reglan:12|regkom:1280",
+        "source": {
+          "kind": "user_expert_statement_or_reported_test",
+          "reviewer": "Tom",
+          "received_at": "2026-10-14T21:16:34+02:00",
+          "scope": "Återrapporterat lyckat Malmö-test; aktuell struktur ska slutvalideras",
+          "independently_verified": false
+        },
+        "note": "Två årsändpunkter i samma uttag. Dokumentationen anger agarkat i denna urvalsväg; att första varianten utan agarkat gav tomt svar bevisar inte att den alltid är ogiltig."
+      }
+    },
+    "extraction_complete": false,
+    "html_extraction_complete": false,
+    "api_metadata_complete": true,
+    "metadata_usable": true,
+    "api_snapshot_query": "t10026",
+    "api_checked_at_utc": "2026-10-09T15:15:18.658740+00:00",
+    "combination_source": {
+      "archive_member": "trafa_metadata_20261009_151500_7h81ptut/html/T10026.html",
+      "sha256": "d690f46268ab142c1d7bcd8707a601774e2960195dbbeff10101382c527033c4",
+      "retrieved_at_utc": null,
+      "url": "https://www.trafa.se/sidor/api-dokumentation/?code=T10026"
+    },
+    "current_product_status": "current"
+  },
+  "T10029": {
+    "label": "Övriga fordonsslag",
+    "variables": [
+      {
+        "code_documented": "AR",
+        "api_name": "ar",
+        "label": "AR",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10029",
+        "api_name_source": "measured_structure",
+        "dynamic_filters": [
+          {
+            "code": "senaste",
+            "label": "Senaste",
+            "type": "F",
+            "selected": false,
+            "option": true
+          },
+          {
+            "code": "forra",
+            "label": "Föregående",
+            "type": "F",
+            "selected": false,
+            "option": true
+          }
+        ],
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_defe676c44b51217"
+      },
+      {
+        "code_documented": "Itrfslut",
+        "api_name": "itrfslut",
+        "label": "Antal i trafik",
+        "description": "Avser i slutet av perioden",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10029",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "AvstSlut",
+        "api_name": "avstslut",
+        "label": "Antal avställda",
+        "description": "Avser i slutet av perioden",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10029",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "RegPL",
+        "api_name": "regpl",
+        "label": "Region",
+        "kind": "dimension_or_hierarchy",
+        "type": "H",
+        "parent_name": "t10029",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "FordonS",
+        "api_name": "fordons",
+        "label": "Fordonsslag",
+        "kind": "dimension_or_hierarchy",
+        "type": "H",
+        "parent_name": "t10029",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "RegLan",
+        "api_name": "reglan",
+        "label": "Län",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "regpl",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_dd3fc2e5971a0cdc"
+      },
+      {
+        "code_documented": "Ford1",
+        "api_name": "ford1",
+        "label": "Fordonsslag",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "fordons",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_2a7bf5ef69c81915"
+      },
+      {
+        "code_documented": "RegKom",
+        "api_name": "regkom",
+        "label": "Kommun",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "reglan",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_b81c3e53a251224e"
+      },
+      {
+        "code_documented": "Ford2",
+        "api_name": "ford2",
+        "label": "Fordonsslag underkategori",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "ford1",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_c5a0eb0eeab80c3c"
+      }
+    ],
+    "manual_enrichment": {
+      "api_name_documented": "t10029",
+      "identity_source": "User-supplied structure response for T04021; includes product list",
+      "status": "partially_reviewed_by_user_and_official_sources",
+      "label_enriched_proposed": "Övriga fordonsslag – regional årsstatistik",
+      "temporal_resolution": "year",
+      "product_role": "I trafik och avställda efter fordonsslag, län och kommun",
+      "search_aliases": [
+        "övriga fordon per län",
+        "övriga fordon per kommun",
+        "regional årsstatistik övriga fordonsslag"
+      ],
+      "reviewed_facts": [
+        {
+          "field": "product_role_and_frequency",
+          "value": {
+            "label_enriched_proposed": "Övriga fordonsslag – regional årsstatistik",
+            "temporal_resolution": "year",
+            "product_role": "I trafik och avställda efter fordonsslag, län och kommun"
+          },
+          "source": {
+            "kind": "user_expert_confirmation",
+            "reviewer": "Tom",
+            "received_at": "2026-10-10T10:49:23+02:00",
+            "scope": "T10017 T10018 T10019 T10029 clarified annual product roles and dimensions; not all population definitions or combinations"
+          }
+        },
+        {
+          "field": "registration_scope",
+          "value": "Registreringspliktiga fordon i Transportstyrelsens vägtrafikregister. Moped klass II, statliga militära fordon och ej registreringspliktiga fordon inom inhägnat område ingår inte. Terrängvagn, terrängsläp och motorredskap finns i registret men redovisas inte i denna statistik.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.2.1",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "reference_periods",
+          "value": "Årsbestånd avser 31 december; ny- och avregistreringar avser kalenderåret. I trafik betyder registrerat och inte avställt, inte observerad körning.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.2.5; Bilaga 1, Status",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "register_quality",
+          "value": "Administrativa totalregister ger ingen urvalsosäkerhet. Kodningsfel och saknade variabeluppgifter kan förekomma. Årsmodell kompletteras med tillverkningsår när den saknas.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "2.1–2.2.4",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "regional_basis",
+          "value": "Län/kommun är ägarens folkbokföring eller företagets registrerade adress, inte körplats. Statistikens ägarkategori kan inte besvara antal tjänstebilar.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.1.2; Bilaga 1, Ägande",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "publication_schedule",
+          "value": "Regional årsstatistik publiceras i mitten av februari, den detaljerade Fordon-publikationen i slutet av februari. Månadsstatistik publiceras andra vardagen följande månad.",
+          "source": {
+            "kind": "official_product_page",
+            "url": "https://www.trafa.se/vagtrafik/fordon/",
+            "edition": null,
+            "checked_on": "2026-10-11",
+            "section": "Publicering",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "monthly_annual_comparability",
+          "value": "Månadsbestånd inkluderar tillfälligt registrerade fordon; officiella årsbestånd utesluter dem. Månatliga avregistreringar är preliminära, årsredovisningen slutlig.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "5.4",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "registered_fuel",
+          "value": "Registrerade drivmedel beskriver inte faktiskt använt bränsle.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Drivmedel",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        }
+      ],
+      "open_questions": [
+        "Produktens alla detaljdefinitioner, periodtäckning och urvalslikvärdighet mot omstuvade produkter är inte verifierade i aktuell API-struktur."
+      ],
+      "publication_context": "Fordon i län och kommuner",
+      "product_page": "https://www.trafa.se/vagtrafik/fordon/",
+      "quality_document": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-i-lan-och-kommuner-2025.pdf",
+      "publication_frequency": "annual",
+      "population_description": "Svenskregistrerade övriga registreringspliktiga fordonsslag i produktens exakta värdemängd. Se registeravgränsning och vald produktkategori; bestånd skiljer sig mellan månads- och årsredovisning.",
+      "geographic_coverage": "Svensk registrering; eventuell läns-/kommunindelning beskriver registrerad adress, inte användningsplats.",
+      "geographic_basis": "Ägarens folkbokföring eller företagets registrerade adress; bevara okända geografiska kategorier.",
+      "method_sources_checked_on": "2026-10-11",
+      "background_review": {
+        "pass": 2,
+        "checked_on": "2026-10-11",
+        "scope": "Gemensamma register-, populations-, period- och kvalitetsdefinitioner samt relevanta fordonsslag. Ingen ny API-hämtning eller fullständig likvärdighetskontroll av urval.",
+        "source_documents": [
+          "https://www.trafa.se/vagtrafik/fordon/",
+          "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-i-lan-och-kommuner-2025.pdf"
+        ],
+        "api_structure_checked_on_unchanged": true
+      },
+      "interpretation_rules": [
+        "Registrerat bestånd är inte antal fordon som faktiskt kör eller ägare som använder fordon. Körsträckor har annan population och ger inte körningens geografiska plats.",
+        "Skilj nyregistrering i det svenska registret från tillverkning av ett nytt fordon; import kan omfatta begagnade fordon. Återpåställning är inte en nyregistrering.",
+        "Skilj avställning från avregistrering. Skrotning och export är avregistreringsorsaker; addera inte orsakerna ovanpå totalen. Administrativ skrotning visar inte när faktisk skrotning skedde.",
+        "Använd produktens specifika koder och tillåtna kombinationer. Omstuvade produkter överlappar äldre produkter; addera dem inte och anta inte en automatisk ett-till-ett-ersättning.",
+        "Summera inte bestånd över perioder, procentandelar eller gruppmedel. Offentlig statistik har fler publiceringsformer än API-et; kontrollera aktuell produktversion när ett urval saknas.",
+        "Övriga fordonsslag är en produktspecifik samling; använd exakta underkategorier och hierarkier. Likställ inte Övriga med alla fordon utanför personbilar."
+      ],
+      "stock_population_temporary_registration": false,
+      "publication_month": 2,
+      "publication_timing": "Mitten av februari",
+      "official_statistics_status": "SOS_annual_publication_background"
+    },
+    "extraction_complete": false,
+    "html_extraction_complete": false,
+    "api_metadata_complete": true,
+    "metadata_usable": true,
+    "api_snapshot_query": "t10029",
+    "api_checked_at_utc": "2026-10-09T15:15:19.332631+00:00",
+    "combination_source": {
+      "archive_member": "trafa_metadata_20261009_151500_7h81ptut/html/T10029.html",
+      "sha256": "e1d6b20097c20337205f70ef9636e9aac0cf835ed4507f38d0c4bdeb9930f0e1",
+      "retrieved_at_utc": null,
+      "url": "https://www.trafa.se/sidor/api-dokumentation/?code=T10029"
+    },
+    "current_product_status": "current"
+  },
+  "T10033": {
+    "label": "Lastbilar",
+    "variables": [
+      {
+        "code_documented": "Ar",
+        "api_name": "ar",
+        "label": "År",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10033",
+        "api_name_source": "measured_structure",
+        "dynamic_filters": [
+          {
+            "code": "senaste",
+            "label": "Senaste",
+            "type": "F",
+            "selected": false,
+            "option": true
+          },
+          {
+            "code": "forra",
+            "label": "Föregående",
+            "type": "F",
+            "selected": false,
+            "option": true
+          }
+        ],
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_66bcc58c017078e5"
+      },
+      {
+        "code_documented": "Manad",
+        "api_name": "manad",
+        "label": "Månad",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10033",
+        "api_name_source": "measured_structure",
+        "dynamic_filters": [
+          {
+            "code": "senaste",
+            "label": "Senaste",
+            "type": "F",
+            "selected": false,
+            "option": true
+          },
+          {
+            "code": "forra",
+            "label": "Föregående",
+            "type": "F",
+            "selected": false,
+            "option": true
+          }
+        ],
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_8b9e8a920eb152e0"
+      },
+      {
+        "code_documented": "Fslag",
+        "api_name": "fslag",
+        "label": "Lastbilstyp",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10033",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_3543ef332e99e520"
+      },
+      {
+        "code_documented": "Nyreg",
+        "api_name": "nyreg",
+        "label": "Antal nyregistreringar",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10033",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Itrf",
+        "api_name": "itrf",
+        "label": "Antal i trafik",
+        "description": "Administrativ uppgift, innehåller även tillfälligt registrerade fordon",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10033",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Avst",
+        "api_name": "avst",
+        "label": "Antal avställda",
+        "description": "Administrativ uppgift, innehåller även tillfälligt registrerade fordon",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10033",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Avreg",
+        "api_name": "avreg",
+        "label": "Antal avregistreringar",
+        "description": "Preliminär uppgift",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10033",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      }
+    ],
+    "manual_enrichment": {
+      "api_name_documented": "t10033",
+      "identity_source": "User-supplied structure response for T04021; includes product list",
+      "status": "partially_reviewed_by_user_and_official_sources",
+      "label_enriched_proposed": "Lastbilar – månadsstatistik",
+      "temporal_resolution": "month",
+      "product_role": "Bestånd, ny- och avregistreringar; lastbilstyp",
+      "search_aliases": [
+        "lastbilar månadsstatistik",
+        "nyregistrerade lastbilar per månad",
+        "avregistrerade lastbilar per månad"
+      ],
+      "reviewed_facts": [
+        {
+          "field": "product_role_and_frequency",
+          "value": {
+            "label_enriched_proposed": "Lastbilar – månadsstatistik",
+            "temporal_resolution": "month",
+            "product_role": "Bestånd, ny- och avregistreringar; lastbilstyp"
+          },
+          "source": {
+            "kind": "user_expert_confirmation",
+            "reviewer": "Tom",
+            "received_at": "2026-10-10T09:21:48+02:00",
+            "scope": "T10013 T10023 T10033 clarified labels, annual/regional annual/monthly product roles; not all definitions or combinations"
+          }
+        },
+        {
+          "field": "registration_scope",
+          "value": "Registreringspliktiga fordon i Transportstyrelsens vägtrafikregister. Moped klass II, statliga militära fordon och ej registreringspliktiga fordon inom inhägnat område ingår inte. Terrängvagn, terrängsläp och motorredskap finns i registret men redovisas inte i denna statistik.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.2.1",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "reference_periods",
+          "value": "Årsbestånd avser 31 december; ny- och avregistreringar avser kalenderåret. I trafik betyder registrerat och inte avställt, inte observerad körning.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.2.5; Bilaga 1, Status",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "register_quality",
+          "value": "Administrativa totalregister ger ingen urvalsosäkerhet. Kodningsfel och saknade variabeluppgifter kan förekomma. Årsmodell kompletteras med tillverkningsår när den saknas.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "2.1–2.2.4",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "regional_basis",
+          "value": "Län/kommun är ägarens folkbokföring eller företagets registrerade adress, inte körplats. Statistikens ägarkategori kan inte besvara antal tjänstebilar.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.1.2; Bilaga 1, Ägande",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "publication_schedule",
+          "value": "Regional årsstatistik publiceras i mitten av februari, den detaljerade Fordon-publikationen i slutet av februari. Månadsstatistik publiceras andra vardagen följande månad.",
+          "source": {
+            "kind": "official_product_page",
+            "url": "https://www.trafa.se/vagtrafik/fordon/",
+            "edition": null,
+            "checked_on": "2026-10-11",
+            "section": "Publicering",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "monthly_annual_comparability",
+          "value": "Månadsbestånd inkluderar tillfälligt registrerade fordon; officiella årsbestånd utesluter dem. Månatliga avregistreringar är preliminära, årsredovisningen slutlig.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "5.4",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "registered_fuel",
+          "value": "Registrerade drivmedel beskriver inte faktiskt använt bränsle.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Drivmedel",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "lorry_weight_classes",
+          "value": "Lätt lastbil har totalvikt högst 3 500 kg, tung över 3 500 kg. Maximilastvikt är totalvikt minus tjänstevikt.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Lastbil och Maximilastvikt",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        }
+      ],
+      "open_questions": [
+        "Produktens alla detaljdefinitioner, periodtäckning och urvalslikvärdighet mot omstuvade produkter är inte verifierade i aktuell API-struktur."
+      ],
+      "publication_context": "Nyregistrerade fordon per månad",
+      "product_page": "https://www.trafa.se/vagtrafik/fordon/",
+      "quality_document": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+      "publication_frequency": "monthly",
+      "population_description": "Svenskregistrerade lastbilar, lätta och tunga. Se registeravgränsning och vald produktkategori; bestånd skiljer sig mellan månads- och årsredovisning.",
+      "geographic_coverage": "Svensk registrering; eventuell läns-/kommunindelning beskriver registrerad adress, inte användningsplats.",
+      "geographic_basis": "Ägarens folkbokföring eller företagets registrerade adress; bevara okända geografiska kategorier.",
+      "method_sources_checked_on": "2026-10-11",
+      "background_review": {
+        "pass": 2,
+        "checked_on": "2026-10-11",
+        "scope": "Gemensamma register-, populations-, period- och kvalitetsdefinitioner samt relevanta fordonsslag. Ingen ny API-hämtning eller fullständig likvärdighetskontroll av urval.",
+        "source_documents": [
+          "https://www.trafa.se/vagtrafik/fordon/",
+          "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf"
+        ],
+        "api_structure_checked_on_unchanged": true
+      },
+      "interpretation_rules": [
+        "Registrerat bestånd är inte antal fordon som faktiskt kör eller ägare som använder fordon. Körsträckor har annan population och ger inte körningens geografiska plats.",
+        "Skilj nyregistrering i det svenska registret från tillverkning av ett nytt fordon; import kan omfatta begagnade fordon. Återpåställning är inte en nyregistrering.",
+        "Skilj avställning från avregistrering. Skrotning och export är avregistreringsorsaker; addera inte orsakerna ovanpå totalen. Administrativ skrotning visar inte när faktisk skrotning skedde.",
+        "Använd produktens specifika koder och tillåtna kombinationer. Omstuvade produkter överlappar äldre produkter; addera dem inte och anta inte en automatisk ett-till-ett-ersättning.",
+        "Summera inte bestånd över perioder, procentandelar eller gruppmedel. Offentlig statistik har fler publiceringsformer än API-et; kontrollera aktuell produktversion när ett urval saknas.",
+        "itrf och avst är månadsbestånd; nyreg och avreg är periodflöden. akumunyreg, när måttet finns, är januari till vald månad samma år och får inte summeras mellan månader.",
+        "Månadsvis summerade avregistreringar är inte garanterat identiska med slutligt årsantal. För årsfrågor välj årsprodukten eller ange preliminär status.",
+        "Totalvikt >3,5 ton i Fordon är inte samma avgränsning som Lastbilstrafiks maxlastvikt ≥3,5 ton. Använd T10061/T10062 för transporter, inte fordonsbestånd."
+      ],
+      "stock_population_temporary_registration": true,
+      "publication_timing": "Andra vardagen månaden efter referensmånaden, enligt produktsidan; kontrollera aktuell kalender.",
+      "monthly_deregistrations_status": "preliminary_in_publication",
+      "official_statistics_status": "monthly_API_scope_not_verified_separately_from_annual_SOS"
+    },
+    "extraction_complete": true,
+    "html_extraction_complete": true,
+    "api_metadata_complete": true,
+    "metadata_usable": true,
+    "api_snapshot_query": "t10033",
+    "api_checked_at_utc": "2026-10-09T15:15:19.817512+00:00",
+    "combination_source": {
+      "archive_member": "trafa_metadata_20261009_151500_7h81ptut/html/T10033.html",
+      "sha256": "23261a62593d49a3d5bfdb844dbf51bca1dc8a8be3386a1e73d5f3ccdfcc77ac",
+      "retrieved_at_utc": null,
+      "url": "https://www.trafa.se/sidor/api-dokumentation/?code=T10033"
+    },
+    "current_product_status": "current"
+  },
+  "T10036": {
+    "label": "Personbilar",
+    "variables": [
+      {
+        "code_documented": "Ar",
+        "api_name": "ar",
+        "label": "År",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "dynamic_filters": [
+          {
+            "code": "senaste",
+            "label": "Senaste",
+            "type": "F",
+            "selected": false,
+            "option": true
+          },
+          {
+            "code": "forra",
+            "label": "Föregående",
+            "type": "F",
+            "selected": false,
+            "option": true
+          }
+        ],
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_66bcc58c017078e5"
+      },
+      {
+        "code_documented": "Manad",
+        "api_name": "manad",
+        "label": "Månad",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "dynamic_filters": [
+          {
+            "code": "senaste",
+            "label": "Senaste",
+            "type": "F",
+            "selected": false,
+            "option": true
+          },
+          {
+            "code": "forra",
+            "label": "Föregående",
+            "type": "F",
+            "selected": false,
+            "option": true
+          }
+        ],
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_8b9e8a920eb152e0"
+      },
+      {
+        "code_documented": "Fslag",
+        "api_name": "fslag",
+        "label": "Fordonsslag underkategori",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_e454bc70647ebf33"
+      },
+      {
+        "code_documented": "Avregform",
+        "api_name": "avregform",
+        "label": "Avregistreringsorsak",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_4025d9cd22822dbc"
+      },
+      {
+        "code_documented": "Drivm",
+        "api_name": "drivm",
+        "label": "Drivmedel",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_50b74945d8d90675"
+      },
+      {
+        "code_documented": "KlimatB",
+        "api_name": "klimatb",
+        "label": "Klimatbonusbil",
+        "description": "Bilar berättigade till bonus i Bonus-malus-systemet",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_a5ccc26c0d5577a3"
+      },
+      {
+        "code_documented": "Nyreg",
+        "api_name": "nyreg",
+        "label": "Antal nyregistreringar",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "AkumuNyreg",
+        "api_name": "akumunyreg",
+        "label": "Ackumulerade nyregistreringar",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "manual_enrichment": {
+          "definition": "Antal nyregistreringar från januari till och med den valda månaden inom det angivna kalenderåret.",
+          "period_semantics_from_description": "calendar_year_to_selected_month",
+          "aggregation_note": "Summera inte ackumulerade månadsvärden. Använd decembervärdet för hela kalenderåret; varje nytt kalenderår börjar en ny ackumuleringsperiod.",
+          "status": "period_definition_confirmed_by_user",
+          "source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:39:15+02:00",
+            "scope": "T10036 akumunyreg cumulative reference period"
+          }
+        }
+      },
+      {
+        "code_documented": "Itrf",
+        "api_name": "itrf",
+        "label": "Antal i trafik",
+        "description": "Administrativ uppgift, innehåller även tillfälligt registrerade fordon",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "manual_enrichment": {
+          "includes_temporarily_registered_vehicles": true,
+          "population_review_source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:49:51+02:00",
+            "scope": "Month-end stocks in T10036 include temporarily registered vehicles; corresponding annual stocks in T10016, T10026 and T10020 exclude them"
+          },
+          "definition": "Antal fordon i trafik vid den valda månadens slut, inklusive tillfälligt registrerade fordon.",
+          "period_semantics_from_description": "stock_at_month_end",
+          "status": "period_and_temporary_registration_confirmed_by_user",
+          "source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:49:51+02:00",
+            "scope": "Month-end stocks in T10036 include temporarily registered vehicles; corresponding annual stocks in T10016, T10026 and T10020 exclude them"
+          }
+        }
+      },
+      {
+        "code_documented": "Avst",
+        "api_name": "avst",
+        "label": "Antal avställda",
+        "description": "Administrativ uppgift, innehåller även tillfälligt registrerade fordon",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "manual_enrichment": {
+          "includes_temporarily_registered_vehicles": true,
+          "population_review_source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:49:51+02:00",
+            "scope": "Month-end stocks in T10036 include temporarily registered vehicles; corresponding annual stocks in T10016, T10026 and T10020 exclude them"
+          },
+          "definition": "Antal avställda fordon vid den valda månadens slut, inklusive tillfälligt registrerade fordon.",
+          "period_semantics_from_description": "stock_at_month_end",
+          "status": "period_and_temporary_registration_confirmed_by_user",
+          "source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:49:51+02:00",
+            "scope": "Month-end stocks in T10036 include temporarily registered vehicles; corresponding annual stocks in T10016, T10026 and T10020 exclude them"
+          }
+        }
+      },
+      {
+        "code_documented": "Avreg",
+        "api_name": "avreg",
+        "label": "Antal avregistreringar",
+        "description": "Preliminär uppgift",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Region",
+        "api_name": "region",
+        "label": "Region",
+        "kind": "dimension_or_hierarchy",
+        "type": "H",
+        "parent_name": "t10036",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Kommun",
+        "api_name": "kommun",
+        "label": "Kommun",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "region",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_025300f556748235"
+      }
+    ],
+    "manual_enrichment": {
+      "api_name_documented": "t10036",
+      "identity_source": "User-supplied structure response for T04021; includes product list",
+      "status": "partially_reviewed_by_user_and_official_sources",
+      "label_enriched_proposed": "Personbilar – månadsstatistik, registreringar och bestånd, även per kommun",
+      "publication_context": "Nyregistrerade fordon per månad",
+      "temporal_resolution": "month",
+      "search_aliases": [
+        "månadsstatistik för personbilar",
+        "nyregistrerade personbilar per månad",
+        "avregistrerade personbilar per månad",
+        "personbilar per kommun och månad"
+      ],
+      "geographic_resolution_note": "API-strukturen innehåller kommun och hierarkin region, men ingen länsdimension. Skapa inte en länsvariabel som saknar stöd.",
+      "open_questions": [
+        "Produktens alla detaljdefinitioner, periodtäckning och urvalslikvärdighet mot omstuvade produkter är inte verifierade i aktuell API-struktur."
+      ],
+      "context_path_proposed": [
+        "Fordon",
+        "Personbilar"
+      ],
+      "source": {
+        "kind": "user_expert_statement",
+        "reviewer": "Tom",
+        "received_at": "2026-10-09T20:27:39+02:00",
+        "scope": "broad product comparison and publication context; not exact equivalence of all dimensions or value domains"
+      },
+      "observed_structure_counts": {
+        "dimensions_including_time": 7,
+        "dimensions_excluding_ar": 6,
+        "hierarchies": 1,
+        "measures": 5,
+        "time_counting_note": "År räknas separat från övriga D-dimensioner i jämförelsen 7 respektive 15. Månad ingår fortfarande bland övriga dimensioner för T10036.",
+        "source": "Saved API structure, checked 2026-10-09"
+      },
+      "reviewed_facts": [
+        {
+          "field": "akumunyreg_reference_period",
+          "value": "Antal nyregistreringar från januari till och med den valda månaden inom det angivna kalenderåret.",
+          "source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:39:15+02:00",
+            "scope": "T10036 akumunyreg cumulative reference period"
+          }
+        },
+        {
+          "field": "stock_population_temporary_registration",
+          "value": true,
+          "source": {
+            "kind": "user_expert_statement",
+            "reviewer": "Tom",
+            "received_at": "2026-10-09T20:49:51+02:00",
+            "scope": "Month-end stocks in T10036 include temporarily registered vehicles; corresponding annual stocks in T10016, T10026 and T10020 exclude them"
+          }
+        },
+        {
+          "field": "registration_scope",
+          "value": "Registreringspliktiga fordon i Transportstyrelsens vägtrafikregister. Moped klass II, statliga militära fordon och ej registreringspliktiga fordon inom inhägnat område ingår inte. Terrängvagn, terrängsläp och motorredskap finns i registret men redovisas inte i denna statistik.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.2.1",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "reference_periods",
+          "value": "Årsbestånd avser 31 december; ny- och avregistreringar avser kalenderåret. I trafik betyder registrerat och inte avställt, inte observerad körning.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.2.5; Bilaga 1, Status",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "register_quality",
+          "value": "Administrativa totalregister ger ingen urvalsosäkerhet. Kodningsfel och saknade variabeluppgifter kan förekomma. Årsmodell kompletteras med tillverkningsår när den saknas.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "2.1–2.2.4",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "regional_basis",
+          "value": "Län/kommun är ägarens folkbokföring eller företagets registrerade adress, inte körplats. Statistikens ägarkategori kan inte besvara antal tjänstebilar.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "1.1.2; Bilaga 1, Ägande",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "publication_schedule",
+          "value": "Regional årsstatistik publiceras i mitten av februari, den detaljerade Fordon-publikationen i slutet av februari. Månadsstatistik publiceras andra vardagen följande månad.",
+          "source": {
+            "kind": "official_product_page",
+            "url": "https://www.trafa.se/vagtrafik/fordon/",
+            "edition": null,
+            "checked_on": "2026-10-11",
+            "section": "Publicering",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "monthly_annual_comparability",
+          "value": "Månadsbestånd inkluderar tillfälligt registrerade fordon; officiella årsbestånd utesluter dem. Månatliga avregistreringar är preliminära, årsredovisningen slutlig.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "5.4",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "registered_fuel",
+          "value": "Registrerade drivmedel beskriver inte faktiskt använt bränsle.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Drivmedel",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "hybrid_classification",
+          "value": "El är ren eldrift. Elhybrid och laddhybrid är skilda kategorier; mildhybrider redovisas under bensin/diesel.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Drivmedel",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        },
+        {
+          "field": "statistical_owner_classification",
+          "value": "I Fordon-definitionerna redovisas enskild näringsverksamhet bland juridiska personer, trots att den juridiskt inte är en juridisk person. Skilj statistisk ägarkategori från legal form och företagstyp; kontrollera motsvarande definition i varje API-produkt.",
+          "source": {
+            "kind": "official_quality_declaration",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+            "edition": "2025",
+            "checked_on": "2026-10-11",
+            "section": "Bilaga 1, Ägande",
+            "scope": "published_statistics_background_not_API_implementation"
+          }
+        }
+      ],
+      "stock_comparability_note": "Månadsbeståndet i T10036 inkluderar tillfälligt registrerade fordon. Motsvarande årsbestånd i T10016, T10026 och T10020 utesluter dem. Decemberbestånd och årsbestånd den 31 december kan därför skilja sig trots samma referensdag; likställ dem inte utan populationskontroll.",
+      "product_page": "https://www.trafa.se/vagtrafik/fordon/",
+      "quality_document": "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf",
+      "publication_frequency": "monthly",
+      "population_description": "Svenskregistrerade personbilar enligt vald kategori. Se registeravgränsning och vald produktkategori; bestånd skiljer sig mellan månads- och årsredovisning.",
+      "geographic_coverage": "Svensk registrering; eventuell läns-/kommunindelning beskriver registrerad adress, inte användningsplats.",
+      "geographic_basis": "Ägarens folkbokföring eller företagets registrerade adress; bevara okända geografiska kategorier.",
+      "method_sources_checked_on": "2026-10-11",
+      "background_review": {
+        "pass": 2,
+        "checked_on": "2026-10-11",
+        "scope": "Gemensamma register-, populations-, period- och kvalitetsdefinitioner samt relevanta fordonsslag. Ingen ny API-hämtning eller fullständig likvärdighetskontroll av urval.",
+        "source_documents": [
+          "https://www.trafa.se/vagtrafik/fordon/",
+          "https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2026/kvalitetsdeklaration-fordon-2025.pdf"
+        ],
+        "api_structure_checked_on_unchanged": true
+      },
+      "interpretation_rules": [
+        "Registrerat bestånd är inte antal fordon som faktiskt kör eller ägare som använder fordon. Körsträckor har annan population och ger inte körningens geografiska plats.",
+        "Skilj nyregistrering i det svenska registret från tillverkning av ett nytt fordon; import kan omfatta begagnade fordon. Återpåställning är inte en nyregistrering.",
+        "Skilj avställning från avregistrering. Skrotning och export är avregistreringsorsaker; addera inte orsakerna ovanpå totalen. Administrativ skrotning visar inte när faktisk skrotning skedde.",
+        "Använd produktens specifika koder och tillåtna kombinationer. Omstuvade produkter överlappar äldre produkter; addera dem inte och anta inte en automatisk ett-till-ett-ersättning.",
+        "Summera inte bestånd över perioder, procentandelar eller gruppmedel. Offentlig statistik har fler publiceringsformer än API-et; kontrollera aktuell produktversion när ett urval saknas.",
+        "itrf och avst är månadsbestånd; nyreg och avreg är periodflöden. akumunyreg, när måttet finns, är januari till vald månad samma år och får inte summeras mellan månader.",
+        "Månadsvis summerade avregistreringar är inte garanterat identiska med slutligt årsantal. För årsfrågor välj årsprodukten eller ange preliminär status.",
+        "Personbilar kan omfatta klass II/husbilar; välj registrerad kategori om frågan enbart gäller vanliga personbilar. Drivmedelsandel anger fordonsantal, inte andel körsträcka eller energi."
+      ],
+      "stock_population_temporary_registration": true,
+      "publication_timing": "Andra vardagen månaden efter referensmånaden, enligt produktsidan; kontrollera aktuell kalender.",
+      "monthly_deregistrations_status": "preliminary_in_publication",
+      "official_statistics_status": "monthly_API_scope_not_verified_separately_from_annual_SOS",
+      "preferred_selection_example": {
+        "query": "t10036|avreg|ar:2023|manad",
+        "source": {
+          "kind": "user_expert_statement_or_reported_test",
+          "reviewer": "Tom",
+          "received_at": "2026-10-14T22:22:26+02:00",
+          "scope": "Tom har kontrollerat portalens rådata och att övriga mått inte krävs. Dessa minimala query-exempel ska slutvalideras.",
+          "independently_verified": false
+        },
+        "note": "Begär endast avregistreringar. Tolv månadsvärden jämförs med slutligt årsantal, inte månadsbestånd."
+      }
+    },
+    "extraction_complete": false,
+    "html_extraction_complete": false,
+    "api_metadata_complete": true,
+    "metadata_usable": true,
+    "api_snapshot_query": "t10036",
+    "api_checked_at_utc": "2026-10-09T15:15:20.741329+00:00",
+    "combination_source": {
+      "archive_member": "trafa_metadata_20261009_151500_7h81ptut/html/T10036.html",
+      "sha256": "12e7fc55eee7bcfa54ef3e834b69150d16846380e09040e72cb7f258267f0289",
+      "retrieved_at_utc": null,
+      "url": "https://www.trafa.se/sidor/api-dokumentation/?code=T10036"
+    },
+    "current_product_status": "current"
+  },
+  "T10039": {
+    "label": "Övriga fordonsslag",
+    "variables": [
+      {
+        "code_documented": "Ar",
+        "api_name": "ar",
+        "label": "År",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "dynamic_filters": [
+          {
+            "code": "senaste",
+            "label": "Senaste",
+            "type": "F",
+            "selected": false,
+            "option": true
+          },
+          {
+            "code": "forra",
+            "label": "Föregående",
+            "type": "F",
+            "selected": false,
+            "option": true
+          }
+        ],
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_66bcc58c017078e5"
+      },
+      {
+        "code_documented": "Manad",
+        "api_name": "manad",
+        "label": "Månad",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "dynamic_filters": [
+          {
+            "code": "senaste",
+            "label": "Senaste",
+            "type": "F",
+            "selected": false,
+            "option": true
+          },
+          {
+            "code": "forra",
+            "label": "Föregående",
+            "type": "F",
+            "selected": false,
+            "option": true
+          }
+        ],
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_8b9e8a920eb152e0"
+      },
+      {
+        "code_documented": "Nyreg",
+        "api_name": "nyreg",
+        "label": "Antal nyregistreringar",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Itrf",
+        "api_name": "itrf",
+        "label": "Antal i trafik",
+        "description": "Administrativ uppgift, innehåller även tillfälligt registrerade fordon",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Avst",
+        "api_name": "avst",
+        "label": "Antal avställda",
+        "description": "Administrativ uppgift, innehåller även tillfälligt registrerade fordon",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Avreg",
+        "api_name": "avreg",
+        "label": "Antal avregistreringar",
+        "description": "Preliminär uppgift",
+        "kind": "measure",
+        "type": "M",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Fslag",
+        "api_name": "fslag",
+        "label": "Fordonsslag",
+        "kind": "dimension_or_hierarchy",
+        "type": "H",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "RegPL",
+        "api_name": "regpl",
+        "label": "Region",
+        "kind": "dimension_or_hierarchy",
+        "type": "H",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "FordonS",
+        "api_name": "fordons",
+        "label": "Fordonsslag",
+        "kind": "dimension_or_hierarchy",
+        "type": "H",
+        "parent_name": "t10039",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure"
+      },
+      {
+        "code_documented": "Fslag1",
+        "api_name": "fslag1",
+        "label": "Fordonsslag",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "fslag",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_6860dee5cfb9c3fa"
+      },
+      {
+        "code_documented": "RegLan",
+        "api_name": "reglan",
+        "label": "Län",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "regpl",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_dd3fc2e5971a0cdc"
+      },
+      {
+        "code_documented": "Ford1",
+        "api_name": "ford1",
+        "label": "Fordonsslag",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "fordons",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_b11fe645b2918b1a"
+      },
+      {
+        "code_documented": "Fslag2",
+        "api_name": "fslag2",
+        "label": "Fordonsslag underkategori",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "fslag1",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_1feae6699d7dfc3d"
+      },
+      {
+        "code_documented": "RegKom",
+        "api_name": "regkom",
+        "label": "Kommun",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "reglan",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_11d3110e16ccabc4"
+      },
+      {
+        "code_documented": "Ford2",
+        "api_name": "ford2",
+        "label": "Fordonsslag underkategori",
+        "kind": "dimension_or_hierarchy",
+        "type": "D",
+        "parent_name": "ford1",
+        "api_name_source": "measured_structure",
+        "value_list_status": "observed_in_api_structure",
+        "value_set_ref": "vs_c5a0eb0eeab80c3c"
+      }
+    ],
+    "manual_enrichment": {
+      "api_name_documented": "t10039",
+      "identity_source": "User-supplied structure response for T04021; includes product list",
+      "status": "partially_reviewed_by_user_and_official_sources",
+      "label_enriched_proposed": "Övriga fordonsslag – månadsstatistik om bestånd och registreringar",
+      "temporal_resolution": "month",
+      "product_role": "Månadsstatistik om bestånd och registreringar för övriga fordonsslag; län och kommun finns",
+      "search_aliases": [
+        "övriga fordon per månad",
+        "övriga fordon län kommun månadsstatistik"
+      ],
+      "reviewed_facts": [
+        {
+          "field": "product_role_and_frequency",
+          "value": {
+            "label_enriched_proposed": "Övriga fordonsslag – månadsstatistik om bestånd och registreringar",
+            "temporal_resolution": "month",
+            "product_role": "Månadsstatistik om bestånd och registreringar för övriga fordonsslag; län och kommun finns"
+          },
+          "source": {
+            "kind": "user_expert_confirmation",
+            "reviewer": "Tom",
+            "received_at": "2026-10-10T10:57:59+02:00",
+            "scope": "T10010 T10030 T10039 product roles; T10010 and T10030 regroup earlier products for new presentation form; not equivalence of all variables/combinations"
+          }
+        },
+        {
+          "field": "registration_scope",
           "value": "Registreringspliktiga fordon i Transportstyrelsens vägtrafikregister. Moped klass II, statliga militära fordon och ej registreringspliktiga fordon inom inhägnat område ingår inte. Terrängvagn, terrängsläp och motorredskap finns i registret men redovisas inte i denna statistik.",
           "source": {
             "kind": "official_quality_declaration",
