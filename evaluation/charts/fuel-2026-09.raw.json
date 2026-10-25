@@ -1,0 +1,641 @@
+{
+  "ok": true,
+  "source": {
+    "url": "https://api.trafa.se/api/data?query=t10036%7Cnyreg%7Car%3A2026%7Cmanad%3A09%7Cdrivm&lang=sv",
+    "query": "t10036|nyreg|ar:2026|manad:09|drivm",
+    "lang": "sv",
+    "retrieved_at": "2026-10-24T21:10:46.342Z",
+    "contract_version": "2.1.0",
+    "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "response_bytes": 6894
+  },
+  "metadata_source": "current_structure",
+  "structure_source": {
+    "url": "https://api.trafa.se/api/structure?query=t10036%7Cnyreg%7Car%3A2026%7Cmanad%3A09%7Cdrivm&lang=sv",
+    "query": "t10036|nyreg|ar:2026|manad:09|drivm",
+    "lang": "sv",
+    "retrieved_at": "2026-10-24T21:10:45.887Z",
+    "contract_version": "2.1.0",
+    "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "response_bytes": 116796,
+    "structure_cache": {
+      "status": "miss",
+      "age_ms": 0,
+      "ttl_ms": 300000
+    }
+  },
+  "query": "t10036|nyreg|ar:2026|manad:09|drivm",
+  "DataCount": 8,
+  "Header": {
+    "Column": [
+      {
+        "Name": "ar",
+        "Type": "D",
+        "DataType": "Time",
+        "Filters": [
+          "2026"
+        ],
+        "Value": "År",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Dar"
+      },
+      {
+        "Name": "manad",
+        "Type": "D",
+        "DataType": "Time",
+        "Filters": [
+          "09"
+        ],
+        "Value": "Månad",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Dmanad"
+      },
+      {
+        "Name": "drivm",
+        "Type": "D",
+        "DataType": "String",
+        "Filters": [],
+        "Value": "Drivmedel",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Ddrivm"
+      },
+      {
+        "Name": "nyreg",
+        "Type": "M",
+        "DataType": "String",
+        "Filters": null,
+        "Value": "Antal nyregistreringar",
+        "Unit": "",
+        "Description": "",
+        "UniqueId": "Dnyreg"
+      }
+    ],
+    "Description": null
+  },
+  "Rows": [
+    {
+      "Cell": [
+        {
+          "Name": "2026",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2026",
+          "FormattedValue": "2026",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2026",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "manad",
+          "Value": "september",
+          "FormattedValue": "september",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DmanadDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "101",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "drivm",
+          "Value": "Bensin",
+          "FormattedValue": "Bensin",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DdrivmDV101",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "nyreg",
+          "Value": "5821",
+          "FormattedValue": "5 821",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2026",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2026",
+          "FormattedValue": "2026",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2026",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "manad",
+          "Value": "september",
+          "FormattedValue": "september",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DmanadDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "102",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "drivm",
+          "Value": "Diesel",
+          "FormattedValue": "Diesel",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DdrivmDV102",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "nyreg",
+          "Value": "1471",
+          "FormattedValue": "1 471",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2026",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2026",
+          "FormattedValue": "2026",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2026",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "manad",
+          "Value": "september",
+          "FormattedValue": "september",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DmanadDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "103",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "drivm",
+          "Value": "El",
+          "FormattedValue": "El",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DdrivmDV103",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "nyreg",
+          "Value": "14096",
+          "FormattedValue": "14 096",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2026",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2026",
+          "FormattedValue": "2026",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2026",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "manad",
+          "Value": "september",
+          "FormattedValue": "september",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DmanadDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "104",
+          "IsMeasure": false,
+          "Description": "Elhybrider är numera exklusive mildhybrider, mildhybrider redovisas under det huvudsakliga drivmedlet. Månadsuppgifterna för 2022 och 2023 är korrigerade (2024-02-02).",
+          "Column": "drivm",
+          "Value": "Elhybrid",
+          "FormattedValue": "Elhybrid",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DdrivmDV104",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "nyreg",
+          "Value": "2047",
+          "FormattedValue": "2 047",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2026",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2026",
+          "FormattedValue": "2026",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2026",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "manad",
+          "Value": "september",
+          "FormattedValue": "september",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DmanadDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "105",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "drivm",
+          "Value": "Laddhybrid",
+          "FormattedValue": "Laddhybrid",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DdrivmDV105",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "nyreg",
+          "Value": "6356",
+          "FormattedValue": "6 356",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2026",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2026",
+          "FormattedValue": "2026",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2026",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "manad",
+          "Value": "september",
+          "FormattedValue": "september",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DmanadDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "106",
+          "IsMeasure": false,
+          "Description": "Månadsuppgifterna för 2022 och 2023 är korrigerade (2024-02-02).",
+          "Column": "drivm",
+          "Value": "Etanol",
+          "FormattedValue": "Etanol",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DdrivmDV106",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "nyreg",
+          "Value": "55",
+          "FormattedValue": "55",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2026",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2026",
+          "FormattedValue": "2026",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2026",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "manad",
+          "Value": "september",
+          "FormattedValue": "september",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DmanadDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "107",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "drivm",
+          "Value": "Gas",
+          "FormattedValue": "Gas",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DdrivmDV107",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "nyreg",
+          "Value": "-",
+          "FormattedValue": "-",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2026",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2026",
+          "FormattedValue": "2026",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2026",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "manad",
+          "Value": "september",
+          "FormattedValue": "september",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DmanadDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "109",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "drivm",
+          "Value": "Övriga",
+          "FormattedValue": "Övriga",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DdrivmDV109",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "nyreg",
+          "Value": "4",
+          "FormattedValue": "4",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    }
+  ],
+  "row_count": 8,
+  "data_status": "rows_returned",
+  "trace": {
+    "schema_version": 1,
+    "request_id": "7e6aa412-e539-4e81-bfc1-80ef40f8f5e2",
+    "server_version": "0.3.1",
+    "tool": "get_statistics",
+    "started_at_utc": "2026-10-24T21:10:44.796Z",
+    "elapsed_ms": 1546,
+    "outcome": "success",
+    "cache": "structure_ttl_lru",
+    "upstream_count": 2,
+    "coverage": {
+      "upstream": "complete",
+      "host": "unavailable"
+    },
+    "events": [
+      {
+        "id": "cache1",
+        "kind": "cache",
+        "endpoint": "structure",
+        "query": "t10036|nyreg|ar:2026|manad:09|drivm",
+        "lang": "sv",
+        "format": "json",
+        "start_ms": 0,
+        "outcome": "success",
+        "status": "miss",
+        "age_ms": 0,
+        "origin_request_id": "7e6aa412-e539-4e81-bfc1-80ef40f8f5e2",
+        "retained": true,
+        "ttl_ms": 300000,
+        "duration_ms": 1091
+      },
+      {
+        "id": "http2",
+        "kind": "http",
+        "endpoint": "structure",
+        "query": "t10036|nyreg|ar:2026|manad:09|drivm",
+        "lang": "sv",
+        "format": "json",
+        "attempt": 1,
+        "start_ms": 0,
+        "outcome": "success",
+        "http_status": 200,
+        "response_bytes": 116796,
+        "cache": "disabled",
+        "queue_ms": 0,
+        "rate_limit_wait_ms": 0,
+        "api_ms": 1091,
+        "parse_ms": 0,
+        "duration_ms": 1091
+      },
+      {
+        "id": "validation3",
+        "kind": "metadata",
+        "name": "structure_contract",
+        "start_ms": 1091,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "validation4",
+        "kind": "metadata",
+        "name": "structure_contract",
+        "start_ms": 1091,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "validation5",
+        "kind": "metadata",
+        "name": "selection",
+        "start_ms": 1091,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "http6",
+        "kind": "http",
+        "endpoint": "data",
+        "query": "t10036|nyreg|ar:2026|manad:09|drivm",
+        "lang": "sv",
+        "format": "json",
+        "attempt": 1,
+        "start_ms": 1091,
+        "outcome": "success",
+        "http_status": 200,
+        "response_bytes": 6894,
+        "cache": "disabled",
+        "queue_ms": 0,
+        "rate_limit_wait_ms": 0,
+        "api_ms": 455,
+        "parse_ms": 0,
+        "duration_ms": 455
+      },
+      {
+        "id": "validation7",
+        "kind": "metadata",
+        "name": "data_contract",
+        "start_ms": 1546,
+        "outcome": "success",
+        "duration_ms": 0
+      }
+    ]
+  }
+}

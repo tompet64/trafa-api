@@ -1,0 +1,63 @@
+{
+  "title": "Nyregistrerade personbilar efter drivmedel",
+  "period": "september 2026",
+  "unit": "Antal nyregistreringar",
+  "source": "Trafikanalys, T10036",
+  "query": "t10036|nyreg|ar:2026|manad:09|drivm",
+  "retrieved_at": "2026-10-24T21:10:46.342Z",
+  "complete": true,
+  "disjoint": true,
+  "additive": true,
+  "rows": [
+    {
+      "code": "101",
+      "label": "Bensin",
+      "value": 5821,
+      "is_total": false
+    },
+    {
+      "code": "102",
+      "label": "Diesel",
+      "value": 1471,
+      "is_total": false
+    },
+    {
+      "code": "103",
+      "label": "El",
+      "value": 14096,
+      "is_total": false
+    },
+    {
+      "code": "104",
+      "label": "Elhybrid",
+      "value": 2047,
+      "is_total": false
+    },
+    {
+      "code": "105",
+      "label": "Laddhybrid",
+      "value": 6356,
+      "is_total": false
+    },
+    {
+      "code": "106",
+      "label": "Etanol",
+      "value": 55,
+      "is_total": false
+    },
+    {
+      "code": "107",
+      "label": "Gas",
+      "value": "-",
+      "is_total": false
+    },
+    {
+      "code": "109",
+      "label": "Övriga",
+      "value": 4,
+      "is_total": false
+    }
+  ],
+  "value_kind": "count",
+  "legend_source": "Trafikanalys teckenförklaring; sakgranskning Tom 2026-10-25"
+}

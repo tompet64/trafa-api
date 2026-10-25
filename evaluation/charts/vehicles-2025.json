@@ -1,0 +1,61 @@
+{
+  "title": "Nyregistrerade fordon efter fordonsslag",
+  "period": "2025",
+  "unit": "Antal nyregistreringar",
+  "source": "Trafikanalys, T10030",
+  "query": "t10030|nyreg|ar:2025|fslag",
+  "retrieved_at": "2026-10-24T21:10:28.949Z",
+  "complete": true,
+  "disjoint": true,
+  "additive": true,
+  "rows": [
+    {
+      "code": "01",
+      "label": "Personbil",
+      "value": 283276,
+      "is_total": false
+    },
+    {
+      "code": "02",
+      "label": "Lastbil",
+      "value": 42344,
+      "is_total": false
+    },
+    {
+      "code": "03",
+      "label": "Buss",
+      "value": 2087,
+      "is_total": false
+    },
+    {
+      "code": "04",
+      "label": "Motorcykel",
+      "value": 11715,
+      "is_total": false
+    },
+    {
+      "code": "05",
+      "label": "Moped klass I",
+      "value": 4680,
+      "is_total": false
+    },
+    {
+      "code": "06",
+      "label": "Traktor",
+      "value": 11752,
+      "is_total": false
+    },
+    {
+      "code": "07",
+      "label": "Släpvagn",
+      "value": 37159,
+      "is_total": false
+    },
+    {
+      "code": "08",
+      "label": "Terrängskoter",
+      "value": 9085,
+      "is_total": false
+    }
+  ]
+}

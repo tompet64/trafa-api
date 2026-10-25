@@ -42,3 +42,9 @@ The code is provided “as is”, without warranty, and users are responsible fo
 ## Scope and review
 
 The skill guides queries to Trafikanalys' public statistics API. It does not provide a hosted MCP server or create an API connection by itself. Review its scripts and references before use, especially when adapting it to a managed workplace.
+
+## PNG-diagram
+
+[Den fristående cirkeldiagramgeneratorn](references/charts/README.md) tar en redan
+validerad tabell och skapar PNG samt en tillhörande tabell utan nya API-anrop.
+Kör med Node.js 22+. MCP-serverns integration förvaltas i dess separata projekt.

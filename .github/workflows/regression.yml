@@ -22,3 +22,5 @@ jobs:
         run: node --check evaluation/comparison/replay_mcp.mjs
       - name: Run offline regressions (including comparison tests)
         run: python evaluation/run_offline.py
+      - name: Test PNG generator without network
+        run: node --test evaluation/charts/pie.test.mjs
