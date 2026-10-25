@@ -1,0 +1,834 @@
+{
+  "ok": true,
+  "source": {
+    "url": "https://api.trafa.se/api/data?query=t1203%7Cpastig%7Car%3A2024%7Cfinans%3A2%7Clan%3A09%2C10%2C25%7Ctraslag&lang=sv",
+    "query": "t1203|pastig|ar:2024|finans:2|lan:09,10,25|traslag",
+    "lang": "sv",
+    "retrieved_at": "2026-10-25T03:05:42.870Z",
+    "contract_version": "2.1.0",
+    "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "response_bytes": 9670
+  },
+  "metadata_source": "current_structure",
+  "structure_source": {
+    "url": "https://api.trafa.se/api/structure?query=t1203%7Cpastig%7Car%3A2024%7Cfinans%3A2%7Clan%3A09%2C10%2C25%7Ctraslag&lang=sv",
+    "query": "t1203|pastig|ar:2024|finans:2|lan:09,10,25|traslag",
+    "lang": "sv",
+    "retrieved_at": "2026-10-25T03:05:42.235Z",
+    "contract_version": "2.1.0",
+    "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "response_bytes": 43575,
+    "structure_cache": {
+      "status": "miss",
+      "age_ms": 0,
+      "ttl_ms": 300000
+    }
+  },
+  "query": "t1203|pastig|ar:2024|finans:2|lan:09,10,25|traslag",
+  "DataCount": 9,
+  "Header": {
+    "Column": [
+      {
+        "Name": "ar",
+        "Type": "D",
+        "DataType": "Time",
+        "Filters": [
+          "2024"
+        ],
+        "Value": "År",
+        "Unit": null,
+        "Description": "Observera att redovisade uppgifter för riket och totalerna för typ av finansiering baseras på en summering av tillgängliga uppgifter. Då det förekommer bortfall i vissa variabler är en del av de redovisade uppgifterna en underskattning av de faktiska värdena.",
+        "UniqueId": "Dar"
+      },
+      {
+        "Name": "finans",
+        "Type": "D",
+        "DataType": "String",
+        "Filters": [
+          "2"
+        ],
+        "Value": "Typ av finansiering",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Dfinans"
+      },
+      {
+        "Name": "lan",
+        "Type": "D",
+        "DataType": "Region",
+        "Filters": [
+          "09",
+          "10",
+          "25"
+        ],
+        "Value": "Län",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Dlan"
+      },
+      {
+        "Name": "traslag",
+        "Type": "D",
+        "DataType": "String",
+        "Filters": [],
+        "Value": "Trafikslag",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Dtraslag"
+      },
+      {
+        "Name": "pastig",
+        "Type": "M",
+        "DataType": "String",
+        "Filters": null,
+        "Value": "Påstigningar, tusental",
+        "Unit": "",
+        "Description": "",
+        "UniqueId": "Dpastig"
+      }
+    ],
+    "Description": null
+  },
+  "Rows": [
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Gotland",
+          "FormattedValue": "Gotland",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "Buss och personbil",
+          "Column": "traslag",
+          "Value": "Väg",
+          "FormattedValue": "Väg",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": "951",
+          "FormattedValue": "951",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Gotland",
+          "FormattedValue": "Gotland",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "traslag",
+          "Value": "Järnväg",
+          "FormattedValue": "Järnväg",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": ",",
+          "FormattedValue": ",",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": [
+            {
+              "Key": "2025-06-26T13:38:09.72",
+              "Value": ".."
+            }
+          ]
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "09",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Gotland",
+          "FormattedValue": "Gotland",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV09",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "t1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "traslag",
+          "Value": "Totalt",
+          "FormattedValue": "Totalt",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDVt1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": "951",
+          "FormattedValue": "951",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": true
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "10",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Blekinge",
+          "FormattedValue": "Blekinge",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV10",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "Buss och personbil",
+          "Column": "traslag",
+          "Value": "Väg",
+          "FormattedValue": "Väg",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": "5947",
+          "FormattedValue": "5 947",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "10",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Blekinge",
+          "FormattedValue": "Blekinge",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV10",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "traslag",
+          "Value": "Järnväg",
+          "FormattedValue": "Järnväg",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": "1833",
+          "FormattedValue": "1 833",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "10",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Blekinge",
+          "FormattedValue": "Blekinge",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV10",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "t1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "traslag",
+          "Value": "Totalt",
+          "FormattedValue": "Totalt",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDVt1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": "7988",
+          "FormattedValue": "7 988",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": true
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "25",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Norrbotten",
+          "FormattedValue": "Norrbotten",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV25",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "Buss och personbil",
+          "Column": "traslag",
+          "Value": "Väg",
+          "FormattedValue": "Väg",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": "8268",
+          "FormattedValue": "8 268",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "25",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Norrbotten",
+          "FormattedValue": "Norrbotten",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV25",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "traslag",
+          "Value": "Järnväg",
+          "FormattedValue": "Järnväg",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": "162",
+          "FormattedValue": "162",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2024",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2024",
+          "FormattedValue": "2024",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2024",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "finans",
+          "Value": "Subventionerad",
+          "FormattedValue": "Subventionerad",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DfinansDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "25",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "lan",
+          "Value": "Norrbotten",
+          "FormattedValue": "Norrbotten",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DlanDV25",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "t1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "traslag",
+          "Value": "Totalt",
+          "FormattedValue": "Totalt",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DtraslagDVt1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "pastig",
+          "Value": "8430",
+          "FormattedValue": "8 430",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": true
+    }
+  ],
+  "row_count": 9,
+  "data_status": "rows_returned",
+  "trace": {
+    "schema_version": 1,
+    "request_id": "b5208886-5cfb-45aa-88ab-9e52f91c9a74",
+    "server_version": "0.3.1",
+    "tool": "get_statistics",
+    "started_at_utc": "2026-10-25T03:05:41.760Z",
+    "elapsed_ms": 1110,
+    "outcome": "success",
+    "cache": "structure_ttl_lru",
+    "upstream_count": 2,
+    "coverage": {
+      "upstream": "complete",
+      "host": "unavailable"
+    },
+    "events": [
+      {
+        "id": "cache1",
+        "kind": "cache",
+        "endpoint": "structure",
+        "query": "t1203|pastig|ar:2024|finans:2|lan:09,10,25|traslag",
+        "lang": "sv",
+        "format": "json",
+        "start_ms": 0,
+        "outcome": "success",
+        "status": "miss",
+        "age_ms": 0,
+        "origin_request_id": "b5208886-5cfb-45aa-88ab-9e52f91c9a74",
+        "retained": true,
+        "ttl_ms": 300000,
+        "duration_ms": 475
+      },
+      {
+        "id": "http2",
+        "kind": "http",
+        "endpoint": "structure",
+        "query": "t1203|pastig|ar:2024|finans:2|lan:09,10,25|traslag",
+        "lang": "sv",
+        "format": "json",
+        "attempt": 1,
+        "start_ms": 0,
+        "outcome": "success",
+        "http_status": 200,
+        "response_bytes": 43575,
+        "cache": "disabled",
+        "queue_ms": 0,
+        "rate_limit_wait_ms": 0,
+        "api_ms": 475,
+        "parse_ms": 0,
+        "duration_ms": 475
+      },
+      {
+        "id": "validation3",
+        "kind": "metadata",
+        "name": "structure_contract",
+        "start_ms": 475,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "validation4",
+        "kind": "metadata",
+        "name": "structure_contract",
+        "start_ms": 475,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "validation5",
+        "kind": "metadata",
+        "name": "selection",
+        "start_ms": 475,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "http6",
+        "kind": "http",
+        "endpoint": "data",
+        "query": "t1203|pastig|ar:2024|finans:2|lan:09,10,25|traslag",
+        "lang": "sv",
+        "format": "json",
+        "attempt": 1,
+        "start_ms": 475,
+        "outcome": "success",
+        "http_status": 200,
+        "response_bytes": 9670,
+        "cache": "disabled",
+        "queue_ms": 0,
+        "rate_limit_wait_ms": 525,
+        "api_ms": 110,
+        "parse_ms": 0,
+        "duration_ms": 635
+      },
+      {
+        "id": "validation7",
+        "kind": "metadata",
+        "name": "data_contract",
+        "start_ms": 1110,
+        "outcome": "success",
+        "duration_ms": 0
+      }
+    ]
+  }
+}

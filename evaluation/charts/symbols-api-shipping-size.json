@@ -1,0 +1,1033 @@
+{
+  "ok": true,
+  "source": {
+    "url": "https://api.trafa.se/api/data?query=t08091%7Cantfortag%7Cnetomsat%7Car%3A2016%7Cstor%7Csjofar&lang=sv",
+    "query": "t08091|antfortag|netomsat|ar:2016|stor|sjofar",
+    "lang": "sv",
+    "retrieved_at": "2026-10-25T03:06:02.807Z",
+    "contract_version": "2.1.0",
+    "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "response_bytes": 11954
+  },
+  "metadata_source": "current_structure",
+  "structure_source": {
+    "url": "https://api.trafa.se/api/structure?query=t08091%7Cantfortag%7Cnetomsat%7Car%3A2016%7Cstor%7Csjofar&lang=sv",
+    "query": "t08091|antfortag|netomsat|ar:2016|stor|sjofar",
+    "lang": "sv",
+    "retrieved_at": "2026-10-25T03:06:01.881Z",
+    "contract_version": "2.1.0",
+    "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+    "response_bytes": 59148,
+    "structure_cache": {
+      "status": "miss",
+      "age_ms": 0,
+      "ttl_ms": 300000
+    }
+  },
+  "query": "t08091|antfortag|netomsat|ar:2016|stor|sjofar",
+  "DataCount": 12,
+  "Header": {
+    "Column": [
+      {
+        "Name": "ar",
+        "Type": "D",
+        "DataType": "Time",
+        "Filters": [
+          "2016"
+        ],
+        "Value": "År",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Dar"
+      },
+      {
+        "Name": "stor",
+        "Type": "D",
+        "DataType": "String",
+        "Filters": [],
+        "Value": "Storleksklass",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Dstor"
+      },
+      {
+        "Name": "sjofar",
+        "Type": "D",
+        "DataType": "String",
+        "Filters": [],
+        "Value": "Sjöfartsföretag",
+        "Unit": null,
+        "Description": "",
+        "UniqueId": "Dsjofar"
+      },
+      {
+        "Name": "antfortag",
+        "Type": "M",
+        "DataType": "String",
+        "Filters": null,
+        "Value": "Antal företag",
+        "Unit": "",
+        "Description": "",
+        "UniqueId": "Dantfortag"
+      },
+      {
+        "Name": "netomsat",
+        "Type": "M",
+        "DataType": "String",
+        "Filters": null,
+        "Value": "Nettoomsättning i mnkr",
+        "Unit": "",
+        "Description": "",
+        "UniqueId": "Dnetomsat"
+      }
+    ],
+    "Description": null
+  },
+  "Rows": [
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "0-9",
+          "FormattedValue": "0-9",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Sjötransportföretag",
+          "FormattedValue": "Sjötransportföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "1156",
+          "FormattedValue": "1 156",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "8002,76",
+          "FormattedValue": "8 002,76",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "0-9",
+          "FormattedValue": "0-9",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Hamnföretag",
+          "FormattedValue": "Hamnföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "237",
+          "FormattedValue": "237",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "699,98",
+          "FormattedValue": "699,98",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "10-19",
+          "FormattedValue": "10-19",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Sjötransportföretag",
+          "FormattedValue": "Sjötransportföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "37",
+          "FormattedValue": "37",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "1456,68",
+          "FormattedValue": "1 456,68",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "10-19",
+          "FormattedValue": "10-19",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Hamnföretag",
+          "FormattedValue": "Hamnföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "17",
+          "FormattedValue": "17",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "534,18",
+          "FormattedValue": "534,18",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "3",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "20-49",
+          "FormattedValue": "20-49",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV3",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Sjötransportföretag",
+          "FormattedValue": "Sjötransportföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "27",
+          "FormattedValue": "27",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "5244,83",
+          "FormattedValue": "5 244,83",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "3",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "20-49",
+          "FormattedValue": "20-49",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV3",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Hamnföretag",
+          "FormattedValue": "Hamnföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "11",
+          "FormattedValue": "11",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "922,08",
+          "FormattedValue": "922,08",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "4",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "50-249",
+          "FormattedValue": "50-249",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV4",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Sjötransportföretag",
+          "FormattedValue": "Sjötransportföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "21",
+          "FormattedValue": "21",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "6609,55",
+          "FormattedValue": "6 609,55",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "4",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "50-249",
+          "FormattedValue": "50-249",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV4",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Hamnföretag",
+          "FormattedValue": "Hamnföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "19",
+          "FormattedValue": "19",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "4351,77",
+          "FormattedValue": "4 351,77",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "5",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "250-",
+          "FormattedValue": "250-",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV5",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Sjötransportföretag",
+          "FormattedValue": "Sjötransportföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "8",
+          "FormattedValue": "8",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "12938,18",
+          "FormattedValue": "12 938,18",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "5",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "250-",
+          "FormattedValue": "250-",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDV5",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Hamnföretag",
+          "FormattedValue": "Hamnföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "3",
+          "FormattedValue": "3",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "3243,74",
+          "FormattedValue": "3 243,74",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": false
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "t1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "Totalt",
+          "FormattedValue": "Totalt",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDVt1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Sjötransportföretag",
+          "FormattedValue": "Sjötransportföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "1249",
+          "FormattedValue": "1 249",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "34252",
+          "FormattedValue": "34 252",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": true
+    },
+    {
+      "Cell": [
+        {
+          "Name": "2016",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "ar",
+          "Value": "2016",
+          "FormattedValue": "2016",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DarDV2016",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "t1",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "stor",
+          "Value": "Totalt",
+          "FormattedValue": "Totalt",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DstorDVt1",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "2",
+          "IsMeasure": false,
+          "Description": "",
+          "Column": "sjofar",
+          "Value": "Hamnföretag",
+          "FormattedValue": "Hamnföretag",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "DsjofarDV2",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "antfortag",
+          "Value": "287",
+          "FormattedValue": "287",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        },
+        {
+          "Name": "",
+          "IsMeasure": true,
+          "Description": "",
+          "Column": "netomsat",
+          "Value": "9751,74",
+          "FormattedValue": "9 751,74",
+          "Level": "0",
+          "Gis": "",
+          "UniqueId": "",
+          "NoteIds": [],
+          "Versions": []
+        }
+      ],
+      "IsTotal": true
+    }
+  ],
+  "row_count": 12,
+  "data_status": "rows_returned",
+  "trace": {
+    "schema_version": 1,
+    "request_id": "4da0237f-4e7f-4c5b-89cd-f2d031da5400",
+    "server_version": "0.3.1",
+    "tool": "get_statistics",
+    "started_at_utc": "2026-10-25T03:06:01.675Z",
+    "elapsed_ms": 1132,
+    "outcome": "success",
+    "cache": "structure_ttl_lru",
+    "upstream_count": 2,
+    "coverage": {
+      "upstream": "complete",
+      "host": "unavailable"
+    },
+    "events": [
+      {
+        "id": "cache1",
+        "kind": "cache",
+        "endpoint": "structure",
+        "query": "t08091|antfortag|netomsat|ar:2016|stor|sjofar",
+        "lang": "sv",
+        "format": "json",
+        "start_ms": 0,
+        "outcome": "success",
+        "status": "miss",
+        "age_ms": 0,
+        "origin_request_id": "4da0237f-4e7f-4c5b-89cd-f2d031da5400",
+        "retained": true,
+        "ttl_ms": 300000,
+        "duration_ms": 206
+      },
+      {
+        "id": "http2",
+        "kind": "http",
+        "endpoint": "structure",
+        "query": "t08091|antfortag|netomsat|ar:2016|stor|sjofar",
+        "lang": "sv",
+        "format": "json",
+        "attempt": 1,
+        "start_ms": 0,
+        "outcome": "success",
+        "http_status": 200,
+        "response_bytes": 59148,
+        "cache": "disabled",
+        "queue_ms": 0,
+        "rate_limit_wait_ms": 0,
+        "api_ms": 206,
+        "parse_ms": 0,
+        "duration_ms": 206
+      },
+      {
+        "id": "validation3",
+        "kind": "metadata",
+        "name": "structure_contract",
+        "start_ms": 206,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "validation4",
+        "kind": "metadata",
+        "name": "structure_contract",
+        "start_ms": 206,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "validation5",
+        "kind": "metadata",
+        "name": "selection",
+        "start_ms": 206,
+        "outcome": "success",
+        "duration_ms": 0
+      },
+      {
+        "id": "http6",
+        "kind": "http",
+        "endpoint": "data",
+        "query": "t08091|antfortag|netomsat|ar:2016|stor|sjofar",
+        "lang": "sv",
+        "format": "json",
+        "attempt": 1,
+        "start_ms": 206,
+        "outcome": "success",
+        "http_status": 200,
+        "response_bytes": 11954,
+        "cache": "disabled",
+        "queue_ms": 0,
+        "rate_limit_wait_ms": 794,
+        "api_ms": 132,
+        "parse_ms": 0,
+        "duration_ms": 926
+      },
+      {
+        "id": "validation7",
+        "kind": "metadata",
+        "name": "data_contract",
+        "start_ms": 1132,
+        "outcome": "success",
+        "duration_ms": 0
+      }
+    ]
+  }
+}
