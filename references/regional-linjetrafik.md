@@ -14,6 +14,8 @@ Subventionerad trafik redovisas per län och riket; kommersiell regional trafik 
 
 pastig är påstigningar, inte unika resenärer eller sammanhållna reskedjor. Tur och retur räknas två gånger och varje övergång ger ny påstigning. Både avgiftsbelagda och kostnadsfria påstigningar ingår.
 
+För jämförelser med RVU: se [resvanor.md](resvanor.md) om huvudresa, delresa, reselement och påstigning. Ett färdsättsbyte innebär inte automatiskt en ny delresa, men kan ge en ny påstigning.
+
 ## performed_planned
 
 Utfört utbud omfattar trafik öppen för passagerare inklusive förstärkningstrafik; inställd trafik undantas och depåkörning ska om möjligt undantas. planavg och planutbud baseras på bearbetad tidtabellsdata från Samtrafiken och är planerat utbud, inte observerat utfört utbud. planavg avser avgångar från hållplats/station, inte självklart antalet hela fordonsturer.

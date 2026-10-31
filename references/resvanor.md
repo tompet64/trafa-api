@@ -24,6 +24,17 @@ Avgränsa slutsatsen till API-et: frånvaron där bevisar inte att undersökning
 - Statistiken ingår i SOS, med statistisk produktkod TK1101. API-koden är separat T1101. (Källa: https://www.trafa.se/globalassets/statistik/resvanor/2026/kvalitetsdeklaration-resvanor-i-sverige-2025.pdf, Allmänna uppgifter A.)
 - Statistikbladet 2024 visar 95-procentiga konfidensintervall. API-strukturen har åtta tillhörande KI-mått; deras exakta numeriska representation behöver verifieras i samma API-uttag. (Källa: https://www.trafa.se/globalassets/statistik/resvanor/2025/resvanor-i-sverige-2024.pdf, Figurer 1–8.)
 
+## Rese- och påstigningsbegrepp
+
+Skilj fyra begrepp vid jämförelser:
+
+- **Huvudresa:** resa mellan huvudresepunkter; kan omfatta flera delresor.
+- **Delresa:** förflyttning mellan punkter där ärenden uträttas; ett byte av färdsätt utan nytt ärende innebär inte automatiskt en ny delresa.
+- **Reselement:** del av en delresa som genomförs med ett färdsätt. Begreppet förekommer i äldre RVU till och med 2016; förutsätt inte att det ingår i senare publicerade API-tabeller.
+- **Påstigning:** ombordstigning i ett kollektivtrafikfordon; en delresa kan medföra flera påstigningar.
+
+Kontrollera exakta definitioner och eventuella ändringar mellan undersökningsomgångar i RVU:s kvalitetsdeklaration innan detaljerade historiska jämförelser. Påstigningar i T1203 är inte liktydiga med RVU:s huvudresor eller delresor.
+
 ## API-tolkning
 
 - anthresar räknar huvudresor, inte unika resenärer, delresor eller fordonsrörelser. antpers är ett personmått i tusental, inte antal enkätsvar eller antal hushåll.

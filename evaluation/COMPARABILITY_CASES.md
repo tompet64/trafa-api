@@ -18,7 +18,7 @@ Dessa är manuella beteendeacceptansfall. De ingår inte automatiskt i evaluatio
 
 **Fråga:** Lägg ihop resor i kollektivtrafiken med påstigningar i järnvägstrafiken.
 
-**Förväntat:** Förklara skillnader mellan resor, delresor och påstigningar och risk för överlappning. Visa separat där API-data finns; avvisa en missvisande summa eller ett diagram som antyder identiska enheter.
+**Förväntat:** Skilj huvudresa, delresa, reselement (äldre RVU till och med 2016) och påstigning; ett färdsättsbyte innebär inte automatiskt en ny delresa. Förklara risk för överlappning. Visa separat där API-data finns; avvisa en missvisande summa eller ett diagram som antyder identiska enheter.
 
 ## TC04 — Spannmål i svenska hamnar
 
