@@ -14,6 +14,8 @@ Färdigheten ska snabbt identifiera rätt statistikprodukt, variabel, mätvärde
 
 Vid jämförelser av personresor, använd [resvanor.md](references/resvanor.md) och [regional-linjetrafik.md](references/regional-linjetrafik.md). Skilj huvudresa, delresa, reselement och påstigning; likställ inte delresa med byte av färdsätt.
 
+För etablerade begreppsdefinitioner: läs först färdighetens relevanta referensfil och använd dess dokumenterade källhänvisningar. Gör inte webbsökningar enbart för att återfinna eller citera en definition som redan är dokumenterad. Kontrollera en extern originalkälla endast om referensfilen saknar uppgiften, är otillräckligt källbelagd, är motsägelsefull, behöver aktualitetskontrolleras eller om användaren uttryckligen begär extern verifiering. Vid sådan kontroll: gör en riktad sökning på Trafikanalys officiella webbplats. Skilj uppgifter från sparade referenser från nyss verifierade webbkällor; påstå inte att en originalkälla har öppnats om så inte skett.
+
 Vid genomfört API-uttag, ange exakt API-query och, om endpoint och URL har verifierats, en klickbar direktlänk till samma datauttag. En statistikproduktsida kan vara kompletterande metodkälla men ersätter inte en direktlänk. Om länken inte kan verifieras, redovisa query och begränsningen utan att hitta på en URL.
 
 ## Använd MCP-verktygen i pluginen
