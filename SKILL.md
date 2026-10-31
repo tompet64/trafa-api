@@ -5,6 +5,11 @@ description: Lös statistikfrågor och metadataarbete med Trafikanalys API (api.
 
 # Trafikanalys API
 
+
+## Syfte och jämförelser mellan statistikprodukter
+
+Färdigheten ska snabbt identifiera rätt statistikprodukt, variabel, mätvärde och giltig API-kombination för korta faktasvar, tabeller och diagram. Den ska även kunna hämta flera produkter och kombinera eller jämföra dem när statistiken är jämförbar. Kontrollera före sammanläggning: statistisk enhet, population och täckning, geografisk avgränsning, tidsperiod och frekvens, trafikslag och transportarbete kontra gods-/passagerarvolym, enhet, klassifikation, dubbelräkningsrisk, metodbrott och preliminär/slutlig status. Kontrollera varje produkts tillåtna kombinationer och metadata separat. Dokumentera eventuell harmonisering, omräkning, aggregering och ursprung för varje värde; kombinera aldrig olika mått bara för att enheten råkar vara densamma. Om jämförbarhet inte kan beläggas ska resultaten redovisas separat med en konkret förklaring av skillnaderna, utan missvisande gemensam summa eller diagramaxel. Föredra snabba, små och validerade uttag framför breda masshämtningar.
+
 ## Använd MCP-verktygen i pluginen
 
 När pluginens `get_structure` och `get_statistics` är tillgängliga, använd dem för aktuella API-anrop. Färdigheten styr fortfarande produktval, definitioner, dokumenterade kombinationer, tolkning och redovisning.
