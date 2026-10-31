@@ -166,3 +166,8 @@ Ett MCP-verktyg som redan slutvaliderar urvalet behöver inte föregås av samma
 strukturhämtning. Använd en separat metadatasökning när en kod, definition
 eller kombination fortfarande behöver fastställas. Hoppa aldrig över validering.
 
+
+
+## Acceptansfall för jämförbarhet
+
+Se [acceptansfallen](evaluation/COMPARABILITY_CASES.md) för separata prov av jämförbara och icke jämförbara statistikprodukter. Dessa fall är ännu inte ett bevis på genomförda API- eller beteendetester.
