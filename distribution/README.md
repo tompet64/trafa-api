@@ -22,3 +22,11 @@ Manifestformatet är `1.1`, utökat med `skill_version` och `release_status`. I 
 Behåll historiska källangivelser till Trafikanalys. Kontrollera eventuella nya myndighetsnamn och API-värdar innan de ändras i kod eller dokumentation. Ange på produktnivå om en sammanställning inte ingår i Sveriges officiella statistik.
 
 Detta är en distributionsrutin, inte bevis för att en viss pluginrelease redan har uppdaterats.
+
+## Föreslagen separat MCP-integration (från källversion 1.1.5)
+
+`integrations/trafa-mcp/` är en separat minimal färdighet avsedd för T-stat-pluginen. Den innehåller enbart tekniska MCP-instruktioner och inga kopior av statistikmetadata. `trafa-api` förblir fristående och styr statistiklogik, metod och källprioritering. Vid framtida pluginpaketering ersätts pluginens inbyggda `trafa-api` av `trafa-mcp`; MCP-konfigurationen (`.app.json`, pluginmanifest och anslutningsinställningar) ska bevaras oförändrad.
+
+Detta är en föreslagen målarkitektur, inte en utförd pluginuppdatering. Förutsättningen att pluginen kan använda en separat installerad `trafa-api` är funktionellt testad, men konsekvent instruktionsprioritet och automatisk tillgänglighet för andra användare är inte bevisad.
+
+Före release: bygg och inspektera ett pluginpaket med enbart `trafa-mcp`; verifiera att `get_statistics` och `get_structure` fungerar; kör RVU 2016/2025 utan API-anrop samt T10030 2025 med ofiltrerad `fslag`; dokumentera lästa färdigheter, API-fråga, täckning, svarstid och fel. Testa också användning utan separat installerad `trafa-api` och säkerställ att ingen statistikmetod uppfinns. Uppdatera därefter distributionsmanifest och pluginversion från verifierad release.
