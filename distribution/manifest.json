@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.1",
+  "distribution": "source",
+  "release_status": "unreleased",
+  "skill_version": "1.1.4",
+  "skill_commit": null,
+  "plugin_version": null,
+  "server_version": null,
+  "api_contract_version": "2.1.0",
+  "synced_at": null,
+  "notes": "Föreslagen färdighetsversion 1.1.4: references/resvanor.md matchar den redan sparade fristående färdighetens förtydligande om reselement och metodbrottet 2019. Detta är ett källmanifest inför granskning och release. Tom granskar och sammanfogar pull requesten innan pluginen uppdateras. skill_commit och distributionsuppgifter fylls först från den granskade källrevisionen vid faktisk paketering; ingen pluginrelease eller synkroniseringstid intygas här."
+}

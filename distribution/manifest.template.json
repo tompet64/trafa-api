@@ -1,10 +1,12 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "distribution": null,
+  "release_status": null,
+  "skill_version": null,
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": null,
   "synced_at": null,
-  "notes": "Fyll endast med verifierade uppgifter från faktisk release."
+  "notes": "Källmanifest får ange föreslagen skill_version med release_status unreleased. Fyll distributionsuppgifter först när de har verifierats vid faktisk release."
 }
