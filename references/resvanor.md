@@ -2,6 +2,8 @@
 
 Granskat 2026-10-11 mot dokumentation och sparad API-metadata. Delvis granskad profil; aktuell API-årstäckning och sluturval måste verifieras.
 
+Resebegreppen och metodbrottet 2019 förtydligade 2026-11-02 mot originalkällor och Toms sakgranskning. API-metadata har inte omverifierats vid denna komplettering.
+
 Personbaserad nationell resvaneundersökning. Välj för resmönster, ärenden, huvudsakliga färdsätt och skillnader mellan befolkningsgrupper; inte operatörernas antal påstigningar.
 
 ## Beslutsväg vid frågor om delresor med buss
@@ -30,10 +32,24 @@ Skilj fyra begrepp vid jämförelser:
 
 - **Huvudresa:** resa mellan huvudresepunkter; kan omfatta flera delresor.
 - **Delresa:** förflyttning mellan punkter där ärenden uträttas; ett byte av färdsätt utan nytt ärende innebär inte automatiskt en ny delresa.
-- **Reselement:** del av en delresa som genomförs med ett färdsätt. Begreppet förekommer i äldre RVU till och med 2016; förutsätt inte att det ingår i senare publicerade API-tabeller.
+- **Reselement (äldre RVU till och med 2016):** del av en delresa som genomförs med ett färdsätt. Byte av färdsätt ger ett nytt reselement; byte mellan fordon med samma färdsätt, exempelvis buss till buss, gör det inte. Från och med 2019 års undersökning samlas reselement inte in.
 - **Påstigning:** ombordstigning i ett kollektivtrafikfordon; en delresa kan medföra flera påstigningar.
 
 Kontrollera exakta definitioner och eventuella ändringar mellan undersökningsomgångar i RVU:s kvalitetsdeklaration innan detaljerade historiska jämförelser. Påstigningar i T1203 är inte liktydiga med RVU:s huvudresor eller delresor.
+
+### Metodbrottet 2019 och jämförelser av reselement
+
+**Från och med 2019 finns endast huvudresor och delresor som hierarkiska resenivåer i RVU. Reselement samlas inte längre in.** Detta är en förändring av undersökningens innehåll, inte enbart en begränsning i API-publiceringen.
+
+Antalet reselement i RVU 2016 och RVU 2025 kan därför inte jämföras som samma insamlade mått: reselement ingick 2016 men samlas inte in 2025. Besvara denna fråga med stöd av detta avsnitt. Ersätt inte reselement med huvudresor, delresor eller påstigningar. Vid jämförelser av huvudresor eller delresor över metodbytet måste dessutom bytet från telefonintervjuer till pappers- och webbenkät beaktas.
+
+Källstöd, kontrollerat 2026-11-02:
+
+- [Kvalitetsdeklaration RVU Sverige 2015–2016](https://www.trafa.se/globalassets/statistik/resvanor/2016/rvu-sverige-2016-kvalitetsdeklaration.pdf), avsnitt 1.2.1, s. 6: mätdagens reselement ingår uttryckligen. Avsnitt 5.3, s. 13: gränsen mellan reselement går vid byte av färdsätt.
+- [Mobilnätsdata som källa till Resvanor i Sverige, PM 2023:6](https://www.trafa.se/globalassets/pm/2023/pm-2023_6-mobilnatsdata-som-kalla-till-resvanor-i-sverige.pdf), avsnitt 3.1–3.2, s. 13: RVU gjordes om från 2019 och undersökningen har två hierarkiskt ordnade resebegrepp, huvudresa och delresa.
+- [Kvalitetsdeklaration Resvanor i Sverige 2025](https://www.trafa.se/globalassets/statistik/resvanor/2026/kvalitetsdeklaration-resvanor-i-sverige-2025.pdf), avsnitt 3.2, s. 13: insamlingen i nuvarande form har pågått sedan 2019. Avsnitt 5.1, s. 17: 2025 kan jämföras med 2019–2024, medan jämförelser med äldre telefonundersökningar kräver försiktighet.
+
+Sakgranskning 2026-11-02: Tom bekräftar uttryckligen att reselement inte samlas in från 2019. Tvånivåbeskrivningen kommer från PM 2023:6; påstå inte att 2025 års kvalitetsdeklaration ordagrant anger att reselement har tagits bort.
 
 ## API-tolkning
 
