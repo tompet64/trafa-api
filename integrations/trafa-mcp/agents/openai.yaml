@@ -1,0 +1,3 @@
+interface:
+  display_name: "Trafa MCP"
+  short_description: "Teknisk anslutning till Trafikanalys API via T-stat"
