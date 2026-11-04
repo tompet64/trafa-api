@@ -14,6 +14,14 @@ Denna färdighet beskriver endast anslutningen till Trafikanalys API via T-stats
 - Om `trafa-api` inte finns tillgänglig, påstå inte att dess referensfiler eller instruktioner har lästs. Be om installation eller redovisa begränsningen. Gör inte semantiska antaganden enbart utifrån verktygens tekniska validering.
 - En plugin kan ha integrationsregler som gör att dess instruktioner läses. Påstå därför inte att färdigheterna är fullständigt isolerade utan ett verifierbart test.
 
+## Behörighet och ändringsgränser
+
+- Läsning är standard. Vanliga statistikfrågor, metodfrågor och definitionstolkningar ger inte tillstånd att ändra filer, färdigheter, plugininställningar, pluginpaket, MCP-servern eller GitHub-innehåll.
+- Håll dig till den begärda uppgiften och till de källor och verktyg som användaren har tillåtit. Om underlag saknas eller inte kan läsas, redovisa begränsningen och avbryt den delen av arbetet.
+- Använd inte underagenter, alternativa verktyg eller webbsökningar för att kringgå uttryckliga källbegränsningar eller utföra obeställda ändringar. Påstå inte att en källa har lästs eller ett uttag har gjorts om det inte har skett.
+- När användaren uttryckligen beställer en ändring i projektet ska den förberedas mot GitHub-källan på en separat gren. Ändringar av färdighetsinnehåll ska få ett nytt `skill_version` i manifestet och läggas fram i en pull request för användarens granskning. Lokala ändringar i installerade färdigheter ersätter inte denna process.
+- Förberedelser, ändringsförslag och tester innebär inte tillstånd att sammanfoga en pull request, publicera en release eller uppdatera en installerad färdighet, plugin eller MCP-server. Sådana steg kräver separat uttryckligt godkännande.
+
 ## Verktygsanrop
 
 Se [references/tools.md](references/tools.md) för parametrar, gränser och teknisk kontroll.
