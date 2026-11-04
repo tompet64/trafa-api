@@ -2,11 +2,11 @@
   "schema_version": "1.1",
   "distribution": "source",
   "release_status": "unreleased",
-  "skill_version": "1.1.5",
+  "skill_version": "1.1.6",
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.5: tillför separat minimal integrationsfärdighet integrations/trafa-mcp utan att ändra den fristående trafa-api eller installerad plugin. Efter Toms granskning och sammanfogning kan separat pluginpaket byggas och acceptanstestas. Inga installerade versioner eller synkroniseringstider intygas."
+  "notes": "Föreslagen källversion 1.1.6: bygger vidare på 1.1.5 genom att förtydliga behörighets- och ändringsgränser i integrations/trafa-mcp samt lägga till manuella beteendeacceptansfall. Ändringen är inte sammanfogad eller installerad. Inga installerade versioner eller synkroniseringstider intygas."
 }
