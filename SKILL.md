@@ -10,6 +10,12 @@ description: Lös statistikfrågor och metadataarbete med Trafikanalys API (api.
 
 Färdigheten ska snabbt identifiera rätt statistikprodukt, variabel, mätvärde och giltig API-kombination för korta faktasvar, tabeller och diagram. Den ska även kunna hämta flera produkter och kombinera eller jämföra dem när statistiken är jämförbar. Kontrollera före sammanläggning: statistisk enhet, population och täckning, geografisk avgränsning, tidsperiod och frekvens, trafikslag och transportarbete kontra gods-/passagerarvolym, enhet, klassifikation, dubbelräkningsrisk, metodbrott och preliminär/slutlig status. Kontrollera varje produkts tillåtna kombinationer och metadata separat. Dokumentera eventuell harmonisering, omräkning, aggregering och ursprung för varje värde; kombinera aldrig olika mått bara för att enheten råkar vara densamma. Om jämförbarhet inte kan beläggas ska resultaten redovisas separat med en konkret förklaring av skillnaderna, utan missvisande gemensam summa eller diagramaxel. Föredra snabba, små och validerade uttag framför breda masshämtningar.
 
+## Underagenter och delegering
+
+Använd inte underagenter och delegera inte någon del av uppgiften om användaren inte uttryckligen har begärt sådan delegering för uppgiften. Instruktioner om resultatkontroll, oberoende kontroll eller parallellt arbete innebär inte i sig tillstånd att använda underagenter.
+
+Vid uttryckligen beställd delegering gäller samma källbegränsningar, verktygsbegränsningar och ändringsbefogenheter för alla medverkande agenter. Tillstånd att delegera utökar inte uppdraget eller tillåtna källor och åtgärder. Redovisa vad som delegerades och vilka verktyg, källor och eventuella ändringar underagenterna använde eller utförde. Skilj granskning av samma underlag från oberoende verifiering mot andra underlag eller med en annan kontrollmetod.
+
 ## Resebegrepp och spårbara API-uttag
 
 Vid jämförelser av personresor, använd [resvanor.md](references/resvanor.md) och [regional-linjetrafik.md](references/regional-linjetrafik.md). Skilj huvudresa, delresa, reselement och påstigning; likställ inte delresa med byte av färdsätt.
