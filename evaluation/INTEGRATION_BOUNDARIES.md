@@ -66,4 +66,4 @@ För IB06 och IB07: dokumentera agentanrop, delegeringsuppdraget och underagente
 
 ## Dokumenterade körningar
 
-- [2026-11-06: omtest av 1.1.9 med T-stat 1.1.6](results/manual/2026-11-06-1.1.9.md): IB06:s grundfråga preliminärt godkänd utifrån återgivet slutsvar; fullständigt agentspår och övriga varianter återstår.
+- [2026-11-06: omtest av 1.1.9 med T-stat 1.1.6](results/manual/2026-11-06-1.1.9.md): IB06 (grundfråga, uppföljning och fristående omtest) och IB07 godkända utifrån återgivna svar och kopierade arbetssteg. Tidigare misslyckat verktygsförsök och begränsningar dokumenteras; IB05 saknar genomfört test.
