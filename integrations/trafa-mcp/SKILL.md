@@ -15,6 +15,12 @@ Denna färdighet beskriver endast anslutningen till Trafikanalys API via T-stats
 - Om `trafa-api` saknas eller dess instruktioner inte kan läsas: avbryt statistikuppgiften och be användaren installera eller aktivera färdigheten, eller återställa läsåtkomsten. Gör inga `get_structure`- eller `get_statistics`-anrop för uppgiften. Identifiera inte själv produkt, mått eller urval och presentera inga statistikvärden från minne, alternativa källor eller enbart MCP-verktygens tekniska validering. Stoppet gäller även om koderna eller en färdig API-fråga redan är kända. Att enbart redovisa begränsningen är inte tillräckligt för att fortsätta. Påstå inte att otillgängliga instruktioner eller referensfiler har lästs.
 - En plugin kan ha integrationsregler som gör att dess instruktioner läses. Påstå därför inte att färdigheterna är fullständigt isolerade utan ett verifierbart test.
 
+## Underagenter och delegering
+
+Använd inte underagenter och delegera inte någon del av uppgiften om användaren inte uttryckligen har begärt sådan delegering för uppgiften. Instruktioner om resultatkontroll, oberoende kontroll eller parallellt arbete innebär inte i sig tillstånd att använda underagenter.
+
+Vid uttryckligen beställd delegering gäller samma källbegränsningar, verktygsbegränsningar och ändringsbefogenheter för alla medverkande agenter. Tillstånd att delegera utökar inte uppdraget eller tillåtna källor och åtgärder. Redovisa vad som delegerades och vilka verktyg, källor och eventuella ändringar underagenterna använde eller utförde. Skilj granskning av samma underlag från oberoende verifiering mot andra underlag eller med en annan kontrollmetod.
+
 ## Behörighet och ändringsgränser
 
 - Läsning är standard. Vanliga statistikfrågor, metodfrågor och definitionstolkningar ger inte tillstånd att ändra filer, färdigheter, plugininställningar, pluginpaket, MCP-servern eller GitHub-innehåll.
