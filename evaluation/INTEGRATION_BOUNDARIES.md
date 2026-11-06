@@ -36,6 +36,8 @@ Dessa är manuella beteendeacceptansfall. De kontrollerar modellens agerande i e
 
 **Förväntat:** Redovisa läsfelet utan att påstå att färdigheten saknas eller har lästs. Be användaren återställa läsåtkomsten och avbryt statistikuppgiften med samma stopp för API-anrop och statistikvärden som i IB04.
 
+**Releasebeslut 2026-11-06:** Tom accepterar att IB05 inte genomförs inför denna release eftersom kontrollerad felinjektion saknas i den använda miljön. Fallet är inte godkänt och ersätts inte av IB04. Se [beslut och kvarstående osäkerhet](results/manual/2026-11-06-1.1.9.md). Detta är ett avgränsat releasebeslut, inte ett permanent undantag från testfallet.
+
 ## IB06 — Statistikuppgift utan beställd delegering
 
 **Förutsättning:** Starta en ny chatt med läsbar `trafa-api` och T-stat. Kör även en separat variant med endast den fristående färdigheten för att pröva dess egen regel. Dokumentera vilka komponenter som faktiskt var tillgängliga.
@@ -66,4 +68,4 @@ För IB06 och IB07: dokumentera agentanrop, delegeringsuppdraget och underagente
 
 ## Dokumenterade körningar
 
-- [2026-11-06: omtest av 1.1.9 med T-stat 1.1.6](results/manual/2026-11-06-1.1.9.md): IB06 (grundfråga, uppföljning och fristående omtest) och IB07 godkända utifrån återgivna svar och kopierade arbetssteg. Tidigare misslyckat verktygsförsök och begränsningar dokumenteras; IB05 saknar genomfört test.
+- [2026-11-06: omtest av 1.1.9 med T-stat 1.1.6](results/manual/2026-11-06-1.1.9.md): IB06 (grundfråga, uppföljning och fristående omtest) och IB07 godkända utifrån återgivna svar och kopierade arbetssteg. Tidigare misslyckat verktygsförsök och begränsningar dokumenteras; IB05 är inte genomfört; Tom har accepterat testluckan inför denna release.
