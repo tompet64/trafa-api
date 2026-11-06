@@ -8,5 +8,5 @@
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.10: dokumenterar manuellt omtest av 1.1.9 med T-stat 1.1.6 i evaluation/results/manual/2026-11-06-1.1.9.md. IB06:s grundfråga är preliminärt godkänd utifrån återgivet slutsvar; agentspår och återstående fall är inte verifierade. Releasestatus föreslås kvarstå som unreleased. Inga instruktioner eller installerade komponenter ändras."
+  "notes": "Föreslagen källversion 1.1.10: dokumenterar manuellt omtest av 1.1.9 med T-stat 1.1.6 i evaluation/results/manual/2026-11-06-1.1.9.md. IB06:s grundfråga är preliminärt godkänd utifrån återgivet slutsvar; agentspår och återstående fall är inte verifierade. Releasestatus föreslås kvarstå som unreleased. Inga instruktioner eller installerade komponenter ändras. Kompletterar references/statusmeddelanden.md med användarrapporterade feltolkningar av nyreg som NY-regler och New York; sannolik orsak skiljs från fastställda observationer."
 }
