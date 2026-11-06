@@ -2,11 +2,11 @@
   "schema_version": "1.1",
   "distribution": "source",
   "release_status": "unreleased",
-  "skill_version": "1.1.9",
+  "skill_version": "1.1.10",
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.9: bygger vidare på 1.1.8 och kräver uttryckligen beställd delegering för underagenter i både trafa-api och trafa-mcp. Samma käll-, verktygs- och ändringsgränser gäller vid tillåten delegering. Manuella acceptansfall kompletteras. Inga installerade versioner eller synkroniseringstider intygas."
+  "notes": "Föreslagen källversion 1.1.10: dokumenterar manuellt omtest av 1.1.9 med T-stat 1.1.6 i evaluation/results/manual/2026-11-06-1.1.9.md. IB06:s grundfråga är preliminärt godkänd utifrån återgivet slutsvar; agentspår och återstående fall är inte verifierade. Releasestatus föreslås kvarstå som unreleased. Inga instruktioner eller installerade komponenter ändras."
 }
