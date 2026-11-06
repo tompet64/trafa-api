@@ -2,11 +2,11 @@
   "schema_version": "1.1",
   "distribution": "source",
   "release_status": "unreleased",
-  "skill_version": "1.1.10",
+  "skill_version": "1.1.11",
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.10: dokumenterar avslutade IB06 och IB07 för testat innehåll i 1.1.9, med kopierade arbetssteg, båda agentsvaren för IB07, tidigare misslyckat verktygsförsök och evidensbegränsningar i evaluation/results/manual/2026-11-06-1.1.9.md. IB05 saknar genomfört test. Kompletterar references/statusmeddelanden.md med feltolkningar av nyreg. Källmanifestet är fortsatt unreleased inför granskning, paketering och separat releasebeslut; inga installerade komponenter uppdateras."
+  "notes": "Föreslagen källversion 1.1.11: dokumenterar Toms beslut 2026-11-06 att acceptera IB05 som inte genomfört inför denna release eftersom kontrollerad felinjektion saknas i den använda miljön. IB04 ersätter inte IB05. IB06 och IB07 är godkända för testat innehåll 1.1.9 med dokumenterade evidensbegränsningar. Huvudinstruktioner och kod ändras inte. Releasestatus är unreleased tills faktisk distribution har verifierats."
 }
