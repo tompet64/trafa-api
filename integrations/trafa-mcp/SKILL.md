@@ -11,7 +11,8 @@ Denna färdighet beskriver endast anslutningen till Trafikanalys API via T-stats
 
 - Använd separat installerade `trafa-api` för statistiklogik, produktmetadata, definitioner, urvalsregler, källprioritering, jämförbarhet och resultatkontroll.
 - Använd `get_statistics` och vid behov `get_structure` för API-anrop. Kör inte Pythonklienten som mellanled till MCP-servern.
-- Om `trafa-api` inte finns tillgänglig, påstå inte att dess referensfiler eller instruktioner har lästs. Be om installation eller redovisa begränsningen. Gör inte semantiska antaganden enbart utifrån verktygens tekniska validering.
+- Kontrollera före en statistikuppgift att den separat installerade `trafa-api` finns tillgänglig och att dess instruktioner kan läsas, innan produkt, mått eller urval fastställs och innan API-anrop görs.
+- Om `trafa-api` saknas eller dess instruktioner inte kan läsas: avbryt statistikuppgiften och be användaren installera eller aktivera färdigheten, eller återställa läsåtkomsten. Gör inga `get_structure`- eller `get_statistics`-anrop för uppgiften. Identifiera inte själv produkt, mått eller urval och presentera inga statistikvärden från minne, alternativa källor eller enbart MCP-verktygens tekniska validering. Stoppet gäller även om koderna eller en färdig API-fråga redan är kända. Att enbart redovisa begränsningen är inte tillräckligt för att fortsätta. Påstå inte att otillgängliga instruktioner eller referensfiler har lästs.
 - En plugin kan ha integrationsregler som gör att dess instruktioner läses. Påstå därför inte att färdigheterna är fullständigt isolerade utan ett verifierbart test.
 
 ## Behörighet och ändringsgränser
