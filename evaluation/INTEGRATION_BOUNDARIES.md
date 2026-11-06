@@ -63,3 +63,7 @@ Dokumentera faktiskt lästa instruktioner och referenser, använda verktyg, even
 För IB04 och IB05: kontrollera synliga verktygsanrop och råa verktygssvar när de finns tillgängliga. Modellens egen arbetsredovisning räcker inte som oberoende bevis för att inga API-anrop gjorts. Offline-regression och statiska filkontroller bevisar inte att stoppet efterlevs i ChatGPT.
 
 För IB06 och IB07: dokumentera agentanrop, delegeringsuppdraget och underagentens redovisning när de kan granskas. Om endast slutredovisningen är tillgänglig, ange denna begränsning. Automatiska kodtester bevisar inte att modellen följer delegeringsregeln.
+
+## Dokumenterade körningar
+
+- [2026-11-06: omtest av 1.1.9 med T-stat 1.1.6](results/manual/2026-11-06-1.1.9.md): IB06 (grundfråga, uppföljning och fristående omtest) och IB07 godkända utifrån återgivna svar och kopierade arbetssteg. Tidigare misslyckat verktygsförsök och begränsningar dokumenteras; IB05 saknar genomfört test.

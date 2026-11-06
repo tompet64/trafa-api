@@ -43,3 +43,15 @@ Publicera inte privata skärmbilder, kontouppgifter eller fullständiga chattlog
 - Korrekt neutral formulering: exempelvis ”Kontrollerar fordonsstatistikens metadata”, om det motsvarar den faktiska handlingen.
 - Belägg: användarens uppgift; ingen skärmbild eller identifierad anropslogg har granskats för detta fall.
 - Bedömning: varken exakt formulering eller teknisk orsak kan fastställas. Registrera inte ”taxering” som synonym till fordonsstatistik och konstruera ingen koppling till en viss produkt eller variabel.
+
+## Feltolkning av nyreg vid nyregistreringar
+
+- Observations- och rapporteringsdatum: 2026-11-06.
+- Status: användarrapporterat genom egen kopiering av arbetssteg och slutsvar; ingen skärmbild eller fullständig anropslogg har granskats.
+- Exakta synliga feltexter enligt kopieringen: ”Extraherar NY-regler 2025-data” och ”Visar New York-registerförfrågningar”.
+- Sammanhang: fristående trafa-api användes för nyregistreringar 2025 efter att T-stat avinstallerats. Enligt redovisningen användes Pythonklientens extract med query `t10030|nyreg|ar:2025|fslag`.
+- Berörd kod: måttet `nyreg` i T10030. Kopieringen fastställer inte vilket enskilt anrop respektive etikett hörde till.
+- Korrekt benämning: ”Antal nyregistreringar”, enligt måttets dokumenterade metadata. Lämplig handlingsbeskrivning är exempelvis ”Hämtar nyregistreringar efter fordonsslag 2025”, när detta motsvarar handlingen.
+- Belägg: användarens kopierade arbetssteg och testsvar. Den redovisade queryn och tabellen avser nyregistreringar i Sverige; de ger inget stöd för New York eller ”NY-regler”.
+- Bedömning: synliga benämningar är felaktiga. En språklig feltolkning av `nyreg` som NY/New York är den sannolika förklaringen, men teknisk orsak och skapande komponent är inte fastställda. Inget motsvarande fel framgår av den återgivna queryn eller resultattabellen; råsvaret har inte granskats här.
+- Förebyggande tillämpning: använd produktens metadataetikett i egenformulerade kommentarer och verktygsrubriker. Översätt inte koden genom ordlikhet. Vid osäkerhet, skriv neutralt ”Kontrollerar fordonsstatistikens urval”. Dokumentationen garanterar inte att separat genererade gränssnittsetiketter ändras.
