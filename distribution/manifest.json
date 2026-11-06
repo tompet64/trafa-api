@@ -8,5 +8,5 @@
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.10: dokumenterar manuellt omtest av 1.1.9 med T-stat 1.1.6 i evaluation/results/manual/2026-11-06-1.1.9.md. IB06:s grundfråga är preliminärt godkänd utifrån återgivet slutsvar; agentspår och återstående fall är inte verifierade. Releasestatus föreslås kvarstå som unreleased. Inga instruktioner eller installerade komponenter ändras. Kompletterar references/statusmeddelanden.md med användarrapporterade feltolkningar av nyreg som NY-regler och New York; sannolik orsak skiljs från fastställda observationer."
+  "notes": "Föreslagen källversion 1.1.10: dokumenterar avslutade IB06 och IB07 för testat innehåll i 1.1.9, med kopierade arbetssteg, båda agentsvaren för IB07, tidigare misslyckat verktygsförsök och evidensbegränsningar i evaluation/results/manual/2026-11-06-1.1.9.md. IB05 saknar genomfört test. Kompletterar references/statusmeddelanden.md med feltolkningar av nyreg. Källmanifestet är fortsatt unreleased inför granskning, paketering och separat releasebeslut; inga installerade komponenter uppdateras."
 }
