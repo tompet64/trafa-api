@@ -10,6 +10,15 @@ Aktuell `DataCount=0` avslutar innan data och kräver ett motiverat alternativ e
 
 `--rows 10` visar högst tio resultatrader med exakta dimensionskoder/etiketter, måttvärden, IsTotal och not-ID. sample_complete visar om hela svaret ryms. Full råfil och Header/Notes är källan för större svar och fotnoter. HTTP-begäransloggen har elapsed_seconds och attempts för nya anrop; de mäter inte hela modellens svarstid.
 
+## Första tomma urvalet: kontrollera kombinationsfilen före nästa anrop
+
+1. Skilj ett tomt urval (`DataCount=0` i aktuell struktur eller `Rows=[]` utan API-fel) från tekniska fel, enstaka saknade celler och okänd `DataCount=null`. Spara exakt query och vad som var tomt. Noll i en numerisk cell är ett resultat, inte ett tomt svar.
+2. Läs direkt relevanta rader i `metadata/kombinationer.json`, eller återanvänd redan läst utdrag. Börja med måttet, exempelvis `python3 scripts/metadata_lookup.py --product t0802 --section combinations --variables godsvikt`. `--variables` kräver att alla angivna koder ingår i raden; hela den misslyckade uppsättningen kan därför filtrera bort rätt väg. Utelämna `--variables` om måttfiltret inte ger träff.
+3. Jämför en dokumenterad rad med den tomma queryn och relevant metodguide. Kontrollera dimensioner, föräldrar, riktning, trafiktyp, varugrupp och total/delgrupp. Slutvalidera ett semantiskt motsvarande alternativ innan nytt datauttag. Behåll frågans period och population; slå inte ihop dimensioner från olika kombinationsrader. Ett aktuellt negativt valbarhetsbesked får inte kringgås med referensvalidering.
+4. Pröva högst två ytterligare dokumenterade alternativ i normalfallet, fler bara vid ny konkret evidens. Saknas styrkt väg, redovisa urvalsproblemet avgränsat. Byt inte till webbsiffror, annan produkt eller kvartalssummering innan denna kontroll; källregeln om enbart API-siffror gäller även därefter.
+
+För gods: T0802:s spannmålsexempel i [sjotrafik.md](sjotrafik.md) visar kombinationen `godsvikt|ar|godsrikt|typh|varah|varau`; varukodens förälder ska finnas med. T10061 kräver kontroll av körningstyp och riktning enligt det särskilda fallet nedan. Exemplen är sökstöd, inte garantier för aktuella värden eller belägg för orsaken till ett nytt tomt svar.
+
 ## Dokumenterade exempel
 
 | Syfte | Query | Evidens och kontroll |
