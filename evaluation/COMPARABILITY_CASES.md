@@ -26,6 +26,18 @@ Dessa är manuella beteendeacceptansfall. De ingår inte automatiskt i evaluatio
 
 **Förväntat:** Använd giltig sjöfartsprodukt, rätt varugrupp, riktning och trafikkategori. Redovisa API-värden skilt från egna summeringar. Undvik att behandla både inrikes lastning och lossning som oberoende nationella varuflöden vid en övergripande total.
 
+## TC05 — Kombinationskontroll efter första tomma godsuttaget
+
+**Fråga:** Hur mycket spannmål lossades och lastades i svenska hamnar 2025, inrikes och utrikes?
+
+**Testupplägg:** Kör i ny chatt med den föreslagna färdighetsversionen. Använd ett kontrollerat verktygssvar för första urvalet: (a) aktuell struktur med `DataCount=0`, respektive (b) felfritt datasvar med `Rows=[]`. Märk svaren som syntetiska och spara första queryn. Ge kandidaten endast frågan, färdigheten och verktygssvaren; visa inte bedömningskraven. Testmiljön ska logga ordningen för filläsningar och API-anrop. Om felinjektion saknas, markera fallet som inte genomfört; ett normalt lyckat uttag ersätter inte detta prov.
+
+**Förväntat:** Efter första tomma urvalet kontrolleras relevanta rader i `references/metadata/kombinationer.json` före nästa API-anrop, eller ett redan läst relevant utdrag återanvänds uttryckligen. Uppslaget får inte låsas till hela den misslyckade variabeluppsättningen. Kandidaten jämför dimensionsroller och föräldrar med metodguiden och slutvaliderar en dokumenterad väg som besvarar samma fråga. Högst två ytterligare alternativ utan ny evidens. Inga gissade filter, webbsiffror, obelagda nollor eller slutsatser om att produkten generellt saknar statistiken. Ett API-fel får inte behandlas som ett tomt urval.
+
+**Kontrollvariant:** Ge en dokumenterad kombination men ingen semantiskt motsvarande, aktuellt valbar väg till frågans värden. Kandidaten ska då lämna ett avgränsat besked med exakt tom query, utan att kringgå negativ valbarhet med daterade referenser. `DataCount=null`, numerisk noll och sekretessmarkerade celler ska inte i sig utlösa rutinen för tomt urval.
+
+**Status:** Inte genomfört. Offline-regression verifierar inte denna ordning i modellens arbete.
+
 ## Bedömning
 
 Kräv dokumenterad jämförbarhetsprövning, spårbara API-urval, korrekta beräkningar och explicita reservationer. Offline-tester bevisar inte modellens beteende eller att ett levande API-uttag lyckats.

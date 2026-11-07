@@ -2,11 +2,11 @@
   "schema_version": "1.1",
   "distribution": "source",
   "release_status": "unreleased",
-  "skill_version": "1.1.11",
+  "skill_version": "1.1.12",
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.11: dokumenterar Toms beslut 2026-11-06 att acceptera IB05 som inte genomfört inför denna release eftersom kontrollerad felinjektion saknas i den använda miljön. IB04 ersätter inte IB05. IB06 och IB07 är godkända för testat innehåll 1.1.9 med dokumenterade evidensbegränsningar. Huvudinstruktioner och kod ändras inte. Releasestatus är unreleased tills faktisk distribution har verifierats."
+  "notes": "Föreslagen källversion 1.1.12: förtydligar att produktens kombinationsfil ska kontrolleras direkt efter första tomma urvalet, före nästa API-anrop. Anger måttbaserat uppslag, kontroll av dimensionsroller och föräldrar, slutvalidering och begränsade dokumenterade alternativ. Manuella acceptansfall för tomma godsuttag tillagda; modellbeteendet är ännu inte verifierat. Ingen installation eller pluginuppdatering ingår. Tidigare dokumenterade testbegränsningar, inklusive accepterad IB05-lucka inför 1.1.11, kvarstår. Releasestatus är unreleased tills faktisk distribution har verifierats."
 }
