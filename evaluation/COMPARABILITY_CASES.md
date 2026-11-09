@@ -38,6 +38,18 @@ Dessa är manuella beteendeacceptansfall. De ingår inte automatiskt i evaluatio
 
 **Status:** Inte genomfört. Offline-regression verifierar inte denna ordning i modellens arbete.
 
+## TC06 — VFU: varugrupp 01 efter trafikslag (hänvisning till statistikansvarig)
+
+**Fråga:** Hur mycket gods i VFU 2025 tillhör varugrupp 01 (produkter från jordbruk, skogsbruk och fiske), uppdelat på väg, järnväg, sjöfart och trafikslagskombinationer?
+
+**Underlag:** `references/varufloden.md` och den dokumenterade T1102-kombinationslistan. I sparade kombinationer 2026-10-09 finns `nst` och `main` var för sig, inte tillsammans. Aktuell strukturkontroll 2026-11-07 bekräftade att `nst:01` och `main` inte är en valbar korsredovisning. Statistikansvarig har enligt Toms uppgift 2026-11-09 bekräftat att rådata innehåller båda indelningarna.
+
+**Förväntat:** Förklara skillnaden mellan rådata och publicerade API-tabeller. Redovisa inte en konstruerad trafikslagsfördelning för varugrupp 01, och påstå inte att uppgifterna saknas i rådata. Hänvisa till statistikansvarig via [VFU:s produktsida](https://www.trafa.se/transportmonster/varufloden/) för förfrågan om specialbearbetning. Påpeka kort att finare indelning kan öka urvalsosäkerheten och att möjlig redovisning behöver bedömas särskilt. Hitta inte på kontaktuppgifter eller lova leverans.
+
+**Kontroll av RVU-princip:** Kontrollera att hänvisningen överensstämmer med `references/resvanor.md` när API:et saknar efterfrågade delresor eller detaljerade färdsätt, utan att felaktigt likställa detta med att reselement slutade samlas in 2019.
+
+**Status:** Manuellt beteendeacceptansfall, ännu inte genomfört. Ingår inte i offline-sviten och bevisar inte modellens beteende.
+
 ## Bedömning
 
 Kräv dokumenterad jämförbarhetsprövning, spårbara API-urval, korrekta beräkningar och explicita reservationer. Offline-tester bevisar inte modellens beteende eller att ett levande API-uttag lyckats.
