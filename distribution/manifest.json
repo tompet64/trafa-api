@@ -2,11 +2,11 @@
   "schema_version": "1.1",
   "distribution": "source",
   "release_status": "unreleased",
-  "skill_version": "1.1.12",
+  "skill_version": "1.1.13",
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.12: förtydligar att produktens kombinationsfil ska kontrolleras direkt efter första tomma urvalet, före nästa API-anrop. Anger måttbaserat uppslag, kontroll av dimensionsroller och föräldrar, slutvalidering och begränsade dokumenterade alternativ. Manuella acceptansfall för tomma godsuttag tillagda; modellbeteendet är ännu inte verifierat. Ingen installation eller pluginuppdatering ingår. Tidigare dokumenterade testbegränsningar, inklusive accepterad IB05-lucka inför 1.1.11, kvarstår. Releasestatus är unreleased tills faktisk distribution har verifierats."
+  "notes": "Föreslagen källversion 1.1.13: dokumenterar att VFU T1102:s rådata enligt statistikansvarig möjliggör varugrupp och trafikslag, medan API:et inte publicerar deras korsfördelning. Hänvisa till statistikansvarig via aktuell produktsida, med reservation för ökad osäkerhet vid fin indelning. RVU:s motsvarande hänvisningsprincip kontrollerad utan att blanda ihop den med reselementens upphörande 2019. Manuellt acceptansfall TC06 tillagt, ännu inte kört. Ingen installation eller pluginuppdatering ingår. Releasestatus unreleased tills faktisk distribution verifierats."
 }
