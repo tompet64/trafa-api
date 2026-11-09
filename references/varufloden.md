@@ -47,6 +47,18 @@ Mått och KI-koder:
 | genomkg | kilogram per sändning | genomkgki |
 | andelsand | procent av antal sändningar | andelsandki |
 
+## API-begränsning: varugrupp och trafikslag i samma redovisning
+
+**Sakuppgift från statistikansvarig, förmedlad av Tom 2026-11-09:** VFU:s rådata innehåller indelningar efter både varuslag och trafikslag/trafikslagskombinationer. I den publicerade API-produkten T1102 kan dessa indelningar däremot inte korsredovisas: API-tabellerna erbjuder varugrupp eller trafikslag, inte båda samtidigt. Detta är en **publiceringsbegränsning i API:et**, inte belägg för att motsvarande uppgifter saknas i undersökningen.
+
+**Teknisk kontroll:** Den sparade kombinationslistan från 2026-10-09 innehåller separata kombinationer med `nst` respektive `main`, men ingen med båda. Vid kontroll av aktuell API-struktur 2026-11-07 var `t1102|vikt|ar:2025|nst:01|avgank|main` inte valbar (`Option=false`), medan `t1102|vikt|viktki|ar:2025|nst:01|avgank` returnerade två rader. Denna kontroll avser API:ets publicerade kombinationer, inte rådatats innehåll.
+
+**Svarsrutin:** När användaren vill ha VFU efter både varuslag/varugrupp och trafikslag eller trafikslagskombinationer, förklara först att API:et inte publicerar korsredovisningen. Ersätt inte den efterfrågade fördelningen med den allmänna trafikslagsfördelningen eller med siffror från andra godstransportprodukter. Hänvisa till statistikansvarig för Varuflödesundersökningen för att fråga om en särskild bearbetning; hämta aktuella kontaktuppgifter från [VFU:s produktsida](https://www.trafa.se/transportmonster/varufloden/). Gissa inte namn, e-postadress eller telefonnummer och utlova inte att varje önskad tabell kan lämnas ut.
+
+**Osäkerhet:** En finare korsindelning ger ofta färre observationer per cell och kan därför medföra större urvalsosäkerhet. Det är en generell risk, inte en kvantifierad osäkerhet för en opublicerad korsredovisning. Hänvisa till särskild precisions- och röjandebedömning hos statistikansvarig; ange inte att osäkerheten alltid ökar eller att en viss detaljnivå är statistiskt användbar.
+
+**Avgränsning mot RVU:** Motsvarande hänvisningsprincip används för RVU när huvudresor i API:et inte besvarar frågor om delresor eller enskilda kollektiva färdsätt. Däremot är upphörandet av insamling av reselement 2019 ett faktiskt metod-/innehållsbrott och får inte beskrivas som enbart en API-begränsning.
+
 ## Öppna frågor
 
 - Faktisk API-tillgänglighet för 2025 och eventuell ändring av kodverk, kombinationer och KI-konvention jämfört med sparad struktur.
