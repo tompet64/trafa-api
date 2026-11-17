@@ -19,3 +19,5 @@ Kontrollera `ok`, `DataCount`, `row_count`, `Header`, `Rows`, `Notes`, `IsTotal`
 ## Versionsgränser
 
 MCP-serverversion och API-kontraktsversion är inte versioner av `trafa-api`. Kontrollera separat installationsmanifest för att intyga färdighetsversion. Förändringar av MCP-verktygens schema kräver översyn av denna fil; statistikmetod hör till `trafa-api`.
+
+`selection_coverage` i nyare servrar anger returnerade och saknade begärda år; saknad kodning kan vara ej bedömbar. Kategoritäckning är inte automatiskt fastställd. `DataCount` är ett tekniskt antal, inte ett statistiskt fullständighetsintyg. Behåll eventuella `code`, `error_code` och spårningskvittons felklassning; välj inte ett generiskt omslutande fel framför verifierat uppströmsfel.

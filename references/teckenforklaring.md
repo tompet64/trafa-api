@@ -87,7 +87,7 @@ Publikationslegend är inte bevis för API-representation. Fem lyckade datauttag
   påstående att symbolerna aldrig förekommer.
 
 MCP-svaren med källa, exakt query och hämtningstid sparas som
-`evaluation/charts/symbols-api-*.json`. Inga noll- eller sekretessdefinitioner
+`evaluation/fixtures/symbols/symbols-api-*.json`. Inga noll- eller sekretessdefinitioner
 härleds enbart från observerad förekomst.
 
 [API-beskrivningen](https://www.trafa.se/globalassets/ovriga-dokument/api-beskrivning.pdf),

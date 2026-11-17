@@ -2,6 +2,7 @@ name: Offline regression
 on:
   push:
   pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
@@ -22,5 +23,14 @@ jobs:
         run: node --check evaluation/comparison/replay_mcp.mjs
       - name: Run offline regressions (including comparison tests)
         run: python evaluation/run_offline.py
-      - name: Test PNG generator without network
-        run: node --test evaluation/charts/pie.test.mjs
+      - name: Report priority checks 1, 5, 6, 9 and 10
+        if: always()
+        run: python evaluation/run_priority.py --report-dir test-results/priority
+      - name: Preserve priority reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: priority-python-${{ matrix.python }}
+          path: test-results/priority/
+          if-no-files-found: error
+          retention-days: 30

@@ -34,11 +34,12 @@ Vid uttryckligen beställd delegering gäller samma källbegränsningar, verktyg
 Se [references/tools.md](references/tools.md) för parametrar, gränser och teknisk kontroll.
 
 1. Använd produkt, mått, filter och dimensioner som fastställts enligt `trafa-api`.
-2. När koderna är kända: anropa `get_statistics` direkt; den gör egen strukturvalidering. Anropa `get_structure` separat endast när det behövs för metadata eller värdekoder.
+2. Kontrollera först tidsurvalets konkreta år mot relevant metadata enligt `trafa-api`. Koddomän är inte observationstäckning. När koderna är kända: anropa `get_statistics` direkt; den gör egen strukturvalidering. Anropa `get_structure` separat endast när det behövs för metadata eller värdekoder.
 3. Ange ofiltrerade kategorier i `dimensions` (exempelvis `["fslag"]`), inte som tomma filter. Filtrera tidsdimensionen med konkreta årskoder.
 4. Kontrollera `ok`, `DataCount`, `row_count`, `Rows`, `IsTotal`, noter, enheter och felstatus. `max_rows` är inte ett löfte om fullständigt uttag.
+   Ett fullständigt returnerat svar (`row_count = DataCount`) bevisar inte att alla efterfrågade perioder och kategorier finns. Skilj saknade rader från noll och låt `trafa-api` bedöma additivitet, avrundning, jämförbarhet och orsaker.
 5. Bevara exakt `query`, verifierad `source.url`, hämtningstid, serverversion, kontraktsversion och spårningsuppgifter när dessa returneras.
-6. Vid nätverksfel, ogiltigt urval eller ofullständigt svar: redovisa felet och avbryt. Byt inte tyst till webbsökning, Python eller en annan datakälla.
+6. Stoppa det misslyckade uttaget och redovisa dess verkliga feltyp. Ett HTTP 500 bevisar inte att statistiken saknas. Kontrollera metadata innan ett separat, giltigt urval prövas; upprepa inte samma fel utan ny evidens. Behörighetsavslag får inte kringgås. Ett tekniskt fel utlöser inte referensfallback och inget källbyte får ske tyst. Vid saknade/inkonsekventa värden efter begränsad urvalskontroll, uppmana användaren att kontrollera andra publiceringar och rapportera misstänkta brister till statistikansvariga via produktsidan; skicka inget själv.
 7. Gör inte externa webbsökningar för statistikvärden. Följ den fristående färdighetens regler för metodkällor.
 
 ## Avgränsning

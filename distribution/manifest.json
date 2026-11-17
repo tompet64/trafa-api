@@ -2,11 +2,11 @@
   "schema_version": "1.1",
   "distribution": "source",
   "release_status": "unreleased",
-  "skill_version": "1.1.13",
+  "skill_version": "1.1.14",
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.13: dokumenterar att VFU T1102:s rådata enligt statistikansvarig möjliggör varugrupp och trafikslag, medan API:et inte publicerar deras korsfördelning. Hänvisa till statistikansvarig via aktuell produktsida, med reservation för ökad osäkerhet vid fin indelning. RVU:s motsvarande hänvisningsprincip kontrollerad utan att blanda ihop den med reselementens upphörande 2019. Manuellt acceptansfall TC06 tillagt, ännu inte kört. Ingen installation eller pluginuppdatering ingår. Releasestatus unreleased tills faktisk distribution verifierats."
+  "notes": "Föreslagen källversion 1.1.14: tidsdomän, observationstäckning, totalavstämning, jämförbarhet och IVV; hänvisning vid misstänkta API-brister; borttagen äldre diagramgenerator; prioriterade offline-tester 1/5/6/9/10 och CI-rapporter. Ingen installation eller driftsättning ingår."
 }

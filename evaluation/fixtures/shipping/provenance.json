@@ -1,0 +1,82 @@
+{
+  "kind": "frozen_observed_evidence",
+  "captured_date": "2026-11-16",
+  "sources": {
+    "detail-2025.json": {
+      "url": "https://api.trafa.se/api/data?query=t08021%7Cgodsvikt%7Car%3A2025%7Cgodsrikt%7Crikth%7Ckvartal&lang=sv",
+      "query": "t08021|godsvikt|ar:2025|godsrikt|rikth|kvartal",
+      "retrieved_at": null,
+      "notes": "Original direct HTTP response body; exact retrieval time was not recorded. Missing rows and inconsistent values are deliberately retained."
+    },
+    "annual-quarter-ivv.json": {
+      "annual_query": "t0802|godsvikt|ar:2016,2017,2018,2019,2020,2021,2022,2023,2024,2025",
+      "annual_retrieved_at": "2026-11-16T15:35:06.780Z",
+      "quarter_sources": [
+        {
+          "url": "https://api.trafa.se/api/data?query=t08021%7Cgodsvikt%7Car%3A2020%7Ckvartal&lang=sv",
+          "query": "t08021|godsvikt|ar:2020|kvartal",
+          "lang": "sv",
+          "retrieved_at": "2026-11-16T15:43:41.700Z",
+          "contract_version": "2.1.0",
+          "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+          "response_bytes": 3194
+        },
+        {
+          "url": "https://api.trafa.se/api/data?query=t08021%7Cgodsvikt%7Car%3A2021%7Ckvartal&lang=sv",
+          "query": "t08021|godsvikt|ar:2021|kvartal",
+          "lang": "sv",
+          "retrieved_at": "2026-11-16T15:43:43.412Z",
+          "contract_version": "2.1.0",
+          "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+          "response_bytes": 3202
+        },
+        {
+          "url": "https://api.trafa.se/api/data?query=t08021%7Cgodsvikt%7Car%3A2022%7Ckvartal&lang=sv",
+          "query": "t08021|godsvikt|ar:2022|kvartal",
+          "lang": "sv",
+          "retrieved_at": "2026-11-16T15:43:45.111Z",
+          "contract_version": "2.1.0",
+          "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+          "response_bytes": 3205
+        },
+        {
+          "url": "https://api.trafa.se/api/data?query=t08021%7Cgodsvikt%7Car%3A2023%7Ckvartal&lang=sv",
+          "query": "t08021|godsvikt|ar:2023|kvartal",
+          "lang": "sv",
+          "retrieved_at": "2026-11-16T15:43:46.683Z",
+          "contract_version": "2.1.0",
+          "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+          "response_bytes": 3076
+        },
+        {
+          "url": "https://api.trafa.se/api/data?query=t08021%7Cgodsvikt%7Car%3A2024%7Ckvartal&lang=sv",
+          "query": "t08021|godsvikt|ar:2024|kvartal",
+          "lang": "sv",
+          "retrieved_at": "2026-11-16T15:43:48.798Z",
+          "contract_version": "2.1.0",
+          "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+          "response_bytes": 3223
+        },
+        {
+          "url": "https://api.trafa.se/api/data?query=t08021%7Cgodsvikt%7Car%3A2025%7Ckvartal&lang=sv",
+          "query": "t08021|godsvikt|ar:2025|kvartal",
+          "lang": "sv",
+          "retrieved_at": "2026-11-16T15:43:50.688Z",
+          "contract_version": "2.1.0",
+          "contract_sha256": "4fd086c42071fc78014f397697fdd5f67fca644afe77a0fde257c9da042921a2",
+          "response_bytes": 3451
+        }
+      ],
+      "ivv_source": {
+        "query": "t0802|godsvikt|ar:2020,2021,2022,2023,2024,2025|godsrikt:1|typvag:1",
+        "retrievedAt": "2026-11-16T18:29:17.018Z",
+        "metadataSource": "current_structure"
+      },
+      "notes": "Values extracted from captured API cells; not assistant conclusions. IVV loaded values are unknown, not inferred."
+    }
+  },
+  "files": {
+    "annual-quarter-ivv.json": "8688d6a528e7692a2dd342a0fea7b2a8c3292380d3b5b6e534a663a4e25e6a6a",
+    "detail-2025.json": "a400dde3c84882f47a2e0193706795f625c0e03b98fd649b5d682480619f8ef4"
+  }
+}
