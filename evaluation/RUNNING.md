@@ -1,5 +1,27 @@
 # Första regressionssviten, edition 2026-10-19.1
 
+## Prioriterade Sjötrafik-kontroller, tillagda 2026-11-17
+
+Kör `python evaluation/run_priority.py --report-dir test-results/priority`.
+Fem testmetoder med kontrollvarianter gäller fall 1 (årskoder), 5 (glesa rader),
+6 (totalavstämning), 9 (avgränsningar) och 10 (IVV-förklaring). Rapporten anger
+uttryckligen `deterministic_code_checks_not_llm_behavior`. JSON, JUnit XML och
+Markdown sparas även när en kontroll misslyckas; processen returnerar då felkod.
+I GitHub Actions visas Markdown i körningssammanfattningen och filerna sparas
+som bilagor per Python-version, vid push, PR och manuell start. För manuell
+start behöver workflowfilen först finnas på standardgrenen. Ingen schemalagd
+liveinsamling eller automatisk rapport till statistikansvarig har lagts till.
+
+`fixtures/shipping/provenance.json` skiljer råsvaret från normaliserade,
+observerade värden. Bristerna i snapshoten bevaras avsiktligt; värdena får inte
+användas som framtida aktuella statistikfakta. Förväntade observationsnycklar
+och definitioner måste beläggas separat vid verklig användning.
+
+Manuella beteendeacceptansfall finns i [SHIPPING_CASES.md](SHIPPING_CASES.md).
+Deras status är ej genomförd. Kodtesternas gröna resultat är inte en automatisk
+utvärdering av modellens instruktionsföljande eller den installerade pluginen.
+Använd separat uttrycklig tillåtelse före eventuell agentdelegering.
+
 Sviten gäller färdigheten trafa-api och dess fristående klient. Den är inte en
 testsvit för biblioteket TrafaPy. `baseline.json` låser ursprungligt Git-commit
 och SHA-256 för färdighetens samtliga ursprungliga filer. Den granskade bundlen

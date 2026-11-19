@@ -2,11 +2,11 @@
   "schema_version": "1.1",
   "distribution": "source",
   "release_status": "unreleased",
-  "skill_version": "1.1.14",
+  "skill_version": "1.1.15",
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.14: registrerar Toms manuella TC06-prov av version 1.1.13. Huvudprovet genomfört men inte fullt godkänt; uttrycklig risk för ökad urvalsosäkerhet saknas och särskild prövning uttrycks bara delvis. Originalsvaret och evidensbegränsningar bevaras i evaluation/results/manual. RVU-principen dokumentkontrollerad vid granskningen, ingen ny RVU-beteendekörning. Endast testdokumentation och manifest ändras. TC05 och tidigare IB05-begränsning kvarstår. Ingen installation, plugin- eller serveruppdatering ingår. Releasestatus unreleased; testad installation 1.1.13 är Toms uppgift, inte självständigt verifierad."
+  "notes": "Föreslagen källversion 1.1.15: tidsdomän, observationstäckning, totalavstämning, jämförbarhet och IVV; hänvisning vid misstänkta API-brister; borttagen äldre diagramgenerator; prioriterade offline-tester 1/5/6/9/10 och CI-rapporter. Ingen installation eller driftsättning ingår."
 }

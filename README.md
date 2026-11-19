@@ -43,8 +43,15 @@ The code is provided “as is”, without warranty, and users are responsible fo
 
 The skill guides queries to Trafikanalys' public statistics API. It does not provide a hosted MCP server or create an API connection by itself. Review its scripts and references before use, especially when adapting it to a managed workplace.
 
-## PNG-diagram
+## Kontroller och automatiska tester
 
-[Den fristående cirkeldiagramgeneratorn](references/charts/README.md) tar en redan
-validerad tabell och skapar PNG samt en tillhörande tabell utan nya API-anrop.
-Kör med Node.js 22+. MCP-serverns integration förvaltas i dess separata projekt.
+[Statistikkontrollerna](references/statistikkontroller.md) skiljer koddomän,
+observationstäckning, numerisk avstämning och jämförbarhet. Kör `python
+evaluation/run_priority.py --report-dir evaluation/results/current-priority`
+för test 1, 5, 6, 9 och 10 med JSON-, JUnit- och Markdown-rapport.
+Hela offline-sviten körs med `python evaluation/run_offline.py`.
+
+GitHub Actions kör tester vid push och pull request och kan startas manuellt.
+Rapporter sparas som körningsbilagor och sammanfattning. Tester med frysta svar
+kontrollerar inte ett levande API eller modellens beteende; se
+[körinstruktionerna](evaluation/RUNNING.md).
