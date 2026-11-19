@@ -48,7 +48,7 @@ Dessa är manuella beteendeacceptansfall. De ingår inte automatiskt i evaluatio
 
 **Kontroll av RVU-princip:** Kontrollera att hänvisningen överensstämmer med `references/resvanor.md` när API:et saknar efterfrågade delresor eller detaljerade färdsätt, utan att felaktigt likställa detta med att reselement slutade samlas in 2019.
 
-**Status:** Manuellt beteendeacceptansfall, ännu inte genomfört. Ingår inte i offline-sviten och bevisar inte modellens beteende.
+**Status:** Huvudprovet genomfört enligt Toms återrapportering, granskat 2026-11-16. Testad version 1.1.13 enligt Tom; inte självständigt innehållsverifierad. Inte fullt godkänt: reservationen för ökad urvalsosäkerhet vid finare indelning saknas och särskild prövning uttrycks bara delvis. RVU-principen har dokumentkontrollerats vid granskningen; ingen separat RVU-beteendekörning ingår. Se [testprotokollet](results/manual/2026-11-16-tc06-1.1.13.md) för kravbedömning, originalsvaret och evidensbegränsningar. Ingår inte i offline-sviten.
 
 ## Bedömning
 
