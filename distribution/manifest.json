@@ -2,11 +2,11 @@
   "schema_version": "1.1",
   "distribution": "source",
   "release_status": "unreleased",
-  "skill_version": "1.1.14",
+  "skill_version": "1.1.15",
   "skill_commit": null,
   "plugin_version": null,
   "server_version": null,
   "api_contract_version": "2.1.0",
   "synced_at": null,
-  "notes": "Föreslagen källversion 1.1.14: tidsdomän, observationstäckning, totalavstämning, jämförbarhet och IVV; hänvisning vid misstänkta API-brister; borttagen äldre diagramgenerator; prioriterade offline-tester 1/5/6/9/10 och CI-rapporter. Ingen installation eller driftsättning ingår."
+  "notes": "Föreslagen källversion 1.1.15: tidsdomän, observationstäckning, totalavstämning, jämförbarhet och IVV; hänvisning vid misstänkta API-brister; borttagen äldre diagramgenerator; prioriterade offline-tester 1/5/6/9/10 och CI-rapporter. Ingen installation eller driftsättning ingår."
 }
