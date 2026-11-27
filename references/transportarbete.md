@@ -17,6 +17,8 @@ Aktuellt tabellverk: https://www.trafa.se/globalassets/statistik/trafikarbete/20
 
 Nationell modell för fordonskilometer, inte regional karta över faktisk körning. Produktnamnets ny är en etikett, inte en daterad metodversion.
 
+T04010 publiceras som komplement till den officiella vägtrafikstatistiken enligt [SCB:s årsrapport om SOS 2025](https://www.scb.se/contentassets/b49206e85dbf46d79696af9dc366885a/ov9999_2025a01_br_x43br2602.pdf), avsnittet Transporter och kommunikation. Körsträckor är en av modellens källor och ingår i SOS.
+
 - Modellen sammanväger trafikförändringar på statligt vägnät med körsträckor från svenskregistrerade fordons besiktningar. Explicit korrigering för svenska fordon utomlands och utländska fordon i Sverige gäller enligt PM lastbilar över 16 tons totalvikt; för övriga antas i praktiken balans mellan trafik över gränsen. (Källa: https://www.trafa.se/globalassets/statistik/transportarbete/2025/transportarbete-i-sverige-2000-2025---metod-pm.pdf, 2.1.)
 - Modellen går inte att bryta ned regionalt. Trafikverkets statliga-vägnätsunderlag är en insats i Trafikanalys modell, inte likvärdigt med modellens all-vägsresultat. (Källa: https://www.trafa.se/vagtrafik/trafikarbete/, Statistikens beskrivning.)
 - Preliminära uppgifter i april, slutliga senare i september när MC och utländska lastbilar tillkommit. Aktuell tabell är daterad 2026-09-21. (Källa: https://www.trafa.se/vagtrafik/trafikarbete/, Publicerade rapporter.)
@@ -33,7 +35,6 @@ Nationell modell för fordonskilometer, inte regional karta över faktisk körni
 - Klarlägg motsägelsen om modellens tillämpning före 2000 mellan produktsida och aktuellt tabellverk.
 - Varför MC-körsträckevariabler finns i T04010 och deras faktiska kombinationer, population, årstäckning och metodversion; inga körbara urval för dem verifierade.
 - Hur ny körsträckemetod påverkar aktuell trafikarbetsmodell och API-version.
-- SOS-status för just trafikarbetsprodukten är inte fastställd i de granskade källorna; överför inte transportarbetsproduktens status utan kontroll.
 
 ## T04020 – Transportarbete i Sverige – trafikslagsöversikt
 
