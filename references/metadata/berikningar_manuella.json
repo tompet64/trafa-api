@@ -6606,7 +6606,7 @@
         },
         {
           "field": "official_status",
-          "value": "Den nuvarande publiceringen är ett komplement till den officiella statistiken Lastbilstrafik. Sammanfattningen för 2021 anger SOS. Kontrollera berörd utgåva vid historiska uttag.",
+          "value": "Publiceras som ett komplement till den officiella Lastbilstrafik. Även 2021 års tabellverk beskriver rapporten som ett komplement till den officiella statistiken.",
           "source": {
             "kind": "official_scb_annual_report",
             "url": "https://www.scb.se/contentassets/b49206e85dbf46d79696af9dc366885a/ov9999_2025a01_br_x43br2602.pdf",
@@ -6616,17 +6616,30 @@
           }
         },
         {
-          "field": "historical_official_status",
-          "value": "Sammanfattningen för referensår 2021 anger att den ingår i SOS. Detta fastställer varken status för alla historiska data i API:t eller när publiceringsstatus kan ha ändrats.",
+          "field": "official_status_2021",
+          "value": "Försättsbladet Titel saknar SOS-märkning. Kort om statistiken beskriver rapporten som ett komplement. Redovisa 2021 utanför SOS.",
+          "source": {
+            "kind": "official_publication",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/utlandska-lastbilar/utlandska-lastbilstransporter-i-sverige-2021.xlsx",
+            "edition": "2021",
+            "checked_on": "2026-11-27",
+            "section": "Titel samt Kort om statistiken, A4",
+            "publication": "Statistik 2022:36"
+          }
+        },
+        {
+          "field": "conflicting_sos_wording_2021",
+          "value": "Statistikbladet saknar SOS-symbol på första sidan och anger SOS i löptext längst ned på första sidan. Uppgiften motsägs av tabellverket och är sannolikt en felaktig standardtext.",
           "source": {
             "kind": "official_publication",
             "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/utlandska-lastbilar/utlandska-lastbilstransporter-i-sverige-2021.pdf",
             "edition": "2021",
+            "section": "Första sidan",
             "checked_on": "2026-11-27"
           }
         }
       ],
-      "official_statistics_status": "not_SOS_current_publication"
+      "official_statistics_status": "not_SOS_complement"
     },
     "T0701": {
       "api_name_documented": "t0701",
