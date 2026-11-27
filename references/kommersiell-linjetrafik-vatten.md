@@ -10,6 +10,8 @@ Kommersiell tidtabellbunden persontrafik på vatten i egen regi, utan offentlig 
 
 Undersökningen är en del av Regional linjetrafik, med separat tabellverk och API-kod T1204. Samma regionala kommersiella trafik ingår i T1203. Summera inte T1204 med T1203:s motsvarande del eller total.
 
+Särredovisningen T1204 ligger utanför SOS enligt [SCB:s årsrapport om SOS 2025](https://www.scb.se/contentassets/b49206e85dbf46d79696af9dc366885a/ov9999_2025a01_br_x43br2602.pdf), avsnittet Transporter och kommunikation. Kontrollera den använda tabellens status om uppgifterna hämtas från Regional linjetrafik.
+
 ## sjotrafik_boundary
 
 Skilj regional vattenkollektivtrafik från hamnanknuten Sjötrafik T0802/T08021, som har annan population och undantag för regional linjetrafik/skärgårdstrafik. En bred fråga om båtar eller färjor kräver avgränsning till regional/interregional/utrikes och finansiering; anta inte att produkterna tillsammans ger ett komplett disjunkt total.

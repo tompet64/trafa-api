@@ -2266,8 +2266,18 @@
             "checked_at": "2026-10-11",
             "scope": "Swedish shipping-enterprise survey scope, economic focus and discontinuation from 2019; page does not separately establish international product update plan"
           }
+        },
+        {
+          "field": "official_status",
+          "value": "Produktsidan märker den svenska historiska undersökningen som SOS. Den separata Eurostat-serien T08092 har inte verifierad SOS-status här.",
+          "source": {
+            "kind": "official_product_page",
+            "url": "https://www.trafa.se/ovrig/sjofartsforetag/",
+            "checked_on": "2026-11-27"
+          }
         }
-      ]
+      ],
+      "official_statistics_status": "SOS_historical_swedish_publication"
     },
     "T08092": {
       "api_name_documented": "t08092",
@@ -6593,8 +6603,43 @@
             "independently_verified": false,
             "scope": "T0301 scope, participating-country surveys, weight thresholds, non-SOS status and absent CI; underestimation is expert assessment"
           }
+        },
+        {
+          "field": "official_status",
+          "value": "Publiceras som ett komplement till den officiella Lastbilstrafik. Även 2021 års tabellverk beskriver rapporten som ett komplement till den officiella statistiken.",
+          "source": {
+            "kind": "official_scb_annual_report",
+            "url": "https://www.scb.se/contentassets/b49206e85dbf46d79696af9dc366885a/ov9999_2025a01_br_x43br2602.pdf",
+            "edition": "2025",
+            "section": "Transporter och kommunikation",
+            "checked_on": "2026-11-27"
+          }
+        },
+        {
+          "field": "official_status_2021",
+          "value": "Försättsbladet Titel saknar SOS-märkning. Kort om statistiken beskriver rapporten som ett komplement. Redovisa 2021 utanför SOS.",
+          "source": {
+            "kind": "official_publication",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/utlandska-lastbilar/utlandska-lastbilstransporter-i-sverige-2021.xlsx",
+            "edition": "2021",
+            "checked_on": "2026-11-27",
+            "section": "Titel samt Kort om statistiken, A4",
+            "publication": "Statistik 2022:36"
+          }
+        },
+        {
+          "field": "conflicting_sos_wording_2021",
+          "value": "Statistikbladet saknar SOS-symbol på första sidan och anger SOS i löptext längst ned på första sidan. Uppgiften motsägs av tabellverket och är sannolikt en felaktig standardtext.",
+          "source": {
+            "kind": "official_publication",
+            "url": "https://www.trafa.se/globalassets/statistik/vagtrafik/utlandska-lastbilar/utlandska-lastbilstransporter-i-sverige-2021.pdf",
+            "edition": "2021",
+            "section": "Första sidan",
+            "checked_on": "2026-11-27"
+          }
         }
-      ]
+      ],
+      "official_statistics_status": "not_SOS_complement"
     },
     "T0701": {
       "api_name_documented": "t0701",
@@ -6937,6 +6982,17 @@
             "reviewed_at": "2026-10-11",
             "scope": "Tom anger analogi med indelningen i T1202 och möjliga förklaringar till begränsad redovisning."
           }
+        },
+        {
+          "field": "official_status",
+          "value": "Kommersiell linjetrafik på vatten är en del av Regional linjetrafik. Den separat publicerade statistiken ingår enligt SCB inte i SOS.",
+          "source": {
+            "kind": "official_scb_annual_report",
+            "url": "https://www.scb.se/contentassets/b49206e85dbf46d79696af9dc366885a/ov9999_2025a01_br_x43br2602.pdf",
+            "edition": "2025",
+            "section": "Transporter och kommunikation",
+            "checked_on": "2026-11-27"
+          }
         }
       ],
       "interpretation_guardrails": [
@@ -6953,8 +7009,7 @@
         "Interregional finns i T1204 analogt med indelningen i T1202 enligt Toms sakuppgift. Möjliga förklaringar till begränsad redovisning är att trafiken är ovanlig eller att antalet utförare är för litet för redovisning av sekretesskäl; dessa orsaker är inte fastställda. Skilj kategorins existens från observationernas täckning och redovisningsstatus. Ett tomt eller saknat värde innebär inte noll och får inte automatiskt betecknas som sekretessbelagt."
       ],
       "open_questions": [
-        "Vilka interregionala uppgifter kan redovisas för respektive år och mått? Är eventuellt saknade värden frånvaro av trafik, bortfall, sekretess eller annan redovisningsbegränsning? Orsaken är inte fastställd.",
-        "Separat SOS-status för API-koden T1204 är inte uttryckligen fastställd i denna granskning; skilj kod från statistikprodukt TK1203."
+        "Vilka interregionala uppgifter kan redovisas för respektive år och mått? Är eventuellt saknade värden frånvaro av trafik, bortfall, sekretess eller annan redovisningsbegränsning? Orsaken är inte fastställd."
       ],
       "verified_api_codes": {
         "trafiktyp": {
@@ -6980,7 +7035,8 @@
           "reviewed_at": "2026-10-11",
           "scope": "Tom anger analogi med indelningen i T1202 och möjliga förklaringar till begränsad redovisning."
         }
-      }
+      },
+      "official_statistics_status": "not_SOS_separate_publication"
     },
     "T0501": {
       "api_name_documented": "t0501",
@@ -8787,6 +8843,17 @@
             "checked_on": "2026-10-11",
             "section": "Kort om statistiken"
           }
+        },
+        {
+          "field": "official_status",
+          "value": "Trafikarbete på svenska vägar är ett komplement till den officiella vägtrafikstatistiken enligt SCB. Körsträckor är en av modellens källor och ingår i SOS.",
+          "source": {
+            "kind": "official_scb_annual_report",
+            "url": "https://www.scb.se/contentassets/b49206e85dbf46d79696af9dc366885a/ov9999_2025a01_br_x43br2602.pdf",
+            "edition": "2025",
+            "section": "Transporter och kommunikation",
+            "checked_on": "2026-11-27"
+          }
         }
       ],
       "interpretation_rules": [
@@ -8799,9 +8866,9 @@
       "open_questions": [
         "Klarlägg motsägelsen om modellens tillämpning före 2000 mellan produktsida och aktuellt tabellverk.",
         "Varför MC-körsträckevariabler finns i T04010 och deras faktiska kombinationer, population, årstäckning och metodversion; inga körbara urval för dem verifierade.",
-        "Hur ny körsträckemetod påverkar aktuell trafikarbetsmodell och API-version.",
-        "SOS-status för just trafikarbetsprodukten är inte fastställd i de granskade källorna; överför inte transportarbetsproduktens status utan kontroll."
-      ]
+        "Hur ny körsträckemetod påverkar aktuell trafikarbetsmodell och API-version."
+      ],
+      "official_statistics_status": "not_SOS_complement"
     },
     "T10020": {
       "api_name_documented": "t10020",
